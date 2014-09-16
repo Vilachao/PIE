@@ -84,11 +84,13 @@
     [self.textViewEscultura setTextColor: [UIColor whiteColor]];
     self.textViewEscultura.selectable = NO;
     self.textViewEscultura.textAlignment=NSTextAlignmentJustified;
+    self.textViewEscultura.textContainerInset = UIEdgeInsetsMake(10.0f, 5.0f, 10.0f, 10.0f);
     self.textViewTituloEscultura.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.500];
     [self.textViewTituloEscultura setTextColor: [UIColor whiteColor]];
     self.textViewTituloEscultura.selectable = NO;
     self.textViewTituloEscultura.scrollEnabled = YES;
     self.textViewTituloEscultura.textAlignment=NSTextAlignmentJustified;
+    self.textViewTituloEscultura.textContainerInset = UIEdgeInsetsMake(0.0f, 5.0f, 10.0f, 0.0f);
     NSString *nameObra = [self.arrayObras objectAtIndex:[self selectImageBackground:self.idEscultura ]];
     self.backgroundImage.image=[PIEutil loadImage:nameObra :@[@"Esculturas",self.nameFolderObraArtista]];
     
