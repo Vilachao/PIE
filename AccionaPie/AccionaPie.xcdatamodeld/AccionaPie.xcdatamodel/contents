@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Artist" representedClassName="Artist" syncable="YES">
+        <attribute name="dateBorn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionArtist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idArtist" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="artistResource" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ArtistResource" inverseName="resourceArtist" inverseEntity="ArtistResource" syncable="YES"/>
+        <relationship name="artistSculpture" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Sculpture" inverseName="sculptureArtist" inverseEntity="Sculpture" syncable="YES"/>
+    </entity>
+    <entity name="ArtistResource" representedClassName="ArtistResource" syncable="YES">
+        <attribute name="idArtist" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idArtistResource" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="resourceArtist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Artist" inverseName="artistResource" inverseEntity="Artist" syncable="YES"/>
+    </entity>
+    <entity name="Sculpture" representedClassName="Sculpture" syncable="YES">
+        <attribute name="audio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descriptionSculpture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idArtist" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idSculpture" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="material" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameQR" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sizes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sculptureArtist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Artist" inverseName="artistSculpture" inverseEntity="Artist" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Artist" positionX="-225" positionY="-162" width="128" height="148"/>
+        <element name="Sculpture" positionX="54" positionY="0" width="128" height="223"/>
+        <element name="ArtistResource" positionX="70" positionY="-216" width="128" height="118"/>
+    </elements>
+</model>

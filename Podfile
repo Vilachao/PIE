@@ -1,0 +1,7 @@
+platform :ios, '7.1'
+pod 'FXReachability', '1.1.1'
+pod 'MBProgressHUD', '0.8'
+pod 'REFrostedViewController', '2.4.6'
+pod 'AFPopupView', '1.0'
+pod 'StreamingKit', '0.1.23'
+pod 'FTCoreText', '1.0.1'

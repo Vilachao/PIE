@@ -1,0 +1,25 @@
+PODS:
+  - AFPopupView (1.0)
+  - FTCoreText (1.0.1)
+  - FXReachability (1.1.1)
+  - MBProgressHUD (0.8)
+  - REFrostedViewController (2.4.6)
+  - StreamingKit (0.1.23)
+
+DEPENDENCIES:
+  - AFPopupView (= 1.0)
+  - FTCoreText (= 1.0.1)
+  - FXReachability (= 1.1.1)
+  - MBProgressHUD (= 0.8)
+  - REFrostedViewController (= 2.4.6)
+  - StreamingKit (= 0.1.23)
+
+SPEC CHECKSUMS:
+  AFPopupView: a637995cd7975bc2dca692cb5c3dc5c9eefc555b
+  FTCoreText: 399795cfe9e000435a25be3bef95f02c298528e9
+  FXReachability: 34c68085c9a12c7fe4f791bdb54e99f14d90b5ae
+  MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
+  REFrostedViewController: 0f6bb16aeb4b384da25cc3c97bc1a16926583c62
+  StreamingKit: 97f1dd5a76693fd55f616e8dfb13b3f456dd11c7
+
+COCOAPODS: 0.33.1
