@@ -47,7 +47,6 @@
 		D72AC1EA19BDDBC8001B2C48 /* Esculturas in Resources */ = {isa = PBXBuildFile; fileRef = D72AC1E919BDDBC8001B2C48 /* Esculturas */; };
 		D72AC1F019BF009A001B2C48 /* marker-100.png in Resources */ = {isa = PBXBuildFile; fileRef = D72AC1EF19BF009A001B2C48 /* marker-100.png */; };
 		D73D2B4E19BA14EB00C79A7C /* Home in Resources */ = {isa = PBXBuildFile; fileRef = D73D2B4D19BA14EB00C79A7C /* Home */; };
-		D77730A019C8641600C6AAE7 /* PIEPruebaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D777309F19C8641600C6AAE7 /* PIEPruebaTableViewCell.m */; };
 		D7924FC919C05FF4000B9402 /* MiniHome in Resources */ = {isa = PBXBuildFile; fileRef = D7924FC819C05FF4000B9402 /* MiniHome */; };
 		D7924FCB19C061AC000B9402 /* MiniArtistas in Resources */ = {isa = PBXBuildFile; fileRef = D7924FCA19C061AC000B9402 /* MiniArtistas */; };
 		D7A2FA1919BC3A6100FE8B43 /* Artistas in Resources */ = {isa = PBXBuildFile; fileRef = D7A2FA1819BC3A6100FE8B43 /* Artistas */; };
@@ -139,8 +138,6 @@
 		D72AC1E919BDDBC8001B2C48 /* Esculturas */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Esculturas; sourceTree = "<group>"; };
 		D72AC1EF19BF009A001B2C48 /* marker-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-100.png"; sourceTree = "<group>"; };
 		D73D2B4D19BA14EB00C79A7C /* Home */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Home; sourceTree = "<group>"; };
-		D777309E19C8641600C6AAE7 /* PIEPruebaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEPruebaTableViewCell.h; sourceTree = "<group>"; };
-		D777309F19C8641600C6AAE7 /* PIEPruebaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEPruebaTableViewCell.m; sourceTree = "<group>"; };
 		D7924FC819C05FF4000B9402 /* MiniHome */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MiniHome; sourceTree = "<group>"; };
 		D7924FCA19C061AC000B9402 /* MiniArtistas */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MiniArtistas; sourceTree = "<group>"; };
 		D7A2FA1819BC3A6100FE8B43 /* Artistas */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Artistas; sourceTree = "<group>"; };
@@ -455,8 +452,6 @@
 				3865D60519A34DEC00479CAF /* PIEutil.m */,
 				D7B21CD619B1AF7D00BBBD92 /* Constants.h */,
 				380E667B1998BCD400866F2D /* Localizable.strings */,
-				D777309E19C8641600C6AAE7 /* PIEPruebaTableViewCell.h */,
-				D777309F19C8641600C6AAE7 /* PIEPruebaTableViewCell.m */,
 				D7C285A819B31FE700EF6CC8 /* RMScannerView */,
 			);
 			name = util;
@@ -662,7 +657,6 @@
 				3818BC5E19A4BCC6004A003C /* Sculpture.m in Sources */,
 				38BAD47A19982CB8002FA234 /* AccionaPie.xcdatamodeld in Sources */,
 				D7C285C319B31FEF00EF6CC8 /* RMScannerView.m in Sources */,
-				D77730A019C8641600C6AAE7 /* PIEPruebaTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
