@@ -351,12 +351,12 @@
 - (void)initConTexto
 {
     
-    self.coreTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(20, 100, 275, 1000)];
+    self.coreTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(0, 0, 275, 1000)];
     self.creditosScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 460)];
     [self.creditosView addSubview:self.creditosScroll];
     [self.creditosScroll addSubview:self.coreTextView];
-    self.coreTextView.text =@"Validar datos e introducir contenido de créditos";
-    self.coreTextView.backgroundColor = [UIColor clearColor];
+    self.coreTextView.text =@"Validar datos e introducir contenido de créditos\n\n\n\n";
+    self.coreTextView.backgroundColor = [UIColor redColor];
     self.coreTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.coreTextView fitToSuggestedHeight];
     [self.coreTextView addStyles:[self coreTextStyle]];
@@ -371,7 +371,7 @@
     //  This will be default style of the text not closed in any tag
 	FTCoreTextStyle *defaultStyle = [FTCoreTextStyle new];
 	defaultStyle.name = FTCoreTextTagDefault;	//thought the default name is already set to FTCoreTextTagDefault
-	defaultStyle.font = [UIFont fontWithName:@"TimesNewRomanPSMT" size:16.f];
+	defaultStyle.font = [UIFont fontWithName:@"TimesNewRomanPSMT" size:20.f];
 	defaultStyle.textAlignment = FTCoreTextAlignementJustified;
 	[result addObject:defaultStyle];
 	

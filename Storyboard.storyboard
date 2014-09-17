@@ -319,7 +319,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A51-0m-2NG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-398" y="1013"/>
+            <point key="canvasLocation" x="-373" y="1043"/>
         </scene>
         <!--Accessibility View Controller - Item 2-->
         <scene sceneID="l1G-jC-hTk">
@@ -1140,7 +1140,7 @@ datos de
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WD-BE-Gx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-866" y="319"/>
+            <point key="canvasLocation" x="-665" y="378"/>
         </scene>
         <!--Navigation Controller - ACCESIBILIDAD-->
         <scene sceneID="42k-0o-3JN">
@@ -1162,7 +1162,7 @@ datos de
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUI-DI-biu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-356" y="319"/>
+            <point key="canvasLocation" x="-270" y="378"/>
         </scene>
         <!--Navigation Menu Home Controller - Item-->
         <scene sceneID="rLJ-0G-6Te">
@@ -1218,9 +1218,7 @@ datos de
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GKp-ql-sbp">
                                 <rect key="frame" x="272" y="6" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="home_menu2">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" image="home_menu2"/>
                                 <connections>
                                     <action selector="actionHome:" destination="bhe-1h-Qan" eventType="touchUpInside" id="lM7-H6-CSf"/>
                                 </connections>
@@ -1228,13 +1226,14 @@ datos de
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="menuButton" destination="E3y-9I-WAS" id="gLf-DV-2Kl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vr1-Nx-hDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-878" y="1043"/>
+            <point key="canvasLocation" x="-749" y="1043"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="bDg-OV-FKG">
