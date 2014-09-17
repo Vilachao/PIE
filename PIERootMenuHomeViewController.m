@@ -52,17 +52,21 @@
 
 
 - (IBAction)actionHome:(id)sender{
-    UIStoryboard *storyboard = self.navigationController.storyboard;
-    
-    //the detail controller
-    PIEMainHomeViewController *myNewVC = [storyboard
-                                          instantiateViewControllerWithIdentifier:@"PIEMainHomeViewController"];
-    
-    myNewVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self.navigationController presentViewController:myNewVC animated:YES completion:nil];
+//    UIStoryboard *storyboard = self.navigationController.storyboard;
+//    
+//    //the detail controller
+//    PIEMainHomeViewController *myNewVC = [storyboard
+//                                          instantiateViewControllerWithIdentifier:@"PIEMainHomeViewController"];
+//    
+//    myNewVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    [self.navigationController presentViewController:myNewVC animated:YES completion:nil];
+//
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"navigationHome"];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
 
-    }
-    
+}
+
 - (IBAction)actionMenu:(id)sender{
         PIEHomeViewController* pieAcceso = (PIEHomeViewController *)self.contentViewController;
         [pieAcceso.frostedViewController presentMenuViewController];

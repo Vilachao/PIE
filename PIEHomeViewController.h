@@ -34,8 +34,8 @@ typedef enum ShowViewHome : NSUInteger {
 @property (weak, nonatomic) IBOutlet UIView *viewNSG;
 
 @property (weak, nonatomic) IBOutlet UIView *creditosView;
-@property (weak, nonatomic) IBOutlet UITextView *textViewQueEs;
-@property (weak, nonatomic) IBOutlet UITextView *textViewAyuntamiento;
+//@property (weak, nonatomic) IBOutlet UITextView *textViewQueEs;
+//@property (weak, nonatomic) IBOutlet UITextView *textViewAyuntamiento;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionViewImages;
 @property (nonatomic)  UIScrollView *creditosScroll;
 @property (nonatomic)  UIScrollView *queesScroll;

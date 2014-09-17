@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Artist.h"
 #import <REFrostedViewController/REFrostedViewController.h>
+#import <MediaPlayer/MPMoviePlayerController.h>
 
 
 
@@ -34,6 +35,12 @@
  *  Elemento de la barra lateral seleccionado. el id correspone con el orden de la lista
  */
 @property (weak, nonatomic) IBOutlet UIView *viewImageLabel;
+
+/**
+ *  Elemento de la barra lateral seleccionado. el id correspone con el orden de la lista
+ */
+@property (strong,nonatomic) MPMoviePlayerController *myPlayer;
+
 @property NSInteger idSelectMenu;
 
 @property (weak, nonatomic) IBOutlet UIView *viewNombreLabel;

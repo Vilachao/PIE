@@ -12,7 +12,7 @@
 #import "PIEutil.h"
 
 @interface PIEMainHomeViewController ()
-
+@property int primeraVez;
 @end
 
 @implementation PIEMainHomeViewController
@@ -22,8 +22,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   // self.navigationItem.hidesBackButton = YES;
-    self.navigationController.navigationBar.hidden = YES;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"pie_navigationBarBackground"] forBarMetrics:UIBarMetricsDefault];
+
+
 }
 
 
@@ -37,29 +38,47 @@
 
 
 - (IBAction)tabBarAction1:(id)sender {
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"action1" object:nil];
-    [self dismissViewControllerAnimated:YES completion:nil];
+
+        self.primeraVez =0;
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
+        [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+        rootViewController.selectedIndex = 0;
 }
 
 - (IBAction)tabBarAction2:(id)sender {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"action2" object:nil];
-    [self dismissViewControllerAnimated:YES completion:nil];
+
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
+        [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+        rootViewController.selectedIndex = 1;
 }
 
 - (IBAction)tabBarAction3:(id)sender {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"action3" object:nil];
-    [self dismissViewControllerAnimated:YES completion:nil];
+
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
+        [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+        rootViewController.selectedIndex = 2;
 }
 
 - (IBAction)tabBarAction4:(id)sender {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"action4" object:nil];
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+
+        self.primeraVez =0;
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
+        [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+                rootViewController.selectedIndex = 3;
+   }
 
 - (IBAction)tabBarAction5:(id)sender {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"action5" object:nil];
-    [self dismissViewControllerAnimated:YES completion:nil];
+
+        self.primeraVez =0;
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
+        [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+                rootViewController.selectedIndex = 4;
+  
 }
 
 
@@ -78,9 +97,11 @@
         stringSpecialLink =[NSString stringWithFormat:@"twitter://user?screen_name=%@",split[1]];
     }
     if(button.tag == 13){
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"abrirEmail" object:nil];
-        [self tabBarAction1:nil];
-        }
+
+            [self abrirMail:nil];
+
+      
+    }
     if(button.tag == 14){
         stringSpecialLink=nil;
         stringLink = kRed_Web;
@@ -90,6 +111,8 @@
         NSURL *urlSpecial = [NSURL URLWithString:stringSpecialLink];
         if ([[UIApplication sharedApplication] canOpenURL:urlSpecial]){
             [[UIApplication sharedApplication] openURL:urlSpecial];
+        }else{
+            [[UIApplication sharedApplication] openURL:url];
         }
     }
     else {
@@ -97,4 +120,18 @@
     }
     
 }
+
+-(void)abrirMail:(NSNotification *)notification{
+    MFMailComposeViewController *mailController = [[MFMailComposeViewController alloc] init];
+    mailController.delegate=self;
+    mailController.mailComposeDelegate = self;
+    [mailController setToRecipients:@[kRed_Mail]];
+    if ( mailController != nil ) {
+        if ([MFMailComposeViewController canSendMail]){
+            [self.navigationController presentViewController:mailController animated:YES completion:^{}];
+        }
+    }
+    
+}
+
 @end

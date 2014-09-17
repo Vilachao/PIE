@@ -11,6 +11,7 @@
 		3818BC5E19A4BCC6004A003C /* Sculpture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC5D19A4BCC6004A003C /* Sculpture.m */; };
 		3818BC6119A4BCC6004A003C /* ArtistResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC6019A4BCC6004A003C /* ArtistResource.m */; };
 		3818BC6419A4BCC6004A003C /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC6319A4BCC6004A003C /* Artist.m */; };
+		384CF6C419C9A1BF00891EEC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */; };
 		38613AE2199B6470007C7F42 /* PIERootMenuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE1199B6470007C7F42 /* PIERootMenuHomeViewController.m */; };
 		38613AE5199B6AAD007C7F42 /* PIENavigationMenuHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE4199B6AAD007C7F42 /* PIENavigationMenuHomeController.m */; };
 		38613AE8199B6BF4007C7F42 /* PIEMenuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE7199B6BF4007C7F42 /* PIEMenuHomeViewController.m */; };
@@ -84,6 +85,7 @@
 		3818BC6019A4BCC6004A003C /* ArtistResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistResource.m; sourceTree = "<group>"; };
 		3818BC6219A4BCC6004A003C /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		3818BC6319A4BCC6004A003C /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		38613AE0199B6470007C7F42 /* PIERootMenuHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIERootMenuHomeViewController.h; sourceTree = "<group>"; };
 		38613AE1199B6470007C7F42 /* PIERootMenuHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIERootMenuHomeViewController.m; sourceTree = "<group>"; };
 		38613AE3199B6AAD007C7F42 /* PIENavigationMenuHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIENavigationMenuHomeController.h; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384CF6C419C9A1BF00891EEC /* MediaPlayer.framework in Frameworks */,
 				D7E34CC519B8D5E900509F07 /* MessageUI.framework in Frameworks */,
 				38BAD46719982CB8002FA234 /* CoreGraphics.framework in Frameworks */,
 				38BAD46B19982CB8002FA234 /* CoreData.framework in Frameworks */,
@@ -300,6 +303,7 @@
 		38BAD46319982CB8002FA234 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */,
 				D7E34CC419B8D5E900509F07 /* MessageUI.framework */,
 				38BAD46419982CB8002FA234 /* Foundation.framework */,
 				38BAD46619982CB8002FA234 /* CoreGraphics.framework */,

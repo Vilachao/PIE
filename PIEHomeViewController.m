@@ -47,8 +47,6 @@
     [self cofigurationView];
     self.lblVersion.text  = [NSString stringWithFormat:@"Version: %@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
     self.activarMail=0;
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"abrirEmail" object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(activarMail:) name:@"abrirEmail" object:nil];
     
    }
 
@@ -58,22 +56,16 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    if([PIEutil showHOME] == 2)
-        [self.homeView removeFromSuperview];
-
+   [self initConTexto];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    if(self.activarMail==1){
-        self.activarMail = 0;
-        [self abrirMail:nil];
-    }
-    [self initConTexto];
-    if ([PIEutil showHOME]==1) {
-        [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt]  viewTo:self.homeView fromX:320 toX:0 time:0];
-        [PIEutil changeShowHOME:0];
-        [self.frostedViewController dismissViewControllerAnimated:NO completion:nil];
-    }else{
+    
+//    if ([PIEutil showHOME]==1) {
+//        [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt]  viewTo:self.homeView fromX:320 toX:0 time:0];
+//        [PIEutil changeShowHOME:0];
+//        [self.frostedViewController dismissViewControllerAnimated:NO completion:nil];
+ 
         [self.view endEditing:YES];
         [self.frostedViewController.view endEditing:YES];
         self.frostedViewController.delegate=self;
@@ -86,7 +78,7 @@
         if(self.idSelectMenu==self.idSelectAnt){
             [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt] viewTo:[self viewSelect:self.idSelectMenu] fromX:0 toX:0 time:0];
         }
-    }
+    
         self.idSelectAnt = self.idSelectMenu;
     
 }
@@ -261,7 +253,7 @@
 -(void)cofigurationView{
     self.frostedViewController.delegate=self;
     self.lblTextoMenu.text = klabelTitulo;
-    self.textViewAyuntamiento.text = kpie_ayuntamiento;
+    //self.textViewAyuntamiento.text = kpie_ayuntamiento;
     //self.textViewQueEs.text = kpie_quees;
     if ([self respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
         self.automaticallyAdjustsScrollViewInsets = NO;
@@ -364,8 +356,8 @@
 
     //FTCore de Que es el PIE
     
-    self.coreQueesTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(0, 0, 295, 1100)];
-    self.queesScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(15, 0, 295, 325)];
+    self.coreQueesTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(0, 0, 285, 1100)];
+    self.queesScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(20, 0, 295, 320)];
     [self.queesView addSubview:self.queesScroll];
     [self.queesScroll addSubview:self.coreQueesTextView];
     self.coreQueesTextView.text =kpie_quees;
@@ -375,9 +367,21 @@
     [self.coreQueesTextView addStyles:[self coreTextStyle]];
     [self.queesScroll setContentSize:CGSizeMake(CGRectGetWidth(self.coreQueesTextView.frame), CGRectGetMaxY(self.coreQueesTextView.frame))];
     [self.queesScroll setContentOffset:CGPointMake(self.queesScroll.contentOffset.x, 0)        animated:YES];
+    
     //FTCore de Ayuntamiento
 
-    
+    self.coreAyuntamientoTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(0, 0, 285, 1100)];
+    self.ayuntamientoScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(20, 0, 295, 425)];
+    [self.ayuntamientoView addSubview:self.ayuntamientoScroll];
+    [self.ayuntamientoScroll addSubview:self.coreAyuntamientoTextView];
+    self.coreAyuntamientoTextView.text = kpie_ayuntamiento;
+    //self.coreAyuntamientoTextView.text =kpie_quees;
+    self.coreAyuntamientoTextView.backgroundColor = [UIColor clearColor];
+    self.coreAyuntamientoTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    //[self.coreQueesTextView fitToSuggestedHeight];
+    [self.coreAyuntamientoTextView addStyles:[self coreTextStyle]];
+    [self.ayuntamientoScroll setContentSize:CGSizeMake(CGRectGetWidth(self.coreAyuntamientoTextView.frame), CGRectGetMaxY(self.coreAyuntamientoTextView.frame))];
+    [self.ayuntamientoScroll setContentOffset:CGPointMake(self.ayuntamientoScroll.contentOffset.x, 0)        animated:YES];
 }
 - (NSArray *)coreTextStyle
 {
@@ -386,15 +390,14 @@
     //  This will be default style of the text not closed in any tag
 	FTCoreTextStyle *defaultStyle = [FTCoreTextStyle new];
 	defaultStyle.name = FTCoreTextTagDefault;	//thought the default name is already set to FTCoreTextTagDefault
-	defaultStyle.font = [UIFont fontWithName:@"TimesNewRomanPSMT" size:14.f];
+	defaultStyle.font = [UIFont fontWithName:@"Helvetica-Neue" size:14.f];
 	defaultStyle.textAlignment = FTCoreTextAlignementLeft;
 	[result addObject:defaultStyle];
 	
     //  Create style using convenience method
 	FTCoreTextStyle *titleStyle = [FTCoreTextStyle styleWithName:@"title"];
-	titleStyle.font = [UIFont fontWithName:@"TimesNewRomanPSMT" size:40.f];
-	titleStyle.paragraphInset = UIEdgeInsetsMake(20.f, 0, 25.f, 0);
-	titleStyle.textAlignment = FTCoreTextAlignementCenter;
+	titleStyle.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:13.f];
+	titleStyle.textAlignment = FTCoreTextAlignementLeft;
 	[result addObject:titleStyle];
 	
     //  Image will be centered
@@ -480,4 +483,6 @@
     }
 
 }
+
+
 @end

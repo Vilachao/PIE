@@ -8,6 +8,7 @@
 
 #import "PIEArtistsViewController.h"
 #import "PIEArtistsCollectionViewCell.h"
+
 #import "PIEutil.h"
 #import "Constants.h"
 
@@ -20,15 +21,11 @@
 /**
  *  Esto es una chapuza!! el frosteddelegate se llama dos veces en vez de una, entonces uso un contador para controlar que a la segunda se ejecute. Con tiempo mirar porque ocurre esto y arreglarlo.
  */
+
 @property   int controlDelegatePan;
 @property   NSString *nameFolderObraArtista;
 @property NSMutableDictionary *artistasObra;
-
-
-/**
- *  Elemento de la barra lateral seleccionado. el id correspone con el orden de la lista
- */
-@property NSInteger idSelectAnt;
+@property  (strong)  MPMoviePlayerController* moviePlayer;
 
 
 @end
@@ -46,6 +43,7 @@
     [self cofigurationView];
     self.textViewArtist.textAlignment=NSTextAlignmentJustified;
     self.viewImageLabel.alpha=0.5f;
+    self.moviePlayer=[[MPMoviePlayerController alloc] init];
 }
 
 
@@ -117,6 +115,23 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    if((int)self.idSelectMenu == 0){
+        
+        self.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
+        NSString *videoURL = [NSString stringWithFormat:kVideoURL,self.nameFolderObraArtista];
+        [self.moviePlayer setContentURL:[NSURL URLWithString:videoURL]];
+        self.moviePlayer.view.transform = CGAffineTransformConcat(self.moviePlayer.view.transform, CGAffineTransformMakeRotation(M_PI_2));
+      
+        UIWindow *backgroundWindow = [[UIApplication sharedApplication] keyWindow];
+        [self.moviePlayer setControlStyle:MPMovieControlStyleFullscreen];
+        [self.moviePlayer.view setFrame:backgroundWindow.frame];
+        [backgroundWindow addSubview:self.moviePlayer.view];
+         [self.moviePlayer prepareToPlay];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moviePlaybackComplete:)
+                                                     name:MPMoviePlayerPlaybackDidFinishNotification object:self.moviePlayer];
+        [self.moviePlayer play];
+        return;
+    }
     
     self.frostedViewController.panGestureEnabled = NO;
     self.selRow = [[NSNumber alloc] initWithInteger:indexPath.row];
@@ -414,6 +429,15 @@
     NSString *key = [NSString stringWithFormat:@"artista%d",artista];
     NSArray *obrasDeArtista = [self.artistasObra objectForKey:key];
     return obrasDeArtista[obra];
+}
+
+- (void)moviePlaybackComplete:(NSNotification *)notification {
+    MPMoviePlayerController *moviePlayerController = [notification object];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification
+                                                  object:moviePlayerController];
+    [moviePlayerController stop];
+    [moviePlayerController.view removeFromSuperview];
+
 }
 
 @end

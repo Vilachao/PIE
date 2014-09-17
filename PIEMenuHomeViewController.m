@@ -53,34 +53,6 @@ static int menuSelect;
     self.tableView.backgroundColor = [UIColor clearColor];
     self.imagesAccesibilidad = @[@"accesibilidadNin",@"accesibilidadMov",@"accesibilidadVisual",@"accesibilidadAuditiva"];
     [self makeMenu];
-
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"action1" object:nil];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector( cambiaIndice1: )name:@"action1" object:nil];
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"action2" object:nil];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector( cambiaIndice2: )name:@"action2" object:nil];
-
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"action3" object:nil];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector( cambiaIndice3: )name:@"action3" object:nil];
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"action4" object:nil];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector( cambiaIndice4: )name:@"action4" object:nil];
-    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"action5" object:nil];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector( cambiaIndice5: )name:@"action5" object:nil];
-}
-
--(void)cambiaIndice1:(NSNotification *)notification{
-    self.tabBarController.selectedIndex = 0;
-}
--(void)cambiaIndice2:(NSNotification *)notification{
-    self.tabBarController.selectedIndex = 1;
-}
--(void)cambiaIndice3:(NSNotification *)notification{
-    self.tabBarController.selectedIndex = 2;
-}
--(void)cambiaIndice4:(NSNotification *)notification{
-    self.tabBarController.selectedIndex = 3;
-}
--(void)cambiaIndice5:(NSNotification *)notification{
-    self.tabBarController.selectedIndex = 4;
 }
 
 #pragma mark -
