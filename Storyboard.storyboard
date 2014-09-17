@@ -42,14 +42,6 @@
                                 <rect key="frame" x="320" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPL-hu-1yy" userLabel="Text View-quees">
-                                        <rect key="frame" x="20" y="0.0" width="280" height="300"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="M2P-L9-IaA">
                                         <rect key="frame" x="0.0" y="331" width="320" height="129"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,11 +207,9 @@
                         <outlet property="creditosView" destination="nSf-fI-bl2" id="0uT-P9-1wM"/>
                         <outlet property="homeView" destination="VP5-mH-xns" id="l7d-CP-DSn"/>
                         <outlet property="home_barButtonItemIntro" destination="nZJ-Wc-UNZ" id="Y5Y-KA-rpN"/>
-                        <outlet property="home_textFieldIntro" destination="HPL-hu-1yy" id="O4G-T6-J9a"/>
                         <outlet property="imageFullGalleryCollection" destination="xGZ-oV-qLU" id="CXm-mv-fMs"/>
                         <outlet property="queesView" destination="5Or-HV-mnY" id="0X7-Vf-Lpb"/>
                         <outlet property="textViewAyuntamiento" destination="E8H-XH-Fvo" id="bKu-Kv-ewQ"/>
-                        <outlet property="textViewQueEs" destination="HPL-hu-1yy" id="eUl-lZ-1Vc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gdd-Jy-r4n" userLabel="First Responder" sceneMemberID="firstResponder"/>

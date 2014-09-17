@@ -262,7 +262,7 @@
     self.frostedViewController.delegate=self;
     self.lblTextoMenu.text = klabelTitulo;
     self.textViewAyuntamiento.text = kpie_ayuntamiento;
-    self.textViewQueEs.text = kpie_quees;
+    //self.textViewQueEs.text = kpie_quees;
     if ([self respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
@@ -350,6 +350,7 @@
 
 - (void)initConTexto
 {
+    //FTCore de Créditos
     
     self.coreTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(0, 0, 275, 1000)];
     self.creditosScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 460)];
@@ -360,8 +361,22 @@
     self.coreTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self.coreTextView fitToSuggestedHeight];
     [self.coreTextView addStyles:[self coreTextStyle]];
-    //  Set the custom-formatted text to the FTCoreTextView
-//    [self.creditosScroll setContentOffset:CGPointMake(self.creditosScroll.contentOffset.x, 0)        animated:YES];
+
+    //FTCore de Que es el PIE
+    
+    self.coreQueesTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(0, 0, 295, 1100)];
+    self.queesScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(15, 0, 295, 325)];
+    [self.queesView addSubview:self.queesScroll];
+    [self.queesScroll addSubview:self.coreQueesTextView];
+    self.coreQueesTextView.text =kpie_quees;
+    self.coreQueesTextView.backgroundColor = [UIColor clearColor];
+    self.coreQueesTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    //[self.coreQueesTextView fitToSuggestedHeight];
+    [self.coreQueesTextView addStyles:[self coreTextStyle]];
+    [self.queesScroll setContentSize:CGSizeMake(CGRectGetWidth(self.coreQueesTextView.frame), CGRectGetMaxY(self.coreQueesTextView.frame))];
+    [self.queesScroll setContentOffset:CGPointMake(self.queesScroll.contentOffset.x, 0)        animated:YES];
+    //FTCore de Ayuntamiento
+
     
 }
 - (NSArray *)coreTextStyle
@@ -371,8 +386,8 @@
     //  This will be default style of the text not closed in any tag
 	FTCoreTextStyle *defaultStyle = [FTCoreTextStyle new];
 	defaultStyle.name = FTCoreTextTagDefault;	//thought the default name is already set to FTCoreTextTagDefault
-	defaultStyle.font = [UIFont fontWithName:@"TimesNewRomanPSMT" size:20.f];
-	defaultStyle.textAlignment = FTCoreTextAlignementJustified;
+	defaultStyle.font = [UIFont fontWithName:@"TimesNewRomanPSMT" size:14.f];
+	defaultStyle.textAlignment = FTCoreTextAlignementLeft;
 	[result addObject:defaultStyle];
 	
     //  Create style using convenience method
