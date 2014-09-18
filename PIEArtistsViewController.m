@@ -41,7 +41,6 @@
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     [self.colectionView setCollectionViewLayout:flowLayout];
     [self cofigurationView];
-    self.textViewArtist.textAlignment=NSTextAlignmentJustified;
     self.viewImageLabel.alpha=0.5f;
     self.moviePlayer=[[MPMoviePlayerController alloc] init];
     self.moviePlayer.view.transform = CGAffineTransformConcat(self.moviePlayer.view.transform, CGAffineTransformMakeRotation(M_PI_2));
