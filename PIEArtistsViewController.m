@@ -44,6 +44,7 @@
     self.textViewArtist.textAlignment=NSTextAlignmentJustified;
     self.viewImageLabel.alpha=0.5f;
     self.moviePlayer=[[MPMoviePlayerController alloc] init];
+    self.moviePlayer.view.transform = CGAffineTransformConcat(self.moviePlayer.view.transform, CGAffineTransformMakeRotation(M_PI_2));
 }
 
 
@@ -52,8 +53,8 @@
     [self.colectionView reloadData];
     self.textViewArtist.text = [self textArtist:(int)self.idSelectMenu];
     self.labelNombreArtista.text = [self nameArtist:(int)self.idSelectMenu];
-    NSArray *imagesBio = [PIEutil arrayFilesFolder:@"Artistas" :@[@"Biografia"]];
-    self.biografiaImageView.image = [PIEutil loadImage:imagesBio[self.idSelectMenu] :@[@"Artistas",@"Biografia"]];
+    NSArray *imagesBio = [PIEutil arrayFilesFolder:@"Artistas" :@[@"MiniBiografia"]];
+    self.biografiaImageView.image = [PIEutil loadImage:imagesBio[self.idSelectMenu] :@[@"Artistas",@"MiniBiografia"]];
     self.nameFolderObraArtista = [NSString stringWithFormat:@"%ld",(long)self.idSelectMenu];
     self.arrayObras = [[NSArray alloc] initWithArray:[PIEutil arrayFilesFolder:@"Artistas"  :@[self.nameFolderObraArtista]]];
     self.arrayMiniObras = [[NSArray alloc] initWithArray:[PIEutil arrayFilesFolder:@"MiniArtistas"  :@[self.nameFolderObraArtista]]];
@@ -115,24 +116,26 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if((int)self.idSelectMenu == 0){
-        
-        self.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
-        NSString *videoURL = [NSString stringWithFormat:kVideoURL,self.nameFolderObraArtista];
-        [self.moviePlayer setContentURL:[NSURL URLWithString:videoURL]];
-        self.moviePlayer.view.transform = CGAffineTransformConcat(self.moviePlayer.view.transform, CGAffineTransformMakeRotation(M_PI_2));
-      
-        UIWindow *backgroundWindow = [[UIApplication sharedApplication] keyWindow];
-        [self.moviePlayer setControlStyle:MPMovieControlStyleFullscreen];
-        [self.moviePlayer.view setFrame:backgroundWindow.frame];
-        [backgroundWindow addSubview:self.moviePlayer.view];
-         [self.moviePlayer prepareToPlay];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moviePlaybackComplete:)
-                                                     name:MPMoviePlayerPlaybackDidFinishNotification object:self.moviePlayer];
-        [self.moviePlayer play];
-        return;
+    int indice =(int)indexPath.row;
+    if((int)self.idSelectMenu == 0){//artista 0
+        indice =(int)indexPath.row -2;
+        if(indexPath.row==0||indexPath.row==1){//pulso en video (posicion 0 , 1 )
+            self.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
+            NSString *videoURL = [NSString stringWithFormat:kVideoURL,self.nameFolderObraArtista];
+            [self.moviePlayer setContentURL:[NSURL URLWithString:videoURL]];
+
+            UIWindow *backgroundWindow = [[UIApplication sharedApplication] keyWindow];
+            [self.moviePlayer setControlStyle:MPMovieControlStyleFullscreen];
+            [self.moviePlayer.view setFrame:backgroundWindow.frame];
+            [backgroundWindow addSubview:self.moviePlayer.view];
+            [self.moviePlayer prepareToPlay];
+            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moviePlaybackComplete:)
+                                                         name:MPMoviePlayerPlaybackDidFinishNotification object:self.moviePlayer];
+            [self.moviePlayer play];
+
+            return;
+        }
     }
-    
     self.frostedViewController.panGestureEnabled = NO;
     self.selRow = [[NSNumber alloc] initWithInteger:indexPath.row];
     self.intt=[self.selRow intValue];
@@ -145,8 +148,7 @@
     animation.duration = 0.5;
     [self.obraImageView.layer addAnimation:animation forKey:nil];
     [self.viewImageLabel.layer  addAnimation:animation forKey:nil];
-    self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :(int)indexPath.row];
-    
+    self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :indice];
 }
 
 -(void)forwardAcction{
@@ -197,7 +199,7 @@
     self.textViewArtist.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.500];
     [self.textViewArtist setTextColor: [UIColor whiteColor]];
     self.textViewArtist.selectable = NO;
-    self.textViewArtist.textContainerInset = UIEdgeInsetsMake( 0, 10, 10, 10);
+    self.textViewArtist.textContainerInset = UIEdgeInsetsMake( 0, 20, 10, 20);
     self.viewImageLabel.hidden = YES;
     [self crearDiccionarioArtistasObras];
 }

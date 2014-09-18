@@ -103,6 +103,7 @@
 //Mapa
 
 #define kVisitaMapa NSLocalizedString(@"VisitaMapa", @"")
+#define KvisitaDestinoPrincipal NSLocalizedString(@"VisitaDestinoPrincipal", @"")
 #define kVisitaDestino0 NSLocalizedString(@"VisitaDestino0", @"")
 #define kVisitaDestino1 NSLocalizedString(@"VisitaDestino1", @"")
 #define kVisitaDestino2 NSLocalizedString(@"VisitaDestino2", @"")

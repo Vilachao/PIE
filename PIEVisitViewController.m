@@ -95,10 +95,10 @@
     [self.btnUsar setTitle:kVisitabotonUsoQR forState:UIControlStateNormal];
     [self.btnAntes setTitle:kVisitabotonAntes forState:UIControlStateNormal];
 
-    NSArray *titles = @[kVisitaDestino0,kVisitaDestino1,kVisitaDestino2,kVisitaDestino4,kVisitaDestino5,kVisitaDestino6,kVisitaDestino7,kVisitaDestino8,kVisitaDestino9,kVisitaDestino10];
+    NSArray *titles = @[KvisitaDestinoPrincipal,kVisitaDestino0,kVisitaDestino1,kVisitaDestino2,kVisitaDestino4,kVisitaDestino5,kVisitaDestino6,kVisitaDestino7,kVisitaDestino8,kVisitaDestino9,kVisitaDestino10];
 
     [self.botonEscultura setTitle:titles[0] forState:UIControlStateNormal];
-    for(int i =1; i<10;i++)
+    for(int i =1; i<11;i++)
     {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
@@ -117,7 +117,7 @@
     NSLog(@"%f",self.markImageView.frame.origin.x);
     NSLog(@"%f",self.markImageView.frame.origin.y);
 //    self.positions = @[[NSValue valueWithCGPoint:CGPointMake(26, 77)],[NSValue valueWithCGPoint:CGPointMake(39, 77)],[NSValue valueWithCGPoint:CGPointMake(75, 74)],[NSValue valueWithCGPoint:CGPointMake(99, 74)],[NSValue valueWithCGPoint:CGPointMake(117, 70)],[NSValue valueWithCGPoint:CGPointMake(129,69)],[NSValue valueWithCGPoint:CGPointMake(132,73)],[NSValue valueWithCGPoint:CGPointMake(143,70)],[NSValue valueWithCGPoint:CGPointMake(165,72)],[NSValue valueWithCGPoint:CGPointMake(173,72)],[NSValue valueWithCGPoint:CGPointMake(203,72)],[NSValue valueWithCGPoint:CGPointMake(216,72)],[NSValue valueWithCGPoint:CGPointMake(223,71)]];
-    self.positions = @[[NSValue valueWithCGPoint:CGPointMake(24, 77)],[NSValue valueWithCGPoint:CGPointMake(73, 73)],[NSValue valueWithCGPoint:CGPointMake(99, 74)],[NSValue valueWithCGPoint:CGPointMake(128, 69)],[NSValue valueWithCGPoint:CGPointMake(143,71)],[NSValue valueWithCGPoint:CGPointMake(165,72)],[NSValue valueWithCGPoint:CGPointMake(173,72)],[NSValue valueWithCGPoint:CGPointMake(203,72)],[NSValue valueWithCGPoint:CGPointMake(216,72)],[NSValue valueWithCGPoint:CGPointMake(225,71)]];
+    self.positions = @[[NSValue valueWithCGPoint:CGPointMake(132, 72)],[NSValue valueWithCGPoint:CGPointMake(24, 77)],[NSValue valueWithCGPoint:CGPointMake(73, 73)],[NSValue valueWithCGPoint:CGPointMake(99, 74)],[NSValue valueWithCGPoint:CGPointMake(128, 69)],[NSValue valueWithCGPoint:CGPointMake(143,71)],[NSValue valueWithCGPoint:CGPointMake(165,72)],[NSValue valueWithCGPoint:CGPointMake(173,72)],[NSValue valueWithCGPoint:CGPointMake(203,72)],[NSValue valueWithCGPoint:CGPointMake(216,72)],[NSValue valueWithCGPoint:CGPointMake(225,71)]];
     
     self.botonEscultura.backgroundColor = [UIColor colorWithRed:0.247 green:0.522 blue:0.565 alpha:1.000];
     [self.botonEscultura setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
