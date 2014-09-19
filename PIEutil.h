@@ -71,6 +71,10 @@
  */
 -(FTCoreTextView *)createTextSize:(CGRect)positionCoreText scrollViewSize:(CGRect)scrollViewSize viewForCore:(UIView *)view text:(NSString *)text;
 
+-(void)createTextSizeAyuntamietno:(CGRect)positionCoreText  reateTextSize2:(CGRect)positionCoreText2 reateTextSize3:(CGRect)positionCoreText3 scrollViewSize:(CGRect)scrollViewSize viewForCore:(UIView *)view text:(NSString *)text text2:(NSString *)text2 text3:(NSString *)text3;
+
+
+
 /**
  *  Styles for textViews
  *
