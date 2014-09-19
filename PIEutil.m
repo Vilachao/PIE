@@ -144,7 +144,7 @@ static int showHOME;
     
     FTCoreTextStyle *italicStyle = [defaultStyle copy];
 	italicStyle.name = @"italic";
-	italicStyle.underlined = YES;
+	italicStyle.underlined = NO;
     italicStyle.font = [UIFont fontWithName:@"Helvetica-Oblique" size:12.f];
 	[result addObject:italicStyle];
     
