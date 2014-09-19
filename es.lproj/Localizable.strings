@@ -58,11 +58,11 @@
 
 "pie_ayuntamiento" = "\n\n<title>Ayuntamiento</title>\n\nEl Parque Internacional de Esculturas (PIE) de Avenida de los Pirineos es una muestra representativa de los logros y avances que el Municipio de San Sebastián de los Reyes está llevando a cabo dentro de la Comunidad de Madrid.\n\nDe esta manera, el PIE se integra dentro del proyecto <title>medioambiental</title> que enriquece a San Sebastián de los Reyes con una amplia oferta de zonas verdes destinadas al disfrute y ocio de sus ciudadanos y visitantes. Esta apuesta medioambiental está unida a los logros que la ciudad ha conseguido en materia de carril-bici en todo el Municipio, lo que supone una nueva manera de ver y relacionarse con la ciudad al tiempo que fomenta la práctica deportiva.\n\nPrecisamente el <title>deporte</title> es otro de los ejes fundamentales que se están desarrollando en el Municipio y que podemos ver el en el PIE, no sólo con su carril-bici, sino también con su carril footing. Éste, permite un recorrido deportivo perimetral por todo el Parque de Avenida de los Pirineos, de manera que se hace un recorrido entre su arboleda y esculturas, lo que supone una experiencia totalmente inédita hasta el momento.\n\nEl PIE es también una apuesta por una ciudad moderna e integradora de las <title>nuevas tecnologías</title>. San Sebastián de los Reyes 2.0 es ya una realidad en el Municipio, una ciudad WIFI conectada al futuro y a las nuevas aplicaciones. El ejemplo lo vemos en el PIE permitiendo la intercomunicación de los usuarios del Parque mediante la aplicación para dispositivos móviles y el innovador sistema de acceder a la información de las obras escultóricas mediante los códigos QR que interaccionan con el visitante.\n\nEsta meta ya lograda de difusión tecnológica del PIE tiene su continuación en su repercusión de cara al <title>turismo</title> y al visitante del PIE. En este sentido San Sebastián de los Reyes suma un nuevo enclave de interés para la promoción de su amplia oferta turística ya consolidada en sus fiestas con sus tradicionales encierros, o en su gran afluencia de visitas de ocio y consumo gracias a sus grandes centros comerciales que atraen a millones de visitantes cada año al Municipio.\n\nFinalmente el PIE supone una clara apuesta por la <title>cultura y la educación</title> para San Sebastián de los Reyes. La cultura y la educación son dos pilares fundamentales afianzados gracias a su amplia agenda cultural, tanto teatral en su Auditorio Adolfo Marsillach como en sus exposiciones de arte, pintura y fotografía, o su consolidada Universidad José Hierro. Esta oferta cultural también se ve en las calles y jardines del Municipio con diversas esculturas que enriquecen el <title>Patrimonio de la ciudad</title>. Este enriquecimiento del espacio ciudadano se amplía en la propuesta del Parque Internacional de Esculturas, logrando que San Sebastián de los Reyes pase a ser una ciudad culturalmente no sólo conocida por la calidad de sus fiestas y su emblemático referente literario José Hierro, sino también por su nuevo enclave cultural como un referente escultórico a nivel nacional e internacional.";
 
-"pie_creditos_newSpace" = "ASOCIACIÓN NEW SPACE GALLERY\n\nImagen y fotografía: Antolín Díez Valcárcel\n\nAsesoramiento en audiodescripciones: César Delgado González\n\nFotografía Inicio/Portada: Héctor Gómez Rioja\n\nLogo Parque Internacional Escultura: José Luis Menéndez\n\nTextos: Miguel Ángel Carrera Varela";
+"pie_creditos_newSpace" = "<title>ASOCIACIÓN NEW SPACE GALLERY</title>\n\nImagen y fotografía: Antolín Díez Valcárcel\n\nAsesoramiento en audiodescripciones: César Delgado González\n\nFotografía Inicio/Portada: Héctor Gómez Rioja\n\nLogo Parque Internacional Escultura: José Luis Menéndez\n\nTextos: Miguel Ángel Carrera Varela\n\n<_image>NSG</_image>\n<_image>BarraSeparacion</_image><title>Agradecimientos</title>Ayuntamiento de San Sebastián de los Reyes<title>Patrocinadores</title>\nCentro comercial plaza norte 2";
 
-"pie_creditos_plaza" = "Centro comercial plaza norte 2";
+"pie_creditos_plaza" = "<title>Patrocinadores</title>Centro comercial plaza norte 2";
 
-"pie_creditos_ayuntamiento" = "Ayuntamiento de San Sebastián de los Reyes";
+"pie_creditos_ayuntamiento" = "<title>Agradecimientos</title>Ayuntamiento de San Sebastián de los Reyes";
 
 "pie_obra_artista0_0"="Dama II\nPlancha de acero corten de 10 mm.\nAcabado oxidado.\n69x100x401 cm.";
 "pie_obra_artista0_1"="Vela VII\nPlancha de acero corten.\nLacado en rojo parcialmente.\n930x426x1055cm.";
@@ -75,17 +75,17 @@
 "pie_obra_artista1_0"="Bocados de vida, 2003\nHierro soldado y pintado\n300x150x150 cm.";
 "pie_obra_artista1_1"="Ensamblada de luz II, 2006\nHierro solado, pintado e iluminación led\n131x82x26 cm.";
 "pie_obra_artista1_2"="Enroscada 2009, 2009\nHierro pintado\n107x57x37 cm.";
-"pie_obra_artista1_3"="Vestigio,2010\nAcero corten soldado y oxidado\n305x165x225 cm.";
+"pie_obra_artista1_3"="Vestigio, 2010\nAcero corten soldado y oxidado\n305x165x225 cm.";
 "pie_obra_artista1_4"="Tetramorfo Síntesis, 2012\nHierro Solado\n400x150x120 cm.";
-"pie_obra_artista1_5"="Tetramorfo Perforado, 2013\nAcero corten, soldado y oxidado\n400x150 x120 cm.";
+"pie_obra_artista1_5"="Tetramorfo Perforado, 2013\nAcero corten, soldado y oxidado\n400x150x120 cm.";
 "pie_obra_artista1_6"="Tetramorfo extendido 101 N, 2014\nHierro soldado y pintado\n145x90x23 cm.";
 //
 "pie_obra_artista2_0"="Airam\nAcero corten\n160x80x35 cm.";
 "pie_obra_artista2_1"="Edam\n180x80x60 cm.";
-"pie_obra_artista2_2"="Enlace\nAcero corten\n 110x40x35 cm.";
-"pie_obra_artista2_3"="Leirum\nAcero corten\n 185x145x135 cm.";
+"pie_obra_artista2_2"="Enlace\nAcero corten\n110x40x35 cm.";
+"pie_obra_artista2_3"="Leirum\nAcero corten\n185x145x135 cm.";
 "pie_obra_artista2_4"="Mur\nHormigón y madera\n75x34x20 cm.";
-"pie_obra_artista2_5"="Om\nHormigón y madera\80x35x20cm.";
+"pie_obra_artista2_5"="Om\nHormigón y madera\n80x35x20 cm.";
 "pie_obra_artista2_6"="Proyecto II\nAcero corten\nMedida escalable";
 //
 "pie_obra_artista3_0"="Alas\nAcero corten\n210x55x55 cm.";
@@ -100,7 +100,7 @@
 "pie_obra_artista4_1"="Confusiones\nMadera lacada\n140x50x20 cm.";
 "pie_obra_artista4_2"="Grave-edad\nMadera lapacho\n143x90x30 cm.";
 "pie_obra_artista4_3"="Interior de uno mismo\nMadera de fresno\n220x100x90 cm.";
-"pie_obra_artista4_4"="Tú y yo,yo y tú\nMadera lacada\n200x120x50 cm.";
+"pie_obra_artista4_4"="Tú y yo, yo y tú\nMadera lacada\n200x120x50 cm.";
 "pie_obra_artista4_5"="Voss que\nMadera de pino lacada\n300x100x50 cm.";
 "pie_obra_artista4_6"="Mentes planas cabezas cuadradas\nMadera de encina\n200x50x50 cm.";
 //
@@ -108,20 +108,20 @@
 "pie_obra_artista5_1"="Dama\nAcero corten\n140x25x25 cm.";
 "pie_obra_artista5_2"="Figura\nAcero soldado\n130x25x30 cm.";
 "pie_obra_artista5_3"="Géminis\nAluminio\n30x7x7 cm.";
-"pie_obra_artista5_4"="Indalo\nBronce\45x30x10 cm.";
+"pie_obra_artista5_4"="Indalo\nBronce\n45x30x10 cm.";
 "pie_obra_artista5_5"="Naturaleza\nMadera lacada\n140x15x15 cm.";
 "pie_obra_artista5_6"="Figura\nAcero solado\n130x25x30 cm.";
 //
-"pie_obra_artista6_0"="Quiero crecer\nMármol, acero y candados. Forja, talla y soldadura\n150x100x90 cm.";
+"pie_obra_artista6_0"="Quiero crecer\nMármol, acero y candados.\nForja, talla y soldadura\n150x100x90 cm.";
 "pie_obra_artista6_1"="Bortando II\nAcero, forja y soldadura\n74x150x120 cm.";
-"pie_obra_artista6_2"="Carnívora\nMármol negro, acero inox. y acero al carbono. Forja y soldadura\n200x110x120 cm.";
-"pie_obra_artista6_3"="Corazón liao\nÉbano y acero. Talla directa, forja y soldadura\n37x27x25 cm.";
-"pie_obra_artista6_4"="Giramar\nAlabrastro y acero inox. Talla directa, forja y soldadura\n235x180x120 cm.";
-"pie_obra_artista6_5"="Hombre crisálida\nAcero al carbono, forja y soldadura\n225 x 90 x 40 cm";
+"pie_obra_artista6_2"="Carnívora\nMármol negro, acero inox. y acero al carbono.\nForja y soldadura\n200x110x120 cm.";
+"pie_obra_artista6_3"="Corazón liao\nÉbano y acero.\nTalla directa, forja y soldadura\n37x27x25 cm.";
+"pie_obra_artista6_4"="Giramar\nAlabrastro y acero inox.\nTalla directa, forja y soldadura\n235x180x120 cm.";
+"pie_obra_artista6_5"="Hombre crisálida\nAcero al carbono, forja y soldadura\n225x90x40 cm";
 "pie_obra_artista6_6"="Desarraigado\nAcero, forja y soldadura\n100x90x80 cm.";
 //
-"pie_obra_artista7_0"="Moon water I\nAlabastro\25x25x7 cm.";
-"pie_obra_artista7_1"="Moon water 0.12\nMármol de carrara\n85 x 85 cm";
+"pie_obra_artista7_0"="Moon water I\nAlabastro\n25x25x7 cm.";
+"pie_obra_artista7_1"="Moon water 0.12\nMármol de carrara\n85x85 cm";
 "pie_obra_artista7_2"="Kaido (Camino del mar),2008\nPiedra de calatorao\n59x57x57 cm.";
 "pie_obra_artista7_3"="El fin es mi principio, 2008\nPiedra de calatorao";
 "pie_obra_artista7_4"="Entre dos, 2009\nPiedra de calatorao\n23x23x25 cm.";
