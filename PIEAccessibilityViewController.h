@@ -20,6 +20,7 @@ typedef enum ShowViewAccess : NSUInteger {
  *  Elemento de la barra lateral seleccionado. el id correspone con el orden de la lista
  */
 @property NSInteger idSelectMenu;
+@property (weak, nonatomic) IBOutlet UIButton *juegoButton;
 
 @property (weak, nonatomic) IBOutlet UIView *accesibilityView;
 

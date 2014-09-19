@@ -86,6 +86,8 @@ static int showHOME;
 
 }
 
+
+
 - (NSArray *)coreTextStyle
 {
     NSMutableArray *result = [NSMutableArray array];

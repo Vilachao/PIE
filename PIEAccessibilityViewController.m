@@ -30,18 +30,21 @@
     [self configurationView];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+   
+        self.accesibilityView.hidden = NO;
+        self.viewGame.hidden = YES;
+        if(self.idSelectMenu!=0)
+            self.juegoButton.hidden=YES;
+    
+}
 -(void)viewDidAppear:(BOOL)animated{
 
-        [self.view endEditing:YES];
-        [self.frostedViewController.view endEditing:YES];
-        self.frostedViewController.delegate=self;
-        [self.frostedViewController presentMenuViewController];
+    [self.view endEditing:YES];
+    [self.frostedViewController.view endEditing:YES];
+    self.frostedViewController.delegate=self;
+    [self.frostedViewController presentMenuViewController];
 
-    if (self.idSelectMenu == 0) {
-        self.accesibilityView.hidden = YES;
-    }else{
-        self.accesibilityView.hidden = NO;
-    }
 }
 
 
@@ -210,6 +213,11 @@
     self.textViewAccesibility.textContainerInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.textViewAccesibility.selectable = NO;
     [self.buttonReiniciar setTitle:kAccesibilidadLabel forState:UIControlStateNormal];
+    if (self.idSelectMenu == 0) {
+        self.accesibilityView.hidden = NO;
+        self.viewGame.hidden = YES;
+    }else
+        self.accesibilityView.hidden = NO;
     
 }
 
