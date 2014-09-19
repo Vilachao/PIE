@@ -25,6 +25,7 @@ typedef enum ShowViewAccess : NSUInteger {
 
 @property (weak, nonatomic) IBOutlet UITextView *textViewAccesibility;
 
+@property (weak, nonatomic) IBOutlet UIView *viewGame;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *accessibility_segmentedButtonLevel;
 
 @property (weak, nonatomic) IBOutlet UIButton *accessibility_buttonRestart;
@@ -34,8 +35,10 @@ typedef enum ShowViewAccess : NSUInteger {
 - (IBAction)accessibility_actionChangeLevel:(id)sender;
 
 - (IBAction)accessibility_actionRestartGame:(id)sender;
+- (IBAction)jugar:(id)sender;
 
 - (IBAction)home_showMenuRefrosted:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *buttonReiniciar;
+@property (weak, nonatomic) IBOutlet UIButton *botonJugar;
 
 @end

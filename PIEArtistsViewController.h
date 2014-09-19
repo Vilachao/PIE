@@ -10,7 +10,7 @@
 #import "Artist.h"
 #import <REFrostedViewController/REFrostedViewController.h>
 #import <MediaPlayer/MPMoviePlayerController.h>
-
+#import <FTCoreTextView.h>
 
 
 @interface PIEArtistsViewController : UIViewController <UINavigationControllerDelegate , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIGestureRecognizerDelegate, REFrostedViewControllerDelegate>
@@ -20,7 +20,7 @@
  *  Array de biografia
  */
 @property NSArray * arrayOfItems;
-@property (weak, nonatomic) IBOutlet UILabel *labelNombreArtista;
+
 @property (weak, nonatomic) IBOutlet UILabel *detalleObra;
 
 /**
@@ -37,14 +37,19 @@
 @property (weak, nonatomic) IBOutlet UIView *viewImageLabel;
 
 /**
+ *  Vista con las componentes y datos del artista
+ */
+
+
+@property (weak, nonatomic) IBOutlet UIView *viewArtist;
+
+/**
  *  Elemento de la barra lateral seleccionado. el id correspone con el orden de la lista
  */
 @property (strong,nonatomic) MPMoviePlayerController *myPlayer;
 
 @property NSInteger idSelectMenu;
 
-@property (weak, nonatomic) IBOutlet UIView *viewNombreLabel;
-@property (weak, nonatomic) IBOutlet UITextView *textViewArtist;
 
 @property (weak, nonatomic) IBOutlet UIImageView *obraImageView;
 

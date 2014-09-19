@@ -66,6 +66,22 @@
     [self.accessibility_collectionViewImages reloadData];
 }
 
+- (IBAction)jugar:(id)sender {
+    if(self.accesibilityView.hidden == NO){
+        self.accesibilityView.hidden = YES;
+        self.viewGame.hidden= NO;
+    }else{
+        self.accesibilityView.hidden = NO;
+        self.viewGame.hidden= YES;
+    }
+    CATransition *animation = [CATransition animation];
+    animation.type = kCATransitionFade;
+    animation.duration = 0.3;
+    [self.accesibilityView.layer addAnimation:animation forKey:nil];
+    [self.viewGame.layer addAnimation:animation forKey:nil];
+
+}
+
 #pragma mark - UICollectionView Data Source Methods
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -189,9 +205,9 @@
 
 -(void)configurationView{
 
-    
-    self.textViewAccesibility.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
-    self.textViewAccesibility.text = kAccesibilidad;
+    NSArray *textos = @[kAccesibilidadNinos,kAccesibilidadReducida,kAccesibilidadVisual,kAccesibilidadAuditiva];
+    self.textViewAccesibility.text = [textos objectAtIndex:self.idSelectMenu];
+    self.textViewAccesibility.textContainerInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.textViewAccesibility.selectable = NO;
     [self.buttonReiniciar setTitle:kAccesibilidadLabel forState:UIControlStateNormal];
     
@@ -210,4 +226,9 @@
 
    }
 
+- (IBAction)home_showMenuRefrosted:(id)sender {
+    [self.view endEditing:YES];
+    [self.frostedViewController.view endEditing:YES];
+    [self.frostedViewController presentMenuViewController];
+}
 @end

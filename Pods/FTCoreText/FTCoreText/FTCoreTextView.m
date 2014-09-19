@@ -651,7 +651,7 @@ CTFontRef CTFontCreateFromUIFont(UIFont *font)
 {
 	CGSize suggestedSize = [self suggestedSizeConstrainedToSize:CGSizeMake(CGRectGetWidth(self.frame), MAXFLOAT)];
 	CGRect viewFrame = self.frame;
-	viewFrame.size.height = suggestedSize.height;
+	viewFrame.size.height = suggestedSize.height +100.0f;
 	self.frame = viewFrame;
 }
 

@@ -8,6 +8,7 @@
 
 #import "PIEutil.h"
 
+
 @implementation PIEutil
 
 + (PIEutil *) sharedInstance{
@@ -51,7 +52,9 @@
     }
     sourcePath = [sourcePath stringByAppendingPathComponent:name];
     BOOL fileExists=[[NSFileManager defaultManager] fileExistsAtPath:sourcePath];
-
+    if(!fileExists){
+        NSLog(@"no existe el fichero");
+    }
     return [UIImage imageWithContentsOfFile:sourcePath];
 }
 
@@ -66,6 +69,94 @@ static int showHOME;
     showHOME = a;
 }
 
+#pragma mark - core text
+-(FTCoreTextView *)createTextSize:(CGRect)positionCoreText scrollViewSize:(CGRect)scrollViewSize viewForCore:(UIView *)view text:(NSString *)text{
+    FTCoreTextView * coreTextView = [[FTCoreTextView alloc]initWithFrame:positionCoreText];
+    UIScrollView * scrollView = [[UIScrollView alloc]initWithFrame:scrollViewSize];
+    [view addSubview:scrollView];
+    [scrollView addSubview:coreTextView];
+    coreTextView.text =text;
+    coreTextView.backgroundColor = [UIColor clearColor];
+    coreTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [coreTextView fitToSuggestedHeight];
+    [coreTextView addStyles:[self coreTextStyle]];
+    [scrollView setContentSize:CGSizeMake(CGRectGetWidth(coreTextView.frame), CGRectGetMaxY(coreTextView.frame))];
+    [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 0)        animated:YES];
+    return coreTextView;
 
+}
+
+- (NSArray *)coreTextStyle
+{
+    NSMutableArray *result = [NSMutableArray array];
+    
+    //  This will be default style of the text not closed in any tag
+	FTCoreTextStyle *defaultStyle = [FTCoreTextStyle new];
+	defaultStyle.name = FTCoreTextTagDefault;	//thought the default name is already set to FTCoreTextTagDefault
+	defaultStyle.font = [UIFont fontWithName:@"Helvetica-Neue" size:14.f];
+	defaultStyle.textAlignment = FTCoreTextAlignementLeft;
+    defaultStyle.color = [UIColor whiteColor];
+	[result addObject:defaultStyle];
+	
+    //  Create style using convenience method
+	FTCoreTextStyle *titleStyle = [FTCoreTextStyle styleWithName:@"title"];
+	titleStyle.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.f];
+    titleStyle.color = [UIColor whiteColor];
+	titleStyle.textAlignment = FTCoreTextAlignementLeft;
+	[result addObject:titleStyle];
+	
+    //  Image will be centered
+	FTCoreTextStyle *imageStyle = [FTCoreTextStyle new];
+	imageStyle.name = FTCoreTextTagImage;
+	imageStyle.textAlignment = FTCoreTextAlignementLeft;
+	[result addObject:imageStyle];
+	
+//	FTCoreTextStyle *firstLetterStyle = [FTCoreTextStyle new];
+//	firstLetterStyle.name = @"firstLetter";
+//	firstLetterStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-BoldMT" size:30.f];
+//	[result addObject:firstLetterStyle];
+//	
+    //  This is the link style
+    //  Notice that you can make copy of FTCoreTextStyle
+    //  and just change any required properties
+	FTCoreTextStyle *linkStyle = [defaultStyle copy];
+	linkStyle.name = FTCoreTextTagLink;
+	linkStyle.color = [UIColor orangeColor];
+	[result addObject:linkStyle];
+	
+//	FTCoreTextStyle *subtitleStyle = [FTCoreTextStyle styleWithName:@"subtitle"];
+//	subtitleStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-BoldMT" size:25.f];
+//	subtitleStyle.color = [UIColor brownColor];
+//	subtitleStyle.paragraphInset = UIEdgeInsetsMake(10, 0, 10, 0);
+//	[result addObject:subtitleStyle];
+//	
+    //  This will be list of items
+    //  You can specify custom style for a bullet
+//	FTCoreTextStyle *bulletStyle = [defaultStyle copy];
+//	bulletStyle.name = FTCoreTextTagBullet;
+//	bulletStyle.bulletFont = [UIFont fontWithName:@"TimesNewRomanPSMT" size:16.f];
+//	bulletStyle.bulletColor = [UIColor orangeColor];
+//	bulletStyle.bulletCharacter = @"❧";
+//	bulletStyle.paragraphInset = UIEdgeInsetsMake(0, 20.f, 0, 0);
+//	[result addObject:bulletStyle];
+    
+    FTCoreTextStyle *italicStyle = [defaultStyle copy];
+	italicStyle.name = @"italic";
+	italicStyle.underlined = YES;
+    italicStyle.font = [UIFont fontWithName:@"Helvetica-Oblique" size:12.f];
+	[result addObject:italicStyle];
+    
+    FTCoreTextStyle *boldStyle = [defaultStyle copy];
+	boldStyle.name = @"bold";
+    boldStyle.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.f];
+	[result addObject:boldStyle];
+    
+    FTCoreTextStyle *coloredStyle = [defaultStyle copy];
+    [coloredStyle setName:@"colored"];
+    [coloredStyle setColor:[UIColor redColor]];
+	[result addObject:coloredStyle];
+    
+    return  result;
+}
 
 @end

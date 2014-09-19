@@ -17,14 +17,35 @@
 
 @interface PIEHomeViewController ()
 
+/**
+ *  array de imagenes pequeñitas
+ */
 @property NSArray * arrayOfItems;
+/**
+ *  Array de imagenes
+ */
 @property NSArray * arrayOfImages;
+/**
+ *  Nombre de la imagen a mostrar
+ */
 @property NSString * imageName;
+/**
+ *  Se utiliza para controlar que imagen mostrar
+ */
 @property NSNumber * selRow;
+/**
+ *  Se utiliza pq cuando deslizas, el evento se lanza 3 veces, se controla en el back y en el fordward
+ */
 @property int controlDelegatePan;
+/**
+ *  Es para saber que imagen fue la seleccionada
+ */
 @property int intt;
-@property int activarMail;
 
+/**
+ *  Tengo que crear las vistas para poder ocultarlas cuando salga la foto
+ */
+@property FTCoreTextView *text;
 
 
 @end
@@ -36,27 +57,25 @@
 {
 
     self.controlDelegatePan = 0;
+    
     [super viewDidLoad];
    
     self.arrayOfItems =[PIEutil arrayFilesFolder:@"MiniHome" :nil];
+    
     self.arrayOfImages =[PIEutil arrayFilesFolder:@"Home" :nil];
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];        
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     
     [self.collectionViewImages setCollectionViewLayout:flowLayout];
     [self cofigurationView];
     self.lblVersion.text  = [NSString stringWithFormat:@"Version: %@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
-    self.activarMail=0;
-    
+    [self initConTexto];
    }
 
--(void)activarMail:(NSNotification *)not{
-    self.activarMail = 1;
-
-}
 
 -(void)viewWillAppear:(BOOL)animated{
-   [self initConTexto];
+
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -169,7 +188,7 @@
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(5, 20, 5, 20); // top, left, bottom, right
+    return UIEdgeInsetsMake(5, 27, 5, 27); // top, left, bottom, right
 }
 
 
@@ -183,6 +202,7 @@
     self.imageName=[self.arrayOfImages objectAtIndex:self.intt];
     self.imageFullGalleryCollection.image= [PIEutil loadImage:self.imageName :@[@"Home"]];
     [self.imageFullGalleryCollection setHidden:false];
+    [self.text setHidden:true];
     CATransition *animation = [CATransition animation];
     animation.type = kCATransitionFade;
     animation.duration = 0.5;
@@ -253,9 +273,7 @@
 -(void)cofigurationView{
     self.frostedViewController.delegate=self;
     self.lblTextoMenu.text = klabelTitulo;
-    //self.textViewAyuntamiento.text = kpie_ayuntamiento;
-    //self.textViewQueEs.text = kpie_quees;
-    if ([self respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
+     if ([self respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     [self.imageFullGalleryCollection setHidden:true];
@@ -294,6 +312,7 @@
 -(void)handleTap:(UITapGestureRecognizer *)gesture{
     self.frostedViewController.panGestureEnabled = YES;
     [self.imageFullGalleryCollection setHidden:true];
+        [self.text setHidden:false];
     CATransition *animation = [CATransition animation];
     animation.type = kCATransitionFade;
     animation.duration = 0.5;
@@ -342,132 +361,22 @@
 
 - (void)initConTexto
 {
-    //FTCore de Créditos
+//Para cumplir con los anchos en todos lados 40, 240 en el primer parámetro
+    if(self.idSelectMenu ==0){
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 320) viewForCore:self.queesView text:kpie_quees];
+    }else if(self.idSelectMenu ==1){
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240,1100) scrollViewSize:CGRectMake(0, 0, 320, 425) viewForCore:self.ayuntamientoView text:kpie_ayuntamiento];
+    }else if(self.idSelectMenu ==2){
+#warning TODO HAY QUE METER LOS TEXTOS DE CRÉDITOS        
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240,1000) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_ayuntamiento];
+    }
     
-    self.coreTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(0, 0, 275, 1000)];
-    self.creditosScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 460)];
-    [self.creditosView addSubview:self.creditosScroll];
-    [self.creditosScroll addSubview:self.coreTextView];
-    self.coreTextView.text =@"Validar datos e introducir contenido de créditos\n\n\n\n";
-    self.coreTextView.backgroundColor = [UIColor redColor];
-    self.coreTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [self.coreTextView fitToSuggestedHeight];
-    [self.coreTextView addStyles:[self coreTextStyle]];
-
-    //FTCore de Que es el PIE
-    
-    self.coreQueesTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(0, 0, 285, 1100)];
-    self.queesScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(20, 0, 295, 320)];
-    [self.queesView addSubview:self.queesScroll];
-    [self.queesScroll addSubview:self.coreQueesTextView];
-    self.coreQueesTextView.text =kpie_quees;
-    self.coreQueesTextView.backgroundColor = [UIColor clearColor];
-    self.coreQueesTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    //[self.coreQueesTextView fitToSuggestedHeight];
-    [self.coreQueesTextView addStyles:[self coreTextStyle]];
-    [self.queesScroll setContentSize:CGSizeMake(CGRectGetWidth(self.coreQueesTextView.frame), CGRectGetMaxY(self.coreQueesTextView.frame))];
-    [self.queesScroll setContentOffset:CGPointMake(self.queesScroll.contentOffset.x, 0)        animated:YES];
-    
-    //FTCore de Ayuntamiento
-
-    self.coreAyuntamientoTextView = [[FTCoreTextView alloc]initWithFrame:CGRectMake(0, 0, 285, 1100)];
-    self.ayuntamientoScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(20, 0, 295, 425)];
-    [self.ayuntamientoView addSubview:self.ayuntamientoScroll];
-    [self.ayuntamientoScroll addSubview:self.coreAyuntamientoTextView];
-    self.coreAyuntamientoTextView.text = kpie_ayuntamiento;
-    //self.coreAyuntamientoTextView.text =kpie_quees;
-    self.coreAyuntamientoTextView.backgroundColor = [UIColor clearColor];
-    self.coreAyuntamientoTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    //[self.coreQueesTextView fitToSuggestedHeight];
-    [self.coreAyuntamientoTextView addStyles:[self coreTextStyle]];
-    [self.ayuntamientoScroll setContentSize:CGSizeMake(CGRectGetWidth(self.coreAyuntamientoTextView.frame), CGRectGetMaxY(self.coreAyuntamientoTextView.frame))];
-    [self.ayuntamientoScroll setContentOffset:CGPointMake(self.ayuntamientoScroll.contentOffset.x, 0)        animated:YES];
-}
-- (NSArray *)coreTextStyle
-{
-    NSMutableArray *result = [NSMutableArray array];
-    
-    //  This will be default style of the text not closed in any tag
-	FTCoreTextStyle *defaultStyle = [FTCoreTextStyle new];
-	defaultStyle.name = FTCoreTextTagDefault;	//thought the default name is already set to FTCoreTextTagDefault
-	defaultStyle.font = [UIFont fontWithName:@"Helvetica-Neue" size:14.f];
-	defaultStyle.textAlignment = FTCoreTextAlignementLeft;
-	[result addObject:defaultStyle];
-	
-    //  Create style using convenience method
-	FTCoreTextStyle *titleStyle = [FTCoreTextStyle styleWithName:@"title"];
-	titleStyle.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:13.f];
-	titleStyle.textAlignment = FTCoreTextAlignementLeft;
-	[result addObject:titleStyle];
-	
-    //  Image will be centered
-	FTCoreTextStyle *imageStyle = [FTCoreTextStyle new];
-	imageStyle.name = FTCoreTextTagImage;
-	imageStyle.textAlignment = FTCoreTextAlignementCenter;
-	[result addObject:imageStyle];
-	
-	FTCoreTextStyle *firstLetterStyle = [FTCoreTextStyle new];
-	firstLetterStyle.name = @"firstLetter";
-	firstLetterStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-BoldMT" size:30.f];
-	[result addObject:firstLetterStyle];
-	
-    //  This is the link style
-    //  Notice that you can make copy of FTCoreTextStyle
-    //  and just change any required properties
-	FTCoreTextStyle *linkStyle = [defaultStyle copy];
-	linkStyle.name = FTCoreTextTagLink;
-	linkStyle.color = [UIColor orangeColor];
-	[result addObject:linkStyle];
-	
-	FTCoreTextStyle *subtitleStyle = [FTCoreTextStyle styleWithName:@"subtitle"];
-	subtitleStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-BoldMT" size:25.f];
-	subtitleStyle.color = [UIColor brownColor];
-	subtitleStyle.paragraphInset = UIEdgeInsetsMake(10, 0, 10, 0);
-	[result addObject:subtitleStyle];
-	
-    //  This will be list of items
-    //  You can specify custom style for a bullet
-	FTCoreTextStyle *bulletStyle = [defaultStyle copy];
-	bulletStyle.name = FTCoreTextTagBullet;
-	bulletStyle.bulletFont = [UIFont fontWithName:@"TimesNewRomanPSMT" size:16.f];
-	bulletStyle.bulletColor = [UIColor orangeColor];
-	bulletStyle.bulletCharacter = @"❧";
-	bulletStyle.paragraphInset = UIEdgeInsetsMake(0, 20.f, 0, 0);
-	[result addObject:bulletStyle];
-    
-    FTCoreTextStyle *italicStyle = [defaultStyle copy];
-	italicStyle.name = @"italic";
-	italicStyle.underlined = YES;
-    italicStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-ItalicMT" size:16.f];
-	[result addObject:italicStyle];
-    
-    FTCoreTextStyle *boldStyle = [defaultStyle copy];
-	boldStyle.name = @"bold";
-    boldStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-BoldMT" size:16.f];
-	[result addObject:boldStyle];
-    
-    FTCoreTextStyle *coloredStyle = [defaultStyle copy];
-    [coloredStyle setName:@"colored"];
-    [coloredStyle setColor:[UIColor redColor]];
-	[result addObject:coloredStyle];
-    
-    return  result;
 }
 
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    
-    //  We need to recalculate fit height on every layout because
-    //  when the device orientation changes, the FTCoreText's width changes
-    
-    //  Make the FTCoreTextView to automatically adjust it's height
-    //  so it fits all its rendered text using the actual width
 	[self.coreTextView fitToSuggestedHeight];
-    
-    //  Adjust the scroll view's content size so it can scroll all
-    //  the FTCoreTextView's content
-    [self.creditosScroll setContentSize:CGSizeMake(CGRectGetWidth(self.creditosScroll.bounds), CGRectGetMaxY(self.coreTextView.frame)+20.0f)];
 }
 
 

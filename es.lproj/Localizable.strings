@@ -9,7 +9,7 @@
 "botonnormas" = "NORMAS DEL PARQUE";
 "botonUsoQR" = "CÓMO USAR LOS QR";
 
-"TabBar_inicio" = "El parque";
+"TabBar_inicio" = "El Parque";
 "TabBar_artista" = "Artistas";
 "TabBar_qr" = "QR";
 "TabBar_visita" = "Visita";
@@ -22,8 +22,6 @@
 "menuHome_3" = "Ayuntamiento";
 "menuHome_4" = "Créditos";
 
-
-
 "menuArtista_1" = "Berned, A.";
 "menuArtista_2" = "Canogar, D.";
 "menuArtista_5" = "Gonzalez, D.";
@@ -31,7 +29,7 @@
 "menuArtista_6" = "Lopez, I.";
 "menuArtista_7" = "Menendez, J.L.";
 "menuArtista_8" = "Olano, A.";
-"menuArtista_4" = "Fernandez-Oliva, S.";
+"menuArtista_4" = "Fdez-Oliva, S.";
 "menuArtista_9" = "Delgado";
 "menuArtista_10" = "CZecili";
 
@@ -66,93 +64,93 @@
 
 "pie_creditos_ayuntamiento" = "Ayuntamiento de San Sebastián de los Reyes";
 
-"pie_obra_artista0_0"="Dama II\nPlancha de acero corten de 10 mm. Acabado oxidado.\n69x100x401 cm.";
-"pie_obra_artista0_1"="Vela VII\nPlancha de acero corten. Lacado en rojo parcialmente.\n930x426x1055cm.";
-"pie_obra_artista0_2"="YAMI\nPlancha de acero inoxidable de 8 mm. de grosor. Acabado pulidno.\n186x186x231 cm.";
-"pie_obra_artista0_3"="HIKARI\nPlancha de acero inoxidable 316 de 5 mm. de grosor. Acabado pulido satinado.\n60x54x71 cm.";
-"pie_obra_artista0_4"="Cabeza V\nPlancha de acero corten de 5 mm. de grosor. Acabado oxidado.\n418x283x340 cm.";
-"pie_obra_artista0_5"="Amistad III\nPlancha de acero inoxidable. Acabado pulido.\n26,5x24,8x27,7 cm.";
-"pie_obra_artista0_6"="Cabeza XVI\nPlancha de acero inoxidable de 5 mm. de grosor. Acabado pulido.\n210x261x231 cm.";
+"pie_obra_artista0_0"="Dama II\nPlancha de acero corten de 10 mm.\nAcabado oxidado.\n69x100x401 cm.";
+"pie_obra_artista0_1"="Vela VII\nPlancha de acero corten.\nLacado en rojo parcialmente.\n930x426x1055cm.";
+"pie_obra_artista0_2"="YAMI\nPlancha de acero inoxidable de 8 mm.\nAcabado pulidno.\n186x186x231 cm.";
+"pie_obra_artista0_3"="HIKARI\nPlancha de acero inoxidable 316 de 5 mm.\nAcabado pulido satinado.\n60x54x71 cm.";
+"pie_obra_artista0_4"="Cabeza V\nPlancha de acero corten de 5 mm.\nAcabado oxidado.\n418x283x340 cm.";
+"pie_obra_artista0_5"="Amistad III\nPlancha de acero inoxidable.\nAcabado pulido.\n26,5x24,8x27,7 cm.";
+"pie_obra_artista0_6"="Cabeza XVI\nPlancha de acero inoxidable de 5 mm.\nAcabado pulido.\n210x261x231 cm.";
 //
-"pie_obra_artista1_0"="Bocados de vida, 2003\nHierro soldado y pintado\n300 x 150 x 150 cm";
-"pie_obra_artista1_1"="Ensamblada de luz II, 2006\nHierro solado, pintado e iluminación led\n131 x 82 26 cm";
-"pie_obra_artista1_2"="Enroscada 2009, 2009\nHierro pintado\n107 x 57 x 37 cm";
-"pie_obra_artista1_3"="Vestigio,2010\nAcero corten soldado y oxidado\n305 x 165 x 225 cm";
-"pie_obra_artista1_4"="Tetramorfo Síntesis, 2012\nHierro Solado\n400 x 150 x 120 cm";
-"pie_obra_artista1_5"="Tetramorfo Perforado, 2013\nAcero corten, soldado y oxidado\n400 x 150 x 120 cm";
-"pie_obra_artista1_6"="Tetramorfo extendido 101 N, 2014\nHierro soldado y pintado\n145 x 90 x 23 cm";
+"pie_obra_artista1_0"="Bocados de vida, 2003\nHierro soldado y pintado\n300x150x150 cm.";
+"pie_obra_artista1_1"="Ensamblada de luz II, 2006\nHierro solado, pintado e iluminación led\n131x82x26 cm.";
+"pie_obra_artista1_2"="Enroscada 2009, 2009\nHierro pintado\n107x57x37 cm.";
+"pie_obra_artista1_3"="Vestigio,2010\nAcero corten soldado y oxidado\n305x165x225 cm.";
+"pie_obra_artista1_4"="Tetramorfo Síntesis, 2012\nHierro Solado\n400x150x120 cm.";
+"pie_obra_artista1_5"="Tetramorfo Perforado, 2013\nAcero corten, soldado y oxidado\n400x150 x120 cm.";
+"pie_obra_artista1_6"="Tetramorfo extendido 101 N, 2014\nHierro soldado y pintado\n145x90x23 cm.";
 //
-"pie_obra_artista2_0"="Airam\nAcero corten\n160 x 80 x 35 cm";
-"pie_obra_artista2_1"="Edam\n\n180 x 80 x 60 cm";
-"pie_obra_artista2_2"="Enlace\nAcero corten\n 110 x 40 x 35 cm";
-"pie_obra_artista2_3"="Leirum\nAcero corten\n 185 x 145 x 135 cm";
-"pie_obra_artista2_4"="Mur\nHormigón y madera\n75 x 34 x 20 cm";
-"pie_obra_artista2_5"="Om\nHormigón y madera\80 x 35 x 20cm";
+"pie_obra_artista2_0"="Airam\nAcero corten\n160x80x35 cm.";
+"pie_obra_artista2_1"="Edam\n180x80x60 cm.";
+"pie_obra_artista2_2"="Enlace\nAcero corten\n 110x40x35 cm.";
+"pie_obra_artista2_3"="Leirum\nAcero corten\n 185x145x135 cm.";
+"pie_obra_artista2_4"="Mur\nHormigón y madera\n75x34x20 cm.";
+"pie_obra_artista2_5"="Om\nHormigón y madera\80x35x20cm.";
 "pie_obra_artista2_6"="Proyecto II\nAcero corten\nMedida escalable";
 //
-"pie_obra_artista3_0"="Alas\nAcero corten\n210x55x55 cm";
-"pie_obra_artista3_1"="Bañista\nBronce\n45x10x5 cm";
-"pie_obra_artista3_2"="Llegada\nBronce\n65x45x15 cm";
-"pie_obra_artista3_3"="Cubos\nAcero corten\n180x420x150 cm";
-"pie_obra_artista3_4"="Eslabones\nHierro lacado\n55x40x7 cm";
-"pie_obra_artista3_5"="Salto\nAcero corten\n65x55x10 cm";
-"pie_obra_artista3_6"="Caballo con Jinete\nAcero corten\n220x330x40 cm";
+"pie_obra_artista3_0"="Alas\nAcero corten\n210x55x55 cm.";
+"pie_obra_artista3_1"="Bañista\nBronce\n45x10x5 cm.";
+"pie_obra_artista3_2"="Llegada\nBronce\n65x45x15 cm.";
+"pie_obra_artista3_3"="Cubos\nAcero corten\n180x420x150 cm.";
+"pie_obra_artista3_4"="Eslabones\nHierro lacado\n55x40x7 cm.";
+"pie_obra_artista3_5"="Salto\nAcero corten\n65x55x10 cm.";
+"pie_obra_artista3_6"="Caballo con Jinete\nAcero corten\n220x330x40 cm.";
 //
-"pie_obra_artista4_0"="Cinco\nMadera\n190 x 200 x 25 cm";
-"pie_obra_artista4_1"="Confusiones\nMadera lacada\n140 x 50 x 20 cm";
-"pie_obra_artista4_2"="Grave-edad\nMadera lapacho\n143 x 90 x 30 cm";
-"pie_obra_artista4_3"="Interior de uno mismo\nMadera de fresno\n220 x 100 x 90 cm";
-"pie_obra_artista4_4"="Tú y yo,yo y tú\nMadera lacada\n200 x 120 x 50 cm";
-"pie_obra_artista4_5"="Voss que\nMadera de pino lacada\n300 x 100 x 50 cm";
-"pie_obra_artista4_6"="Mentes planas cabezas cuadradas\nMadera de encina\n200 x 50 x 50 cm";
+"pie_obra_artista4_0"="Cinco\nMadera\n190x200x25 cm.";
+"pie_obra_artista4_1"="Confusiones\nMadera lacada\n140x50x20 cm.";
+"pie_obra_artista4_2"="Grave-edad\nMadera lapacho\n143x90x30 cm.";
+"pie_obra_artista4_3"="Interior de uno mismo\nMadera de fresno\n220x100x90 cm.";
+"pie_obra_artista4_4"="Tú y yo,yo y tú\nMadera lacada\n200x120x50 cm.";
+"pie_obra_artista4_5"="Voss que\nMadera de pino lacada\n300x100x50 cm.";
+"pie_obra_artista4_6"="Mentes planas cabezas cuadradas\nMadera de encina\n200x50x50 cm.";
 //
-"pie_obra_artista5_0"="Arquitectura acróbata\nAcero soldado\n170 x 45 x 40 cm";
-"pie_obra_artista5_1"="Dama\nAcero corten\n140 x 25 x 25 cm";
-"pie_obra_artista5_2"="Figura\nAcero soldado\n130 x 25 x 30 cm";
-"pie_obra_artista5_3"="Géminis\nAluminio\n30 x 7 x 7 cm";
-"pie_obra_artista5_4"="Indalo\nBronce\45 x 30 x 10 cm";
-"pie_obra_artista5_5"="Naturaleza\nMadera lacada\n140 x 15 x 15 cm";
-"pie_obra_artista5_6"="Figura\nAcero solado\n130 x 25 x 30 cm";
+"pie_obra_artista5_0"="Arquitectura acróbata\nAcero soldado\n170x45x40 cm.";
+"pie_obra_artista5_1"="Dama\nAcero corten\n140x25x25 cm.";
+"pie_obra_artista5_2"="Figura\nAcero soldado\n130x25x30 cm.";
+"pie_obra_artista5_3"="Géminis\nAluminio\n30x7x7 cm.";
+"pie_obra_artista5_4"="Indalo\nBronce\45x30x10 cm.";
+"pie_obra_artista5_5"="Naturaleza\nMadera lacada\n140x15x15 cm.";
+"pie_obra_artista5_6"="Figura\nAcero solado\n130x25x30 cm.";
 //
-"pie_obra_artista6_0"="Quiero crecer\nMármol, acero y candados. Forja, talla y soldadura\n150 x 100 x 90 cm";
-"pie_obra_artista6_1"="Bortando II\nAcero, forja y soldadura\n74 x 150 x 120 cm";
-"pie_obra_artista6_2"="Carnívora\nMármol negro, acero inox. y acero al carbono. Forja y soldadura\n200 x 110 x 120 cm";
-"pie_obra_artista6_3"="Corazón liao\nÉbano y acero. Talla directa, forja y soldadura\n37 x 27 x 25 cm";
-"pie_obra_artista6_4"="Giramar\nAlabrastro y acero inox. Talla directa, forja y soldadura\n235 x 180 x 120 cm";
+"pie_obra_artista6_0"="Quiero crecer\nMármol, acero y candados. Forja, talla y soldadura\n150x100x90 cm.";
+"pie_obra_artista6_1"="Bortando II\nAcero, forja y soldadura\n74x150x120 cm.";
+"pie_obra_artista6_2"="Carnívora\nMármol negro, acero inox. y acero al carbono. Forja y soldadura\n200x110x120 cm.";
+"pie_obra_artista6_3"="Corazón liao\nÉbano y acero. Talla directa, forja y soldadura\n37x27x25 cm.";
+"pie_obra_artista6_4"="Giramar\nAlabrastro y acero inox. Talla directa, forja y soldadura\n235x180x120 cm.";
 "pie_obra_artista6_5"="Hombre crisálida\nAcero al carbono, forja y soldadura\n225 x 90 x 40 cm";
-"pie_obra_artista6_6"="Desarraigado\nAcero, forja y soldadura\n100 x 90 x 80 cm";
+"pie_obra_artista6_6"="Desarraigado\nAcero, forja y soldadura\n100x90x80 cm.";
 //
-"pie_obra_artista7_0"="Moon water I\nAlabastro\25 x 25 x 7 cm";
+"pie_obra_artista7_0"="Moon water I\nAlabastro\25x25x7 cm.";
 "pie_obra_artista7_1"="Moon water 0.12\nMármol de carrara\n85 x 85 cm";
-"pie_obra_artista7_2"="Kaido (Camino del mar),2008\nPiedra de calatorao\n59 x 57 x 57 cm";
+"pie_obra_artista7_2"="Kaido (Camino del mar),2008\nPiedra de calatorao\n59x57x57 cm.";
 "pie_obra_artista7_3"="El fin es mi principio, 2008\nPiedra de calatorao";
-"pie_obra_artista7_4"="Entre dos, 2009\nPiedra de calatorao\n23 x 23 x 25 cm";
-"pie_obra_artista7_5"="La donna è mobile, 2013\nPiedra de calatorao";
+"pie_obra_artista7_4"="Entre dos, 2009\nPiedra de calatorao\n23x23x25 cm.";
+"pie_obra_artista7_5"="La donna è mobile, 2013\nPiedra de calatorao.";
 //
-"nombrepie_artista0" = "Arturo Berned\nMadrid 1966";
+"nombrepie_artista0" = "<title>Arturo Berned</title>\n<italic>Madrid 1966</italic>";
 "pie_artista0"= "Arturo Berned nace en Madrid en 1966. Durante su etapa de estudiante se le conceden varias becas que disfruta en Londres, Turín y Oxford coincidiendo sus primeros pasos profesionales con las estancias en dichas ciudades que, posteriormente, tendrán una influencia clara en su proceso creativo.\n\nComo arquitecto ha desarrollado su actividad profesional principalmente en México, Inglaterra, Italia y España.\n\nEs durante su estancia en México, a principios de los 90, cuando inicia su camino en el mundo de la escultura, vocación que, si en un principio constituía una fuente de realización a través de la cual poner en práctica proyectos mediante los que materializar pensamientos, poco a poco fue cobrando una importancia creciente en su trabajo y en su expresión.\n\nA finales de la década de los 90, inicia una intensa colaboración profesional con el Estudio Lamela Arquitectos que concluirá como director de Proyectos y Obras en dicho estudio. Durante estos años, interviene en la mayor parte de los proyectos desarrollados por el estudio, entre otros: la Terminal de Barajas T4, la Ciudad Deportiva del Real Madrid o la ampliación del estadio Santiago Bernabéu. Así mismo participa activamente en concursos de arquitectura nacional e internacional como el Distrito C de Telefónica o el Aeropuerto de Sharm El Sheikh.\n\nTras esta etapa, empieza a desarrollar intensamente su verdadera vocación, la escultura. Son años en los que empieza una intensa labor de investigación en las formas y materiales que va a utilizar, y que desemboca finalmente en un intenso proceso creativo que ha venido desarrollando desde el año 2003 hasta ahora.\n\nSu trayectoria como artista comienza en la Escuela Superior de Arquitectura de Madrid, “en una época en la que hacía obras del tamaño de una maqueta”. Su inquietud le lleva a plantearse cómo puede introducir piezas de cierto tamaño en los interiores. A principios de los 90, empieza a hacer lo que él llama cajas y tienen la función de mesas. Representan un clásico de Berned.";
 
-"nombrepie_artista1" = "Diego Canogar\nMadrid, 16 de mayo de 1966";
+"nombrepie_artista1" = "<title>Diego Canogar</title>\n<italic>Madrid, 16 de mayo de 1966</italic>";
 "pie_artista1"="Diego Canogar nace en Madrid el 16 de mayo de 1966. Cursa estudios superiores en la Facultad de Bellas Artes de la Universidad Complutense de Madrid en la que se licencia en 1992.\n\nEmpieza pronto su carrera artística exponiendo en colectivas durante sus años de estudiante. En estos años se va decantando por la escultura como su medio preferido de expresión plástica y recibe una beca Erasmus para estudiar en la Leeds Polytechnic, en Inglaterra donde realiza sus primeras incursiones en el mundo del grabado, medio en el que trabaja ocasionalmente mostrando su obra en la feria ESTAMPA. Realiza exposiciones fuera y dentro de España. Expone individualmente en las galerías Asunción Isorna y El Gayo Arte en Madrid , la Galería Amaga en Avilés y Tolmo en Toledo.\n\nEn 2003 pasa a ser artista de la galería Rayuela, exponiendo en ella con regularidad y en la Feria ARTMADRID. Recibe en 2005 becas importantes como la Beca Velázquez y la de la Academia de España en Roma. En 2008, su proyecto es el ganador de la 1ª Bienal de obra Pública de Navacerrada, instalando allí su primera pieza escultórica monumental importante al año siguiente. Tiene obra en docenas de colecciones públicas y privadas y entre sus últimas exposiciones individuales importantes en centros públicos, se podrían destacar el COAATT de Toledo y el Centro de arte Tomás y Valiente en 2008 y la sala el Brocense de Cáceres en 2010.\n\nDesde 2013, pasa a formar parte de los artistas de la madrileña galería BAT.";
 
-"nombrepie_artista2" = "Emilio Cobertera\nBishop’s Stortford,Inglaterra, 1968";
+"nombrepie_artista2" = "<title>Emilio Cobertera</title>\n<italic>Bishop’s Stortford,Inglaterra, 1968</italic>";
 "pie_artista2"="Emilio Cobertera nace en Bishop’s Stortford, Inglaterra en 1968. Licenciado por la Facultad de Bellas Artes de Madrid, carrera que se ve acompañada por estudios en Filosofía, en los que se interesa por la estética y la antropología. Una vez finalizadas ambas, las preguntas quedan todavía gravitando. El trabajo desde entonces ha consistido en buscar las respuestas usando el arte como un instrumento de síntesis.\n\nDesde una primera etapa figurativa, su obra ha ido hacia derroteros de abstracción buscando aquello de lo que no cabe hablar, sino sentir con la mirada.\n\nHa usado la escultura y la pintura como herramientas de investigación, centrándose últimamente en el espacio que separa, pero que a la vez define, al sujeto frente al todo.\n\nEn 1997 abrió un estudio-galería en el centro de Madrid: Sunday Gallery, un proyecto de acercamiento a interioristas y a coleccionistas, que sigue dando buenos resultados. Participa en colectivos como el MTG (Mínimo Tamaño Grande) en exposiciones anuales en San Lorenzo del Escorial, donde comparten espacio tanto artistas emergentes como consagrados, o en el Colectivo Vams. Ha expuesto, además, en Roma y en Lisboa, así como en diversas ferias: MAC 21, Marbella; Arcale, Salamanca; Faim, Madrid y galerías: Fábrica de Babel, Ekléctica, Petra Barahona y Arte 34.";
 
-"nombrepie_artista3" = "Salvador Fernández Oliva\nMadrid, 1960";
+"nombrepie_artista3" = "<title>Salvador Fernández Oliva</title>\n<italic>Madrid, 1960</italic>";
 "pie_artista3"="Salvador Fernández Oliva nace en Madrid en 1960. Escultor, músico y pintor autodidacta. Sus principales exposiciones las ha realizado en el Museo de Arte Contemporáneo de Madrid en 1994, Fundación Pons (Madrid) en 2010, Fundación Pons (Barcelona) en 2010 y terraza de Casa de Vacas en Parque del Retiro de Madrid en 2011.\n\nA lo largo de su carrera como escultor ha instalado diversas esculturas en espacios públicos como “El vecino curioso” en 1995 y varias obras en bronce en Navalcarnero.\n\nHa obtenido diversos premios en certámenes de pintura, como el  C. C. Villa de Madrid en 1997.\n\nActualmente ha centrado su trabajo como escultor en el mundo del caballo y de la hípica.";
 
-"nombrepie_artista4" = "David González\nMadrid, 1965";
+"nombrepie_artista4" = "<title>David González</title>\n<italic>Madrid, 1965</italic>";
 "pie_artista4"="David González Grande nace en Madrid en 1965. Escultor centrado en el trabajo de la madera, realiza obras inspirándose en la naturaleza, explorando todas sus posibilidades y tamaños. Formó parte de la Asociación de Artistas de Cercedilla, siendo al año siguiente el presidente de la misma, organizando exposiciones en la Comunidad de Madrid tanto colectivas como individuales. Colabora con el colectivo de escultores Mínimo Tamaño Grande y en los últimos 15 años se ha centrado en el mundo del mercado profesional del arte con diversas exposiciones en ferias y galerías.\n\nConfiesa que se siente cómodo trabajando la madera por su naturaleza, plasticidad, dureza y a la vez fragilidad, siendo sus colores y olores lo que más le gusta. En sus obras mezcla otros materiales como la piedra y el hierro, y también aplica diversas pátinas de color dándole un toque característico a toda su obra: “el color forma parte de mi vida, usando en mis esculturas colores primos o con mucha fuerza para decorar y hacer resaltar partes de las piezas, haciéndolas más cercana a mí”.\n\nLe gusta trabajar directamente con la motosierra, por su velocidad de creación y las posibilidades de estas máquinas, investigando sobre las texturas de los cortes y las diferentes formas y usos. Actualmente centra su actividad como escultor en la realización de esculturas de gran formato, experimentando todas las posibilidades de la madera como elemento principal de su obra.";
 
 
 
-"nombrepie_artista5" = "Nacho López Díaz\nAlcalá de Henares, Madrid, 1968";
+"nombrepie_artista5" = "<title>Nacho López Díaz</title>\n<italic>Alcalá de Henares, Madrid, 1968</italic>";
 "pie_artista5"="Nacho López Díaz, escultor y artista visual, nace en Alcalá de Henares el 9 de Mayo de 1968. Licenciado en Psicopedagogía, inicia su formación artística a través de la ilustración y el cómic. Posteriormente, empieza sus estudios de dibujo y escultura con Ricardo Horcajada y Jorge Varas, doctores en Bellas Artes y profesores de la Universidad Complutense de Madrid.\n\nRealiza en la Academia de Bellas Artes de San Fernando, el curso “Proceso mental y material de la escultura”, dirigido por el Académico y escultor José Luis Sánchez, y el curso “Visual Arts” Canterbury High School, Inglaterra.\n\nBecado por la Universidad Internacional Menéndez Pelayo y por la Universidad Rey Juan Carlos, así como otras instituciones, participa en cursos y talleres con artistas contemporáneos de rango internacional, como José Manuel CIRIA, Emilio Gañán, Fernando Mastretta, Eva Lootz, Javier Mariscal, José María Sicilia, Waldo Balart.\n\nHa realizado exposiciones individuales y colectivas con galerías y centros culturales de Madrid, Castilla la Mancha, Castilla-León, Valencia, Andalucía y Aragón, así como la galería Bellange Ateljé de Estocolmo. Ha participado en ferias de Arte como Estampa, ArtMadrid y Artearévalo.\n\nGanador de Premios de Escultura como el premio adquisición Caja Castilla la Mancha de 2.008, y el Premio ARS del Certamen José Lapayese. Teruel 2.009. Es seleccionado en diferentes certámenes como la 69 Edición internacional de arte de Valdepeñas, Colegio de Arquitectos de la Comunidad Valenciana. 2008, Premio Nacional de pintura. Ciudad de Alcalá 2.008, Finalista Excultural. Bargas Toledo 2010...\n\nSu obra se encuentra en la Fundación Caja Castilla la Mancha, la Fundación Valle de los Sueños, el Colegio de Arquitectos de Valencia, el IES Albéniz de Alcalá de Henares y en colecciones particulares.\n\nMiembro de AVAM (Artistas Visuales Asociados de Madrid), socio del colectivo de escultores Mínimo Tamaño Grande y de Sculpture Network (Plataforma europea de escultura).\n\n“Entre el minimalismo geométrico de épocas pasadas y el expresionismo, danzan algunas de las esculturas que realizo últimamente. La escala suele estar a la altura del posible espectador. Piezas grandes, pero justas para el uso doméstico de un salón, de un porche, de un pequeño jardín... piezas que podrían realizarse a escala mayor, para otras localizaciones urbanas. Esculturas que buscan una espiritualidad por si mismas, y que transmiten mensajes diferentes para cada observador. Intentan remover sensaciones interiores, ideologías estéticas, y a veces incluso, comparar referencias hacia formas de la naturaleza, de la arquitectura o de otras formas tridimensionales, que se han observado en otro lugar y en otro tiempo”";
 
-"nombrepie_artista6" = "José Luis Menéndez\nMadrid, 1966";
+"nombrepie_artista6" = "<title>José Luis Menéndez</title>\n<italic>Madrid, 1966</italic>";
 "pie_artista6"="José Luis Menéndez nace en Madrid en 1966 en Madrid. Licenciado en Escultura por la Facultad de Bellas Artes de la Universidad Complutense de Madrid, comienza a difundir su extensa producción artística en los años 90 en exposiciones individuales en colaboración con diversas galerías de arte de Madrid. Entre sus premios y menciones destacan el Primer Premio del IV Certamen Nacional de Escultura Ciudad de Leganés, y el Primer Premio del Certamen Nacional de Escultura Monumental Villa de Pinto. Sus esculturas monumentales al aire libre imprimen en los espacios que ocupan el estilo inconfundible del acero al carbono, destacando entre sus variadas obras las realizadas para emplazamientos tan emblemáticos como el Museo al aire libre de Leganés o la Fachada del Centro Cultural Infanta Cristina de Pinto, ambas en Madrid.\n\nSus inquietudes artísticas le llevan a participar en diversos proyectos culturales, como el Record Guinness colectivo de la escultura más grande del mundo realizada con material reciclado o su activa colaboración con el colectivo multicultural Mínimo Tamaño Grande. Participa en los últimos años en ferias relevantes dentro del mundo del arte, destacando SCOPE MIAMI12, TIAF12 Toronto (Canadá), ART MADRID 2013 MAESTROS, JUSTMAD2, ESPACIO ATLÁNTICO de Vigo, FOROSUR en Cáceres y ARTENAVAS en Ávila.\n\nDestacan sus actividades como conferenciante y jurado en distintos premios de escultura. Actualmente sigue investigando en las posibilidades de creación a través de la escultura y colabora en proyectos culturales a nivel nacional e internacional.";
 
-"nombrepie_artista7" = "Ana Olano Sans\nLas Palmas de Gran Canaria, 1969";
+"nombrepie_artista7" = "<title>Ana Olano Sans</title>\n<italic>Las Palmas de Gran Canaria, 1969</italic>";
 "pie_artista7"="Ana Olano Sans nace en Las Palmas de Gran Canaria en 1969. Desde sus primeros cursos en la Facultad de Bellas Artes desarrolla una intensa actividad artística participando en diversos Simposios, Talleres y Seminarios de Arte.\n\nA lo largo de su trayectoria ha recibido numerosos reconocimientos entre los que cabe destacar: los Primeros Premios de Escultura “Mariano Benlliure” y “Jóvenes Creadores” otorgados ambos por el Ayuntamiento de Madrid, el 1º Premio de Escultura de “Villaviciosa de Odón” y los premios del “Simposio Internacional de Escultura O Grove” (Pontevedra) y de la “Fundación Gregorio Prieto” (Ciudad Real). Recientemente ha sido galardonada con los Primeros Premios de escultura “Villa de Pinto”, “Villa de Parla” y “Asociación Mujeres por la Igualdad” de Pozuelo de Alarcón.\n\nDesde el año 1996 trabaja con Galerías y Centros de Arte Contemporáneo y su obra ha sido seleccionada para participar en las Ferias: ARTE NAVAS, DEART, PIEDRA, ESTAMPA, FLECHA y ART-MADRID.\n\nDe su trabajo como escultora queda constancia en su obra pública, que se encuentra en las colecciones del Museo Municipal de Madrid, el Museo Sargadelos, el Museo de Arte Contemporáneo MACAY (México), la UFMG de Brasil, la Fondazione Antonio Ratti (Italia), ONCE, Fundaciones Joan Miró, Gregorio Prieto, Colegio del Rey de Alcalá de Henares y San Pablo CEU Sanchinarro, así como numerosos Ayuntamientos del territorio nacional cuentan con su obra expuesta permanentemente.\n\nAlgunas de sus últimas creaciones realizadas en mármol, granito y bronce, están ubicadas al aire libre y pueden visitarse en Madrid (Villaviciosa de Odón, Serranillos del Valle), Vigo (Monte Alba), Pontevedra (O Grove), Córdoba (Fuente Palmera), Valencia (Rincón de Ademuz) o Zaragoza (Utebo), entre otros.\n\ Además de su obra artística cabe destacar su labor docente, desarrollada desde 1998 en diferentes instituciones públicas y privadas, así como universidades dentro y fuera de nuestras fronteras, entre ellas la Universidad Federal de Minas Gerais en Belo Horizonte, Brasil.\n\ En 2010 se traslada durante unos meses a Pietrasanta (Italia) para realizar algunos trabajos en mármol de Carrara y recopilar documentación para su Tesis Doctoral.\n\ Actualmente imparte clases de escultura en la academia DEARTE, compartiendo esta actividad docente con la desarrollada como Profesora Asociada de Escultura en la Facultad de Bellas Artes de la UCM desde el año 2007.";
 
 
@@ -173,21 +171,28 @@
 
 "VisitaMapa" = "Durante tu visita\n\nDurante tu visita es importante que localices una serie de puntos y dispositivos que te ayudarán a disfrutar de la misma.\n\nEl primer lugar al que deberías dirigirte es el MURO INFORMATIVO que encontrarás en la rotonda del centro del Parque. En este espacio, que reconocerás a primera vista, encontrarás la información fundamental que te ayudará en tu recorrido y disfrute del Parque, así como un plano del PIE con la localización de las distintas obras.\n\nUna vez comiences tu visita, tienes que localizar los distintos hitos informativos que encontrarás junto a las obras y en los que podrás y en los que podrás descargarte toda la información que necesitas sobre la obra que estás contemplando y sobre el autor de la misma. Además, el hito te indica la mejor localización para contemplar la obra, y te marca la distancia del perímetro circular que es aconsejable recorrer en torno a ella para apreciarla en todos sus contextos. De esta manera puedes usar los hitos como una línea imaginaria a seguir durante tu recorrido por el Parque.\n\nEl recorrido en el parque también te permitirá apreciar las distintas texturas de las obras que lo integran. De esta manera podrás sentir los materiales que conforman las esculturas a modo de roce de las mismas. La vegetación del parque, la corteza de los árboles y el material de las esculturas crearán distintas texturas que tienes que apreciar mediante el recorrido.";
 
-"Accesibilidad" = "Accesibilidad\n\nA lo largo de todo el recorrido del PIE existe un carril bici sin apenas desnivel alguno que permite la visita de las obras para personas con problemas de movilidad. Este carril puede usarse por personas en silla de ruedas.\n\nLa localización del MURO INTRODUCTORIO permite el acceso al mismo de personas con problemas de movilidad al estar situado en la misma calzada con acceso directo al carril bici. Además su ubicación permite el acceso de autobuses para visitas guiadas a colectivos que necesiten de un especial cuidado durante sus visitas.\n\nPara todos aquellos colectivos de personas con problemas de movilidad, el PIE dispone de una serie de programas así como voluntarios que acompañarán a estas personas durante su visita al PIE, por lo que es aconsejable ponerse en contacto directo con nosotros a través del teléfono 630.365.934, o bien remitiéndonos un correo a la siguiente dirección: parqueinternacionalescultura@hotmail.com";
+"AccesibilidadAuditiva" = "Del mismo modo que es fundamental conseguir un PIE accesible, es también de vital importancia que la APP sea accesible para todos los tipos de visitantes. La consecución de este objetivo requiere la adecuación y la adaptación de los contenidos para todas las necesidades y requisitos específicos. Para facilitar la accesibilidad de las personas con discapacidad auditiva, hemos suprimido la opción de activar el subtitulado de los vídeos que puedan formar parte de la aplicación, pasando a ser ésta automática y todos los vídeos, por defecto, podrán ir subtitulados.";
 
-"EsculturaTitulo0Bernet"= "Arturo Berned\nCabeza 2\nChapa de Acero corten de 5 mm. de espesor.\n255 x 226 x 226 cm.";
+
+"AccesibilidadVisual" = "Para los usuarios con discapacidad visual hemos producido una serie de audiodescripciones sobre las esculturas expuestas. Estas audiodescripciones, que podrán escucharse tecleando el icono correspondiente, son locuciones de los detalles formales de la obras especialmente dirigidas y creadas para este tipo de usuarios, lo que les permitirá un mayor acceso a la información sobre las esculturas del PIE.";
+
+"AccesibilidadReducida" = "A lo largo de todo el recorrido del PIE existe un carril bici sin apenas desnivel alguno que permite la visita de las obras para personas con problemas de movilidad. Este carril puede usarse por personas en silla de ruedas.\nLa localización del Área Introductoria permite el acceso al mismo de personas con problemas de movilidad al estar situado en la misma calzada con acceso directo al carril bici. Además su ubicación permite el acceso de autobuses para visitas guiadas a colectivos que necesiten de un especial cuidado durante sus visitas.\nPara todos aquellos colectivos de personas con problemas de movilidad, el PIE dispone de una serie de programas así como voluntarios que acompañarán a estas personas durante su visita al PIE, por lo que es aconsejable ponerse en contacto directo con nosotros a través del teléfono 630.365.934, o bien remitiéndonos un correo a la siguiente dirección:\nparqueinternacionalescultura@hotmail.com";
+
+"AccesibilidadNinos" = "Si visitas el Parque en familia o con niños, estos podrán disfrutar con la mayor libertad posible ya que los códigos QR se han situado a una altura apta para ser escaneados por niños. De esta forma, la localización de las esculturas y la lectura de los códigos QR puede convertirse en una trepidante “búsqueda de los tesoros digitales”. Y cuando finalicéis vuestra visita, os invitamos a que pongáis a prueba vuestra memoria visual con este juego de parejas.";
+
+"EsculturaTitulo0Bernet"= "Arturo Berned\nCabeza 2\nChapa de Acero corten de 5 mm. de espesor.\n255x226x226 cm.";
 
 "Escultura0Bernet"= "Primero fue la verticalidad arborescente de los Guerreros, de los Soldados, de las Damas, de las Columnas, de las primeras Cabezas. Reminiscencias arcaicas, con ecos de la historia del arte de todos los siglos, sugeridas por estos títulos figurativos, y por la propia configuración de las piezas, que impresionan por su presencia casi de personajes, sí.\n\nMás allá de esos arcaísmos iniciales, hemos asistido a un proceso de progresiva depuración y esencialización del trabajo de un Berned cada vez más abstracto. Presencia de la arquitectura en Casa Guerrero, pieza inspirada en la planta de la vivienda unifamiliar homónima de su colega y amigo Alberto Campo Baeza. Geometría purista de las Espirales, de las Cabezas más recientes. Matemática compatible con la subjetividad: geometría sensible. Piezas diagonales, dinámicas. Piezas de presencia constructiva y rotunda. Cada vez mayor seguridad en la expresión. Cada vez mayor y más emocionante maestría. Rigor y pasión.\n\nTexto de Juan Manuel Bonet en el Catálogo de la Exposición Arturo Berned 1+ ?5/2 (D.L.: M23935-2011).";
 
-"EsculturaTitulo1Canogar"= "Diego Canogar\nTetramorfo V\nHierro de 4 mm.\n183 x 112 x 96 cm.";
+"EsculturaTitulo1Canogar"= "Diego Canogar\nTetramorfo V\nHierro de 4 mm.\n183x112x96 cm.";
 
 "Escultura1Canogar"= "Allá por 2006 empecé e obsesionarme con la posibilidad de producir esculturas metálicas que fueran estructuralmente más robustas que las de la serie enroscada en las que llevaba trabajando desde el 2001. Me había encontrado con el problema de que cuanto más mayores las hacía, más inestables eran. La tensión superficial que soportaba el material al revirarlo evitaba que se combasen las piezas por su propio peso hasta cierto límite que se me antojaba a veces un poco limitado. Me encantaba el resultado visual, constructivo y como de trazo grueso que la serie “enroscada” había aportado a mi obra, que hasta entonces solo empleaba elementos marcadamente lineales como varillas y tubos. Pero sentía la necesidad de explorar nuevas formas que fueran estructuralmente sencillas y me permitieran extender las piezas en todas las direcciones. Intuía que una evolución de la serie enroscada me daría la solución adecuada, después de trabajar sobre varias estructuras muy prometedoras.\n\nEn 2007, combando chapa perforada hasta esferizarla levemente podía construir esferas con una estructura de dodecaedro. Juntando porciones de estas esferas de cuatro en cuatro, (de allí el nombre Tetramorfos que le he dado a la serie) uniéndolas por las aristas de los círculos, daba como resultado la estructura que tanto había buscado. De inmediato me emocioné muchísimo. Cumplía todo lo que deseaba. Podía por fin  hacer piezas mucho más extensas y robustas. Incluso las formas más sencillas que se generaban me fascinaban por su poderosa presencia. La geometría esférica del aire que rodeaba los núcleos de metal era pura magia para él intelecto. Las formas tenían su equilibrio interno y una misma pieza tenía varias posiciones en la que se mantenía estable por si misma si no deseaba usar ninguna base extra. Podía imaginarme piezas de todos los tamaños y soñaba con transitarlas, recorrerlas, escalarlas, crear laberintos que explorar si llegaba a hacerlas tan grandes que uno pudiera meterse dentro de esas formas huecas.\n\nSi bien, pude pronto producir piezas bastante complejas y de buen tamaño, pasó un tiempo hasta que logré construir las primeras esculturas de escala monumental y es aquí donde esta pieza concreta, la “Tetramorfo V” tiene su importancia. Fue la primera que se utilizo usando grandes prensas industriales para esferizar chapas de un grosor contundente. Fue la prueba de que podía producir piezas de gran tamaño y porte generoso como así hice a partir de ese momento.\n\nDiego Canogar, 4 de abril de 2014.";
 
-"EsculturaTitulo2Gonzalez"= "David González Grande\nGrave-Edad 68\nMadera y base de hierro.\n190 x 170 x 30 cm.";
+"EsculturaTitulo2Gonzalez"= "David González Grande\nGrave-Edad 68\nMadera y base de hierro.\n190x170x30 cm.";
 
 "Escultura2Gonzalez"= "Grave-edad 68, cruce de caminos, es una escultura realizada en madera de encina, con su base de hierro que la sujeta y soporta, la eleva, la deja suspendida en el aire. La madera acariciando el viento, pasando por ella como susurro en una vela.\n\nEstá hecha partiendo de la materia, desde el inicio de lo primitivo, desde el tronco puro de un árbol, La Encina. Sacando piezas en forma de cuña que se clavan unas contra otras ejerciendo la fuerza de su peso hacia abajo, jugando con la “grave-edad”.\n\nSujetas las piezas con tornillería de hierro viejo, oxidado, en recuerdo al material primitivo.\n\nDos piezas, en este elemento el artista juega, se divierte con las composiciones geométricas que la luz y las sombras crean al paso de ellas, en la vista horizontal.\n\nAportando el color como un elemento más a la escultura. Líneas, partes pintadas con colores puros, como el rojo, el azul, el amarillo, el verde. Sumando al tono oscuro de la propia madera.";
 
-"EsculturaTitulo3Cobertera"= "Emilio Cobertera\nSin título\nConjunto de dos piezas en acero corten y acero inoxidable.\nPieza I: 220 x 60 x 50 cm.\nPieza II: 190 x 60 x 50 cm.";
+"EsculturaTitulo3Cobertera"= "Emilio Cobertera\nSin título\nConjunto de dos piezas en acero corten y acero inoxidable.\nPieza I: 220x60x50 cm.\nPieza II: 190x60x50 cm.";
 
 "Escultura3Cobertera"= "Conjunto de dos piezas en acero corten y acero inoxidable que forman una alegoría entorno a las fisuras y vacíos que se presentan en las verdades de la razón y la lógica. Piezas a situar en un espacio natural que simbolizan, con sus líneas  marcadas y materiales acerados, el dominio de la razón monolítica sobreimpuesta a la belleza natural.";
 
@@ -195,23 +200,23 @@
 
 "Escultura4Lopez"= "Estamos ante una escultura con una prestancia robusta. De líneas geométricas donde predominan formas rectangulares, aristas, y polígonos irregulares, dentro de un espacio vertical y reducido.\n\nSe concibe como una escultura que puede evocar en sus formas a la arquitectura de una metamorfosis hermosa mediante la cual una posible figura se transforma en pieza de un posible ajedrez imaginario.\n\nPieza que puede evocar en ciertos aspectos a las aristas de algunas piezas de Brancussi, especialmente en la base o peana, dado que las formas geométricas, la robustez y el color oscuro de la misma refleja esa similitud.\n\nLa figura en sí, no tanto, dado que la irregularidad en las diferentes caras de la pieza hace diferir de esa semejanza, dando una mayor movilidad y agilidad.\n\nEscultura con nombre femenino y referencias al agua. Esta referencia se transmite en la línea del contorno de la figura, que aunque son de formas robustas tienden hacia un movimiento ligero y vertical. La referencia al agua se plasma  en el color de escultura.\n\nSe trata de un azul cielo, color que puede hacer referencia al agua, al mar, al cielo… Tiene un simbolismo de melancolía y de calma, se le asocia con la introspección y las emociones profundas.\n\nEl azul celeste es un color que, según algunas teorías, dicen ser envolvente, refrescante y tranquilizante. Asociándose a lo perceptivo. Estas características pueden ayudar al espectador a tener una visión de mayor sensibilidad hacía la obra.";
 
-"EsculturaTitulo5Menendez"= "José Luis Menéndez\nÁngel\nAcero al carbón y acero inoxidable.\n420 x 190 x 200 cm. (sin base); 300 x 200 x 200 cm.(con base)";
+"EsculturaTitulo5Menendez"= "José Luis Menéndez\nÁngel\nAcero al carbón y acero inoxidable.\n420x190x200 cm. (sin base); 300x200x200 cm.(con base)";
 
 "Escultura5Menendez"= "Yo, en todas mis esculturas, siempre intento que tenga de treinta a cuarenta interpretaciones de ideas conscientes como mínimo antes de empezar. Normalmente con el tiempo descubro más, o me las descubren los demás.\n\nYo creo que una obra de arte tiene que estar viva. Y tiene que transmitir algo a todo el mundo, o mejor dicho, a todo aquel que quiera ver. Independientemente de su cultura, de sus tradiciones o de su situación personal o social. Dicho de otro modo. Para mí, una obra de arte puede decirle algo, por supuesto algo de lo que busca, tanto a un hombre del pasado como del presente o del futuro. También le diría algo a un terrícola como a un extraterrestre, a un niño como a un adulto, etc...\n\nComo son tantos los significados el intentar mencionarlos a todos me supondría el dirigir a los observadores hacia mis significados y alejarlos de sus significados. Por eso sólo mencionaré alguno de los más evidentes u obvios.\n\nCreo que es obvio que en mis esculturas hay una idea de vuelta del ser humano a la naturaleza, de vuelta a la tierra, de recordarle de dónde viene, de dónde salen sus raíces.\n\nEl ser humano viene de la tierra, se alimenta de lo que produce ésta y al final vuelve a ella. Es por esto que es un terrícola.\n\nPero a veces se le olvida. Se construye mundos grises, artificiales, donde la naturaleza no tiene cabida. Y se le olvida la respuesta a las grandes preguntas de la humanidad. ¿Quiénes somos?, ¿De dónde venimos? y ¿A dónde vamos?\n\nEsta escultura de un ser humano que formado por raíces, sí recuerda quién es. Que subido a un árbol sabe de dónde viene. Y que con la punta de las alas de su imaginación, si sabe dónde va.\n\nLuego recordad que Ángel viene del latín “Angelus” y del griego “Ángelos” y en las dos significa mensajero.\n\nYo he creado un mensajero y vosotros crearéis vuestro mensaje.";
 
-"EsculturaTitulo6Olano"= "Ana Olano Sans\nElegía\nAcero corten.\n172 x 180 x 120 cm.";
+"EsculturaTitulo6Olano"= "Ana Olano Sans\nElegía\nAcero corten.\n172x180x120 cm.";
 
 "Escultura6Olano"= "A lo largo de mi trayectoria, el estudio de las correspondencias entre el espacio y la masa, me ha llevado a simplificar la forma, recurriendo a volúmenes constituidos por agrupaciones de módulos geométricos, relacionando unos con otros, analizando sus formas internas, sus juntas y uniones, en el intento de crear una unidad formal.\n\nElegía fue concebida e ideada para un medio rural, tratando de dar respuesta al espacio que comprenden algunas de las doce localidades de “Rincón de Ademuz” en la provincia de Valencia, donde hace unos años se convocó una Bienal Internacional de Escultura en la que participé con otros 60 artistas.\n\nElegía representa un canto triste al abandono del medio rural por el hombre. Se transcribe en la fractura o caída de un útil en desuso que antes se reafirmaba en un solo cuerpo, como yunque, como unidad-yunta en la que se engranan y conviven dos partes gemelas.";
 
-"EsculturaTitulo7Salvador"= "Salvador Fernández-Oliva\nPlanos de Corte\nAcero Corten\n210 x 260 x 90 cm.";
+"EsculturaTitulo7Salvador"= "Salvador Fernández-Oliva\nPlanos de Corte\nAcero Corten\n210x 260x90 cm.";
 
 "Escultura7Salvador"= "Planos de Corte es una obra muy robusta que juega con los distintos planos y espacios que podemos encontrar en una forma puramente geométrica. Se ha tratado de crear un espacio hueco central en la obra y construir a su alrededor toda una serie de planos que juegan entre en si. De esta manera la obra tiene muchas visiones que permiten incluso que se vea a través de la misma cambiando la perspectiva de los que vemos. Finalmente el espectador se ve forzado a indagar en la obra, a buscar nuevos huecos y espacios que se le van apareciendo a medida que estudia y contempla la obra.";
 
-"EsculturaTitulo8Salvador"= "Salvador Fernández-Oliva\nCabeza de caballo\nAcero corten.\n250 x 120 x 120 cm.";
+"EsculturaTitulo8Salvador"= "Salvador Fernández-Oliva\nCabeza de caballo\nAcero corten.\n250x120x120 cm.";
 
 "Escultura8Salvador"= "A lo largo de mi carrera como escultor, siempre he estado muy ligado al mundo del caballo. Por eso he querido reproducir una cabeza donde se pudiera observar la fuerza y belleza que se ve en los caballos. En las líneas del cuello, mediante planos rectos, he querido mostrar los nervios de una cabeza de caballo en tensión. Sin ser una obra completamente abstracta, reproduzco mediante líneas rectas y curvados de chapa todos los matices que se encuentran en una cabeza, logrando con la textura de la chapa corten  darle los matices de robustez y al mismo tiempo de elegancia a la obra.";
 
-"EsculturaTitulo9Salvador"= "Salvador Fernández-Oliva\nTorre\nAcero corten.\n300 x 120 x 120 cm.";
+"EsculturaTitulo9Salvador"= "Salvador Fernández-Oliva\nTorre\nAcero corten.\n300x120x120 cm.";
 
 "Escultura9Salvador"= "Esta obra es realmente un divertimiento basado en Planos de Corte. Si el visitante se fija, la obra consiste en una serie de piezas geométricas que caen como cubos de hielo en un vaso, de manera que aunque todas son iguales, su recreación en el espacio al caer hace que difieran unas de otras. Como he dicho, si el espectador de la obra se fija, podrá reconocer que las piezas que caen tiene la misma forma que Planos de Corte a distinta escala. Este juego con las escalas es muy interesante, ya que cogemos una obra de gran fuerza y volumen y la aligeramos hasta literalmente suspenderla en el aire que conforma la torre con las piezas cayendo unas sobre otras. Y finalmente llegamos a recrear una forma nueva, que se alza en el espacio creando uniones que si uno se fija con atención son todas distintas unas de otras.";
 

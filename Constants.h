@@ -214,5 +214,12 @@
 
 #define KVisitaSituacion NSLocalizedString(@"VisitaSituacion", @"")
 #define KVisitaRecorrido NSLocalizedString(@"VisitaRecorrido", @"")
+#define KVisitaRecorrido NSLocalizedString(@"VisitaRecorrido", @"")
+
+#define kAccesibilidadReducida NSLocalizedString(@"AccesibilidadReducida", @"")
+#define kAccesibilidadVisual NSLocalizedString(@"AccesibilidadVisual", @"")
+#define kAccesibilidadAuditiva NSLocalizedString(@"AccesibilidadAuditiva", @"")
+#define kAccesibilidadNinos NSLocalizedString(@"AccesibilidadNinos", @"")
+
 
 #endif

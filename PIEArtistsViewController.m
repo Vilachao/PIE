@@ -16,8 +16,8 @@
 
 
 @property   NSString *imageName;
-@property   NSNumber *selRow;
-@property   int intt;
+
+@property   int indice;
 /**
  *  Esto es una chapuza!! el frosteddelegate se llama dos veces en vez de una, entonces uso un contador para controlar que a la segunda se ejecute. Con tiempo mirar porque ocurre esto y arreglarlo.
  */
@@ -41,7 +41,6 @@
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
     [self.colectionView setCollectionViewLayout:flowLayout];
     [self cofigurationView];
-    self.viewImageLabel.alpha=0.5f;
     self.moviePlayer=[[MPMoviePlayerController alloc] init];
     self.moviePlayer.view.transform = CGAffineTransformConcat(self.moviePlayer.view.transform, CGAffineTransformMakeRotation(M_PI_2));
 }
@@ -50,10 +49,10 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.colectionView reloadData];
-    self.textViewArtist.text = [self textArtist:(int)self.idSelectMenu];
-    self.labelNombreArtista.text = [self nameArtist:(int)self.idSelectMenu];
+    
     NSArray *imagesBio = [PIEutil arrayFilesFolder:@"Artistas" :@[@"MiniBiografia"]];
     self.biografiaImageView.image = [PIEutil loadImage:imagesBio[self.idSelectMenu] :@[@"Artistas",@"MiniBiografia"]];
+
     self.nameFolderObraArtista = [NSString stringWithFormat:@"%ld",(long)self.idSelectMenu];
     self.arrayObras = [[NSArray alloc] initWithArray:[PIEutil arrayFilesFolder:@"Artistas"  :@[self.nameFolderObraArtista]]];
     self.arrayMiniObras = [[NSArray alloc] initWithArray:[PIEutil arrayFilesFolder:@"MiniArtistas"  :@[self.nameFolderObraArtista]]];
@@ -115,9 +114,9 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    int indice =(int)indexPath.row;
+    self.indice =(int)indexPath.row;
     if((int)self.idSelectMenu == 0){//artista 0
-        indice =(int)indexPath.row -2;
+        self.indice =(int)indexPath.row -2;
         if(indexPath.row==0||indexPath.row==1){//pulso en video (posicion 0 , 1 )
             self.moviePlayer.movieSourceType = MPMovieSourceTypeStreaming;
             NSString *videoURL = [NSString stringWithFormat:kVideoURL,self.nameFolderObraArtista];
@@ -136,9 +135,7 @@
         }
     }
     self.frostedViewController.panGestureEnabled = NO;
-    self.selRow = [[NSNumber alloc] initWithInteger:indexPath.row];
-    self.intt=[self.selRow intValue];
-    NSString *nameObra = [self.arrayObras objectAtIndex:indexPath.row];
+    NSString *nameObra = [self.arrayObras objectAtIndex:self.indice];
     self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"Artistas",self.nameFolderObraArtista]];
     self.viewImageLabel.hidden = NO;
     [self.obraImageView setHidden:false];
@@ -147,7 +144,7 @@
     animation.duration = 0.5;
     [self.obraImageView.layer addAnimation:animation forKey:nil];
     [self.viewImageLabel.layer  addAnimation:animation forKey:nil];
-    self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :indice];
+    self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :self.indice];
 }
 
 -(void)forwardAcction{
@@ -159,13 +156,13 @@
         animation.duration = 0.8;
         [self.obraImageView.layer addAnimation:animation forKey:nil];
 
-        if(self.intt<[self.arrayObras count]-1){
-            self.intt=self.intt+1;
-            NSString *nameObra = [self.arrayObras objectAtIndex:self.intt];
+        if(self.indice<[self.arrayObras count]-1){
+            self.indice=self.indice+1;
+            NSString *nameObra = [self.arrayObras objectAtIndex:self.indice];
             self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"Artistas",self.nameFolderObraArtista]];
         }
     }
-    self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :(int)self.intt];
+    self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :(int)self.indice];
 }
 
 
@@ -178,13 +175,13 @@
         animation.duration = 0.8;
         [self.obraImageView.layer addAnimation:animation forKey:nil];
         
-        if(self.intt>0){
-            self.intt= self.intt-1;
-            NSString *nameObra = [self.arrayObras objectAtIndex:self.intt];
+        if(self.indice>0){
+            self.indice= self.indice-1;
+            NSString *nameObra = [self.arrayObras objectAtIndex:self.indice];
             self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"Artistas",self.nameFolderObraArtista]];
         }
     }
-    self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :(int)self.intt];
+    self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :(int)self.indice];
 }
 
 
@@ -195,12 +192,13 @@
     }
     [self.obraImageView setHidden:true];
     [self configureGesture];
-    self.textViewArtist.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.500];
-    [self.textViewArtist setTextColor: [UIColor whiteColor]];
-    self.textViewArtist.selectable = NO;
-    self.textViewArtist.textContainerInset = UIEdgeInsetsMake( 0, 20, 10, 20);
     self.viewImageLabel.hidden = YES;
+    self.biografiaImageView.layer.masksToBounds = YES;
+    self.biografiaImageView.layer.cornerRadius = 10.0;
     [self crearDiccionarioArtistasObras];
+    [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 40, 160, 300) scrollViewSize:CGRectMake(0, 0, 200, 300) viewForCore:self.viewArtist text:[self nameArtist:(int)self.idSelectMenu]];
+    
+    [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 110, 280, 220) viewForCore:self.viewArtist text:[self textArtist:(int)self.idSelectMenu]];
 }
 
 #pragma mark -select menu
@@ -277,7 +275,6 @@
 
 -(void)configureGesture{
     
-    UISwipeGestureRecognizer *swipe;
     
     self.obraImageView.tag = 100;
     // by the way, if not using ARC, make sure to add `autorelease` to
@@ -285,59 +282,9 @@
     UITapGestureRecognizer *tap;
     tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     [self.obraImageView addGestureRecognizer:tap];
-    
-    UITapGestureRecognizer *tapText2;
-    tapText2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-    tapText2.numberOfTapsRequired =2;
-    [self.textViewArtist addGestureRecognizer:tapText2];
-    
-    UITapGestureRecognizer *tapText;
-    tapText = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-    tapText.numberOfTapsRequired =1;
-    [tapText requireGestureRecognizerToFail:tapText2];
-    [self.textViewArtist addGestureRecognizer:tapText];
-    
-    UITapGestureRecognizer *tapBiographicImage;
-    tapBiographicImage = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-    [self.biografiaImageView addGestureRecognizer:tapBiographicImage];
-    
-    
-    //    swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
-    //    swipe.direction = UISwipeGestureRecognizerDirectionLeft;
-    //    [self.obraImageView addGestureRecognizer:swipe];
-    //
-    //    swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipe:)];
-    //    swipe.direction = UISwipeGestureRecognizerDirectionRight;
-    //    [self.obraImageView addGestureRecognizer:swipe];
-    //
 }
 
-//-(void)handleSwipe:(UISwipeGestureRecognizer *)gesture{
-//    if(gesture.direction == UISwipeGestureRecognizerDirectionLeft){
-//        [self forwardAcction];
-//    }else if(gesture.direction == UISwipeGestureRecognizerDirectionRight){
-//        [self backAction];
-//    }
-//}
-
 -(void)handleTap:(UITapGestureRecognizer *)gesture{
-    
-//    if(gesture.view.tag == 91)
-//    {
-//        if(gesture.numberOfTapsRequired ==2){
-//            if(self.biografiaImageView.hidden == YES)
-//                [self hideBackgroundImage:false];
-//            else
-//                [self hideBackgroundImage:true];
-//        }else if(self.biografiaImageView.hidden == YES){
-//            [self hideBackgroundImage:false];
-//        }else{
-//            [self showBackgroundImage:true];
-//        }
-//    }//push in background image
-//    else    if(gesture.view.tag == 90){
-//        [self showBackgroundImage:false];
-//    }
     self.frostedViewController.panGestureEnabled = YES;
     [self.obraImageView setHidden:true];
     self.viewImageLabel.hidden = YES;
@@ -386,17 +333,14 @@
 
 -(void)showBackgroundImage:(BOOL)show{
     if(show){
-        self.textViewArtist.hidden = YES;
-        self.colectionView.hidden = YES;
+        self.viewArtist.hidden = YES;
     }else{
-        self.textViewArtist.hidden = NO;
-        self.colectionView.hidden = NO;
+        self.viewArtist.hidden = NO;
     }
     CATransition *animation = [CATransition animation];
     animation.type = kCATransitionFade;
-    animation.duration = 0.5;
-    [self.textViewArtist.layer addAnimation:animation forKey:nil];
-    [self.colectionView.layer addAnimation:animation forKey:nil];
+    animation.duration = 0.3;
+    [self.viewArtist.layer addAnimation:animation forKey:nil];
 }
 
 -(void)hideBackgroundImage:(BOOL)hide{

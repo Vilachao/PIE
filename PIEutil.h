@@ -8,6 +8,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <FTCoreTextView.h>
 
 @interface PIEutil : NSObject
 
@@ -58,5 +59,24 @@
  *  @param a value for showHome 0 not show 1 show
  */
 + (void )changeShowHOME:(int)a;
+
+
+/**
+ *  Create CoreText
+ *
+ *  @param positionCoreText position coretext
+ *  @param scrollViewSize   positionScroll
+ *  @param view             view
+ *  @param text             text
+ */
+-(FTCoreTextView *)createTextSize:(CGRect)positionCoreText scrollViewSize:(CGRect)scrollViewSize viewForCore:(UIView *)view text:(NSString *)text;
+
+/**
+ *  Styles for textViews
+ *
+ *  @return result formated text
+ */
+- (NSArray *)coreTextStyle;
+
 
 @end
