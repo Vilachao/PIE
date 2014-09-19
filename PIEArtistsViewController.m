@@ -83,7 +83,7 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     
-    return [self.arrayObras count];
+    return [self.arrayMiniObras count];
     
 }
 

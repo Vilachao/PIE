@@ -30,6 +30,7 @@ typedef enum ShowViewHome : NSUInteger {
 @property (weak, nonatomic) IBOutlet UIView *homeView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageFullGalleryCollection;
 
+- (IBAction)tapGesture:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *queesView;
 @property (weak, nonatomic) IBOutlet UIView *viewNSG;
 
