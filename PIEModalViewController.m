@@ -26,11 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.textViewInfo.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.500];
-    [self.textViewInfo setTextColor: [UIColor whiteColor]];
-    self.textViewInfo.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
-    self.textViewInfo.selectable = NO;
-    self.textViewInfo.text = self.texto;
+   self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240,1100) scrollViewSize:CGRectMake(0, 50, 320, 425) viewForCore:self.view text:self.texto];
+    self.text.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.500];
+//.text setTextColor: [UIColor whiteColor]];
+//    self.textViewInfo.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
+//    self.textViewInfo.selectable = NO;
+//    self.textViewInfo.text = self.texto;
     [self.close setTitle:kbotonCerrar forState:UIControlStateNormal];
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"NewText" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(texto:) name:@"NewText" object:nil];
@@ -39,7 +40,7 @@
 }
 
 -(void)texto:(NSNotification *)notification{
-    self.textViewInfo.text = self.texto;
+    self.text.text = self.texto;
 }
 
 - (void)didReceiveMemoryWarning

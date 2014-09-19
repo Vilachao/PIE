@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FTCoreTextView.h>
+#import <FTCoreTextStyle.h>
+#import "PIEutil.h"
 
 @interface PIEModalViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *textViewInfo;
-
+@property FTCoreTextView *text;
 @property NSString * texto;
 
 -(IBAction)close:(id)sender ;
