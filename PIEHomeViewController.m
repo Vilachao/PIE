@@ -367,23 +367,10 @@
     }else if(self.idSelectMenu ==1){
         self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240,1100) scrollViewSize:CGRectMake(0, 0, 320, 425) viewForCore:self.ayuntamientoView text:kpie_ayuntamiento];
     }else if(self.idSelectMenu ==2){
-#warning TODO HAY QUE METER LOS TEXTOS DE CRÉDITOS 
-        
-        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240,1000) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_creditos_newSpace];
-        
-        UIImageView *barraSeparacion =[[UIImageView alloc] initWithFrame:CGRectMake(20,350,280,5)];
-        barraSeparacion.image=[UIImage imageNamed:@"BarraSeparacion"];
-        [self.view addSubview:barraSeparacion];
-        
-        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 350, 240,1000) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_creditos_ayuntamiento];
-        
-        UIImageView *barraSeparacion2 =[[UIImageView alloc] initWithFrame:CGRectMake(20,600,280,5)];
-        barraSeparacion2.image=[UIImage imageNamed:@"BarraSeparacion"];
-        [self.view addSubview:barraSeparacion2];
-        
-        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 600, 240,1000) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_creditos_plaza];
-    }
-    
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 320) viewForCore:self.queesView text:kpie_creditos_newSpace];
+
+        //[[PIEutil sharedInstance]createTextSizeAyuntamietno:CGRectMake(0, 0, 320, 100) reateTextSize2:CGRectMake(0, 100, 320, 100) reateTextSize3:CGRectMake(0, 200, 320, 100) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_creditos_newSpace text2:kpie_creditos_ayuntamiento text3:kpie_creditos_plaza];
+         }
 }
 
 - (void)viewDidLayoutSubviews

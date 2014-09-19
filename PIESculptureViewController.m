@@ -55,8 +55,8 @@
 -(void)viewWillAppear:(BOOL)animated{
     
     [self configurationView];
-    [[PIEutil sharedInstance] createTextSize:CGRectMake(100, 0, 180,200) scrollViewSize:CGRectMake(0, 0, 320, 200) viewForCore:self.viewEscultura text:self.esculturaTituloTextos[self.idEscultura]];
-    [[PIEutil sharedInstance] createTextSize:CGRectMake(100, 0, 180,3000) scrollViewSize:CGRectMake(100, 100, 320, 180) viewForCore:self.viewEscultura text:self.esculturaTextos[self.idEscultura]];
+    [[PIEutil sharedInstance] createTextSize:CGRectMake(100, 0, 180,200) scrollViewSize:CGRectMake(5, 0, 320, 200) viewForCore:self.viewEscultura text:self.esculturaTituloTextos[self.idEscultura]];
+    [[PIEutil sharedInstance] createTextSize:CGRectMake(0, 0, 180,3000) scrollViewSize:CGRectMake(100, 100, 320, 180) viewForCore:self.viewEscultura text:self.esculturaTextos[self.idEscultura]];
 
 }
 

@@ -86,6 +86,28 @@ static int showHOME;
 
 }
 
+-(void)createTextSizeAyuntamietno:(CGRect)positionCoreText  reateTextSize2:(CGRect)positionCoreText2 reateTextSize3:(CGRect)positionCoreText3 scrollViewSize:(CGRect)scrollViewSize viewForCore:(UIView *)view text:(NSString *)text text2:(NSString *)text2 text3:(NSString *)text3{
+
+    UIScrollView * scrollView = [[UIScrollView alloc]initWithFrame:scrollViewSize];
+    [view addSubview:scrollView];
+    FTCoreTextView *coreTextView1= [self createCoreText:scrollView :text :positionCoreText];
+    FTCoreTextView *coreTextView2= [self createCoreText:scrollView :text2 :positionCoreText2 ];
+    FTCoreTextView *coreTextView3= [self createCoreText:scrollView :text3 :positionCoreText3];
+    [scrollView setContentSize:CGSizeMake(CGRectGetWidth(coreTextView1.frame)+CGRectGetWidth(coreTextView2.frame)+CGRectGetWidth(coreTextView3.frame), CGRectGetMaxY(coreTextView1.frame)+CGRectGetMaxY(coreTextView2.frame)+CGRectGetMaxY(coreTextView3.frame))];
+    [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 0)        animated:YES];
+}
+
+-(FTCoreTextView *)createCoreText:(UIScrollView *)scroll :(NSString *)text :(CGRect)pos{
+    
+    FTCoreTextView * coreTextView = [[FTCoreTextView alloc]initWithFrame:pos];
+    [scroll addSubview:coreTextView];
+    coreTextView.text =text;
+    coreTextView.backgroundColor = [UIColor clearColor];
+    coreTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [coreTextView fitToSuggestedHeight];
+    [coreTextView addStyles:[self coreTextStyle]];
+    return coreTextView;
+}
 
 
 - (NSArray *)coreTextStyle
