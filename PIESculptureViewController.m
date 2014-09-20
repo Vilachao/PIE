@@ -74,6 +74,7 @@
 #pragma mark -confi view
 
 -(void)configurationView{
+    if(self.idEscultura<=9){
     NSArray *components = [self.idCode componentsSeparatedByString:@"."];
 
     self.indiceObra = 0;
@@ -100,6 +101,9 @@
     self.imageViewArtist.image = [PIEutil loadImage:imagesBio[self.idArtista]  :@[@"Artistas",@"MiniBiografia"]];
     self.imageViewArtist.layer.masksToBounds = YES;
     self.imageViewArtist.layer.cornerRadius = 10.0;
+    }else{
+        [self closeButton:nil];
+    }
 }
 
 
@@ -185,8 +189,13 @@
 
 -(NSInteger)convierteID:(NSInteger )esculturaID{
     if(esculturaID == 7 || esculturaID == 8 || esculturaID == 9){
-        return 7;
+        return 3;
     }
+    if(esculturaID == 2)   return 4;
+    if(esculturaID == 3)   return 2;
+    if(esculturaID == 4)   return 5;
+    if(esculturaID == 5)   return 6;
+    if(esculturaID == 6)   return 7;
     return esculturaID;
 }
 

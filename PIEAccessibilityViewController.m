@@ -41,7 +41,7 @@
 -(void)viewDidAppear:(BOOL)animated{
 
     [self.view endEditing:YES];
-    [self.frostedViewController.view endEditing:YES];
+   // [self.frostedViewController.view endEditing:YES];
     self.frostedViewController.delegate=self;
     [self.frostedViewController presentMenuViewController];
 
@@ -222,6 +222,9 @@
 }
 
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.frostedViewController hideMenuViewController];
+}
 
 - (void)frostedViewController:(REFrostedViewController *)frostedViewController didRecognizePanGesture:(UIPanGestureRecognizer *)recognizer{
 //    if([recognizer locationInView:self.view].y > [[UIScreen mainScreen] bounds].size.height*1/2 )
@@ -236,7 +239,7 @@
 
 - (IBAction)home_showMenuRefrosted:(id)sender {
     [self.view endEditing:YES];
-    [self.frostedViewController.view endEditing:YES];
+   // [self.frostedViewController.view endEditing:YES];
     [self.frostedViewController presentMenuViewController];
 }
 @end

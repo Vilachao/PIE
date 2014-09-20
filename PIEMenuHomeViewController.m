@@ -213,6 +213,5 @@ static int menuSelect;
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewControlle{
     menuSelect = tabBarController.selectedIndex;
     [self viewWillAppear:NO];
-    [PIEutil changeShowHOME:2];
 }
 @end

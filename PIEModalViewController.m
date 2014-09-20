@@ -26,8 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240,1100) scrollViewSize:CGRectMake(0, 50, 320, 425) viewForCore:self.view text:self.texto];
-    self.text.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.500];
+   self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240,1100) scrollViewSize:CGRectMake(0, 50, 320, 425) viewForCore:self.modalView text:self.texto];
+
 //.text setTextColor: [UIColor whiteColor]];
 //    self.textViewInfo.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
 //    self.textViewInfo.selectable = NO;

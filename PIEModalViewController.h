@@ -19,6 +19,7 @@
 
 -(IBAction)close:(id)sender ;
 @property (weak, nonatomic) IBOutlet UIButton *close;
+@property (weak, nonatomic) IBOutlet UIView *modalView;
 
 
 @end
