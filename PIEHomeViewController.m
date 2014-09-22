@@ -55,7 +55,7 @@
 
 - (void)viewDidLoad
 {
-
+    
     self.controlDelegatePan = 0;
     
     [super viewDidLoad];
@@ -74,7 +74,14 @@
    }
 
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.frostedViewController hideMenuViewController];
+}
+
 -(void)viewWillAppear:(BOOL)animated{
+    if(self.idSelectMenu==0){ self.queesView.hidden = NO; self.ayuntamientoView.hidden= YES;self.creditosView.hidden= YES;}
+    else   if(self.idSelectMenu==1){ self.queesView.hidden = YES; self.ayuntamientoView.hidden= NO;self.creditosView.hidden= YES;}
+    else   if(self.idSelectMenu==2){ self.queesView.hidden = YES; self.ayuntamientoView.hidden= YES;self.creditosView.hidden= NO;}
 
 }
 
@@ -84,32 +91,17 @@
 //        [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt]  viewTo:self.homeView fromX:320 toX:0 time:0];
 //        [PIEutil changeShowHOME:0];
 //        [self.frostedViewController dismissViewControllerAnimated:NO completion:nil];
- 
-        [self.view endEditing:YES];
-        [self.frostedViewController.view endEditing:YES];
-        self.frostedViewController.delegate=self;
-        [self.frostedViewController presentMenuViewController];        
-        if(self.idSelectMenu>self.idSelectAnt)
-            [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt] viewTo:[self viewSelect:self.idSelectMenu] fromX:-320 toX:0 time:0.4];
-        else if(self.idSelectAnt<self.idSelectAnt)
-            [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt] viewTo:[self viewSelect:self.idSelectMenu] fromX:0 toX:320 time:0.4];
-        
-        if(self.idSelectMenu==self.idSelectAnt){
-            [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt] viewTo:[self viewSelect:self.idSelectMenu] fromX:0 toX:0 time:0];
-        }
-    
-        self.idSelectAnt = self.idSelectMenu;
-    
-}
 
--(void)viewWillDisappear:(BOOL)animated{
-    [PIEutil changeShowHOME:2];
-    [self.frostedViewController dismissViewControllerAnimated:YES completion:nil];
+//    [self.frostedViewController.view endEditing:YES];
+    self.frostedViewController.delegate=self;
+    [self.frostedViewController presentMenuViewController];
+
 }
 
 - (IBAction)home_showMenuRefrosted:(id)sender {
     [self.view endEditing:YES];
-    [self.frostedViewController.view endEditing:YES];
+   // [self.frostedViewController.view endEditing:YES];
+    [self.frostedViewController dismissViewControllerAnimated:NO completion:nil];
     [self.frostedViewController presentMenuViewController];
 }
 

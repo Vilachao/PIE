@@ -128,7 +128,13 @@ static int showHOME;
     titleStyle.color = [UIColor whiteColor];
 	titleStyle.textAlignment = FTCoreTextAlignementLeft;
 	[result addObject:titleStyle];
-	
+
+    FTCoreTextStyle *titleStyle2 = [FTCoreTextStyle styleWithName:@"title2"];
+	titleStyle2.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:11.f];
+    titleStyle2.color = [UIColor whiteColor];
+	titleStyle.textAlignment = FTCoreTextAlignementLeft;
+	[result addObject:titleStyle2];
+
     //  Image will be centered
 	FTCoreTextStyle *imageStyle = [FTCoreTextStyle new];
 	imageStyle.name = FTCoreTextTagImage;

@@ -66,12 +66,14 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [self.view endEditing:YES];
-    [self.frostedViewController.view endEditing:YES];
+   // [self.frostedViewController.view endEditing:YES];
     self.frostedViewController.delegate=self;
     [self.frostedViewController presentMenuViewController];
 }
 
-
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.frostedViewController hideMenuViewController];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -83,7 +85,7 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     
-    return [self.arrayObras count];
+    return [self.arrayMiniObras count];
     
 }
 
@@ -327,7 +329,7 @@
 
 - (IBAction)home_showMenuRefrosted:(id)sender {
     [self.view endEditing:YES];
-    [self.frostedViewController.view endEditing:YES];
+  //  [self.frostedViewController.view endEditing:YES];
     [self.frostedViewController presentMenuViewController];
 }
 

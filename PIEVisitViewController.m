@@ -38,24 +38,17 @@
 -(void)viewDidAppear:(BOOL)animated{
 
         [self.view endEditing:YES];
-        [self.frostedViewController.view endEditing:YES];
+     //   [self.frostedViewController.view endEditing:YES];
         self.frostedViewController.delegate=self;
         [self.frostedViewController presentMenuViewController];
 
-    if(self.idSelectMenu>self.idSelectAnt)
-        [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt] viewTo:[self viewSelect:self.idSelectMenu] fromX:-320 toX:0 time:0.4];
-    else if(self.idSelectAnt<self.idSelectAnt)
-        [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt] viewTo:[self viewSelect:self.idSelectMenu] fromX:0 toX:320 time:0.4];
-    
-    if(self.idSelectMenu==self.idSelectAnt){
-        [PIEutil moveViewFrom:[self viewSelect:self.idSelectAnt] viewTo:[self viewSelect:self.idSelectMenu] fromX:0 toX:0 time:0];
-        
-    }
-    self.idSelectAnt = self.idSelectMenu;
-    
-    
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    if(self.idSelectMenu==0){ self.viewAntesVisita.hidden = NO; self.viewDespuesVisita.hidden= YES;}
+    else   if(self.idSelectMenu==1){ self.viewAntesVisita.hidden = YES; self.viewDespuesVisita.hidden= NO;}
+
+}
 
 
 - (void)didReceiveMemoryWarning
@@ -159,10 +152,13 @@
     [UIView commitAnimations];
 }
 
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.frostedViewController hideMenuViewController];
+}
 
 - (IBAction)home_showMenuRefrosted:(id)sender {
     [self.view endEditing:YES];
-    [self.frostedViewController.view endEditing:YES];
+  //  [self.frostedViewController.view endEditing:YES];
     [self.frostedViewController presentMenuViewController];
 }
 
