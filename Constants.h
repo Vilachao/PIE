@@ -59,8 +59,10 @@
 #define kmenuAccesibilidadReducidaVisual NSLocalizedString(@"menuAccesibilidadReducidaVisual", @"")
 
 //HOME
+#define kpie_ayuntamientoTitulo NSLocalizedString(@"pie_ayuntamientoTitulo", @"")
 #define kpie_ayuntamiento NSLocalizedString(@"pie_ayuntamiento", @"")
 #define kpie_quees NSLocalizedString(@"pie_quees", @"")
+#define kpie_queesTitulo NSLocalizedString(@"pie_queesTitulo", @"")
 #define kpie_creditos_ayuntamiento NSLocalizedString(@"pie_creditos_ayuntamiento", @"")
 #define kpie_creditos_plaza NSLocalizedString(@"pie_creditos_plaza", @"")
 #define kpie_creditos_newSpace NSLocalizedString(@"pie_creditos_newSpace", @"")
@@ -71,7 +73,7 @@
 #define kpie_artista2 NSLocalizedString(@"pie_artista2", @"")
 #define kpie_artista3 NSLocalizedString(@"pie_artista3", @"")
 #define kpie_artista4 NSLocalizedString(@"pie_artista4", @"")
-#define kpie_artista5 NSLocalizedString(@"pie_artista4", @"")
+#define kpie_artista5 NSLocalizedString(@"pie_artista5", @"")
 #define kpie_artista6 NSLocalizedString(@"pie_artista6", @"")
 #define kpie_artista7 NSLocalizedString(@"pie_artista7", @"")
 #define kpie_artista8 NSLocalizedString(@"pie_artista8", @"")
@@ -94,6 +96,13 @@
 #define kVisitaQR NSLocalizedString(@"VisitaQR", @"")
 #define kVisitaNormasParque NSLocalizedString(@"VisitaNormasParque", @"")
 #define kVisitaTextoComoLlegar NSLocalizedString(@"VisitaTextoComoLlegar", @"")
+
+#define kVisitaTextoAntesTitulo NSLocalizedString(@"VisitaTextoAntesVisitaTitulo", @"")
+#define kVisitaTextoHorarioTitulo NSLocalizedString(@"VisitaTextoHorarioTitulo", @"")
+#define kVisitaQRTitulo NSLocalizedString(@"VisitaQRTitulo", @"")
+#define kVisitaNormasParqueTitulo NSLocalizedString(@"VisitaNormasParqueTitulo", @"")
+#define kVisitaTextoComoLlegarTitulo NSLocalizedString(@"VisitaTextoComoLlegarTitulo", @"")
+
 #define kVisitabotonAntes NSLocalizedString(@"botonAntes", @"")
 #define kVisitabotonHorario NSLocalizedString(@"botonHorario", @"")
 #define kVisitabotonComoLLegar NSLocalizedString(@"botonComoLLegar", @"")

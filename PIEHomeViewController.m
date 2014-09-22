@@ -355,9 +355,11 @@
 {
 //Para cumplir con los anchos en todos lados 40, 240 en el primer parámetro
     if(self.idSelectMenu ==0){
-        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 320) viewForCore:self.queesView text:kpie_quees];
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 50) viewForCore:self.queesView text:kpie_queesTitulo];
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 50, 320, 270) viewForCore:self.queesView text:kpie_quees];
     }else if(self.idSelectMenu ==1){
-        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240,1100) scrollViewSize:CGRectMake(0, 0, 320, 425) viewForCore:self.ayuntamientoView text:kpie_ayuntamiento];
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 50) viewForCore:self.ayuntamientoView text:kpie_ayuntamientoTitulo];
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 50, 320, 420) viewForCore:self.ayuntamientoView text:kpie_ayuntamiento];
     }else if(self.idSelectMenu ==2){
         self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 20, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_creditos_newSpace];
 

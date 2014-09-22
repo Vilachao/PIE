@@ -15,7 +15,10 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *textViewInfo;
 @property FTCoreTextView *text;
+@property FTCoreTextView *textTitulo;
+
 @property NSString * texto;
+@property NSString * textoTitulo;
 
 -(IBAction)close:(id)sender ;
 @property (weak, nonatomic) IBOutlet UIButton *close;

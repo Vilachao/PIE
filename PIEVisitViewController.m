@@ -19,6 +19,7 @@
 @property (nonatomic, strong) PIEModalViewController *modalView;
 @property int idSelectAnt;
 @property    NSArray *textModals;
+@property    NSArray *textModalsTitulo;
 @property    NSArray *positions;
 @property    UIButton *botonAnteriorSeleccionado;
 @end
@@ -60,7 +61,9 @@
 -(IBAction)buttonAction:(id)sender{
     UIButton * button = (UIButton *)sender;
     NSString *textModal = [self.textModals objectAtIndex:button.tag-10];
+    NSString *textModalTitulo = [self.textModals objectAtIndex:button.tag-10];
     self.modalView.texto = textModal ;
+    self.modalView.textoTitulo = textModalTitulo;
     [[NSNotificationCenter defaultCenter]postNotificationName:@"NewText" object:nil];
     _popup = [AFPopupView popupWithView:self.modalView.view];
     [_popup show];
@@ -81,6 +84,8 @@
     self.modalView = [storyboard instantiateViewControllerWithIdentifier:@"Modal"];
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"HideAFPopup" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(hide) name:@"HideAFPopup" object:nil];
+    self.textModalsTitulo = @[kVisitaTextoAntesTitulo,kVisitaTextoHorarioTitulo,kVisitaTextoComoLlegarTitulo,kVisitaNormasParqueTitulo,kVisitaQRTitulo];
+    
       self.textModals = @[kVisitaTextoAntes,kVisitaTextoHorario,kVisitaTextoComoLlegar,kVisitaNormasParque,kVisitaQR,kVisitaMapa];
     [self.btnLlegar setTitle:kVisitabotonComoLLegar forState:UIControlStateNormal];
     [self.btnNormas setTitle:kVisitabotonnormas forState:UIControlStateNormal];
