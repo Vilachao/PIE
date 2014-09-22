@@ -20,6 +20,7 @@
 - (IBAction)tabBarAction4:(id)sender;
 - (IBAction)tabBarAction5:(id)sender;
 - (IBAction)socialNetworks:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *tabBarView;
 
 
 @end
