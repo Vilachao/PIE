@@ -108,7 +108,7 @@
 #define kVisitabotonComoLLegar NSLocalizedString(@"botonComoLLegar", @"")
 #define kVisitabotonnormas NSLocalizedString(@"botonnormas", @"")
 #define kVisitabotonUsoQR NSLocalizedString(@"botonUsoQR", @"")
-
+#define kVisitabotonMasInformacion NSLocalizedString(@"botonMasInformacion", @"")
 //Mapa
 
 #define kVisitaMapa NSLocalizedString(@"VisitaMapa", @"")
@@ -124,6 +124,7 @@
 #define kVisitaDestino8 NSLocalizedString(@"VisitaDestino8", @"")
 #define kVisitaDestino9 NSLocalizedString(@"VisitaDestino9", @"")
 #define kVisitaDestino10 NSLocalizedString(@"VisitaDestino10", @"")
+#define kVisitaMapaTitulo NSLocalizedString(@"VisitaMapaTitulo", @"")
 
 //ACCESIBILIDAD
 #define kAccesibilidad NSLocalizedString(@"Accesibilidad", @"")
@@ -230,5 +231,9 @@
 #define kAccesibilidadAuditiva NSLocalizedString(@"AccesibilidadAuditiva", @"")
 #define kAccesibilidadNinos NSLocalizedString(@"AccesibilidadNinos", @"")
 
+#define kAccesibilidadReducidaTitulo NSLocalizedString(@"AccesibilidadReducidaTitulo", @"")
+#define kAccesibilidadVisualTitulo NSLocalizedString(@"AccesibilidadVisualTitulo", @"")
+#define kAccesibilidadAuditivaTitulo NSLocalizedString(@"AccesibilidadAuditivaTitulo", @"")
+#define kAccesibilidadNinosTitulo NSLocalizedString(@"AccesibilidadNinosTitulo", @"")
 
 #endif

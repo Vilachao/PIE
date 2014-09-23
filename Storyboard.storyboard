@@ -322,7 +322,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1k-Qc-BG4">
-                                        <rect key="frame" x="40" y="62" width="240" height="317"/>
+                                        <rect key="frame" x="40" y="88" width="240" height="281"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -331,10 +331,10 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIo-tE-LhZ">
-                                        <rect key="frame" x="78" y="358" width="163" height="51"/>
+                                        <rect key="frame" x="72" y="358" width="176" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="Jugar" backgroundImage="cerrarBackGround">
+                                        <state key="normal" title="Juego para niños" backgroundImage="cerrarBackGround">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -342,6 +342,15 @@
                                             <action selector="jugar:" destination="OZ8-ae-sI7" eventType="touchUpInside" id="0g4-ba-U9c"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGt-oq-DfU">
+                                        <rect key="frame" x="40" y="39" width="240" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                             </view>
@@ -365,7 +374,8 @@
                         <outlet property="accessibility_collectionViewImages" destination="cgR-2a-86l" id="qvL-1R-YI7"/>
                         <outlet property="buttonReiniciar" destination="y0v-eu-KWG" id="C9D-Nq-2dC"/>
                         <outlet property="juegoButton" destination="dIo-tE-LhZ" id="swf-j8-szM"/>
-                        <outlet property="textViewAccesibility" destination="m1k-Qc-BG4" id="Ze5-69-oGN"/>
+                        <outlet property="textViewAccesibility" destination="m1k-Qc-BG4" id="q0M-s8-koQ"/>
+                        <outlet property="textViewAccesibilityTitulo" destination="XGt-oq-DfU" id="aQW-8t-rMA"/>
                         <outlet property="viewGame" destination="jlT-AH-YwS" id="Fos-ea-Gkc"/>
                     </connections>
                 </viewController>
@@ -438,7 +448,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7s-UB-IXg">
+                                    <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7s-UB-IXg">
                                         <rect key="frame" x="20" y="149" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.20399999999999999" alpha="0.75" colorSpace="calibratedWhite"/>
@@ -451,7 +461,7 @@
                                             <action selector="buttonAction:" destination="9WN-Pa-fVB" eventType="touchUpInside" id="rsZ-Cb-q6p"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iH-E9-dok">
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iH-E9-dok">
                                         <rect key="frame" x="20" y="118" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.20399999999999999" alpha="0.75" colorSpace="calibratedWhite"/>
@@ -464,7 +474,7 @@
                                             <action selector="buttonAction:" destination="9WN-Pa-fVB" eventType="touchUpInside" id="d8m-5U-ceI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu5-mi-Ryb">
+                                    <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu5-mi-Ryb">
                                         <rect key="frame" x="20" y="180" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.20399999999999999" alpha="0.75" colorSpace="calibratedWhite"/>
@@ -477,7 +487,7 @@
                                             <action selector="buttonAction:" destination="9WN-Pa-fVB" eventType="touchUpInside" id="eqW-gb-UET"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymA-6c-HXV">
+                                    <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymA-6c-HXV">
                                         <rect key="frame" x="20" y="211" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.20399999999999999" alpha="0.75" colorSpace="calibratedWhite"/>
@@ -490,7 +500,7 @@
                                             <action selector="buttonAction:" destination="9WN-Pa-fVB" eventType="touchUpInside" id="hqQ-bw-anF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgd-cf-cbe">
+                                    <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgd-cf-cbe">
                                         <rect key="frame" x="20" y="242" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.20399999999999999" alpha="0.75" colorSpace="calibratedWhite"/>
@@ -550,7 +560,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0p-fz-wHO">
-                                        <rect key="frame" x="0.0" y="143" width="320" height="295"/>
+                                        <rect key="frame" x="0.0" y="125" width="320" height="341"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <subviews>
                                             <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A07-88-7uv">
@@ -563,6 +573,17 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="botonEsculturaAction:" destination="9WN-Pa-fVB" eventType="touchUpInside" id="vXt-jL-GtW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-dk-GXC">
+                                                <rect key="frame" x="72" y="270" width="176" height="51"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button" backgroundImage="cerrarBackGround">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonAction:" destination="9WN-Pa-fVB" eventType="touchUpInside" id="3od-4L-o60"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -600,6 +621,7 @@
                         <outlet property="botonEscultura" destination="A07-88-7uv" id="df2-C6-9D8"/>
                         <outlet property="btnAntes" destination="9iH-E9-dok" id="MF5-Ux-f58"/>
                         <outlet property="btnLlegar" destination="qu5-mi-Ryb" id="Z5f-4J-Zbr"/>
+                        <outlet property="btnMasInformacion" destination="WGh-dk-GXC" id="Q5g-iy-bdU"/>
                         <outlet property="btnNormas" destination="ymA-6c-HXV" id="Mbp-Vs-nyE"/>
                         <outlet property="btnPrecios" destination="f7s-UB-IXg" id="Jbe-s3-eWy"/>
                         <outlet property="btnUsar" destination="qgd-cf-cbe" id="wl7-RM-yge"/>
@@ -701,7 +723,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>

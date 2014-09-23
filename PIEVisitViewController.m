@@ -87,7 +87,7 @@
        self.modalView = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"Modal"];
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"HideAFPopup" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(hide) name:@"HideAFPopup" object:nil];
-    self.textModalsTitulo = @[kVisitaTextoAntesTitulo,kVisitaTextoHorarioTitulo,kVisitaTextoComoLlegarTitulo,kVisitaNormasParqueTitulo,kVisitaQRTitulo];
+    self.textModalsTitulo = @[kVisitaTextoAntesTitulo,kVisitaTextoHorarioTitulo,kVisitaTextoComoLlegarTitulo,kVisitaNormasParqueTitulo,kVisitaQRTitulo,kVisitaMapaTitulo];
     
       self.textModals = @[kVisitaTextoAntes,kVisitaTextoHorario,kVisitaTextoComoLlegar,kVisitaNormasParque,kVisitaQR,kVisitaMapa];
     [self.btnLlegar setTitle:kVisitabotonComoLLegar forState:UIControlStateNormal];
@@ -95,15 +95,17 @@
     [self.btnPrecios setTitle:kVisitabotonHorario forState:UIControlStateNormal];
     [self.btnUsar setTitle:kVisitabotonUsoQR forState:UIControlStateNormal];
     [self.btnAntes setTitle:kVisitabotonAntes forState:UIControlStateNormal];
-
+    [self.btnMasInformacion setTitle:kVisitabotonMasInformacion forState:UIControlStateNormal];
     NSArray *titles = @[KvisitaDestinoPrincipal,kVisitaDestino0,kVisitaDestino1,kVisitaDestino2,kVisitaDestino4,kVisitaDestino5,kVisitaDestino6,kVisitaDestino7,kVisitaDestino8,kVisitaDestino9,kVisitaDestino10];
 
     [self.botonEscultura setTitle:titles[0] forState:UIControlStateNormal];
+    [self.botonEscultura setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     for(int i =1; i<11;i++)
     {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
 
+        
         button.titleLabel.font =  [UIFont fontWithName:@"Helvetica-Bold" size:11] ;
         [button addTarget:self
                    action:@selector(botonEsculturaAction:)
@@ -111,13 +113,11 @@
         [button setTitle:titles[i] forState:UIControlStateNormal];
         button.frame = CGRectMake(self.botonEscultura.frame.origin.x, self.botonEscultura.frame.origin.y+22*i, self.botonEscultura.frame.size.width,self.botonEscultura.frame.size.height);
         button.tag = self.botonEscultura.tag+i;
+
         [button setTitleColor:[UIColor colorWithRed:0.247 green:0.522 blue:0.565 alpha:1.000] forState:UIControlStateNormal];
         [self.scrollViewButtons addSubview:button];
     }
     
-    NSLog(@"%f",self.markImageView.frame.origin.x);
-    NSLog(@"%f",self.markImageView.frame.origin.y);
-//    self.positions = @[[NSValue valueWithCGPoint:CGPointMake(26, 77)],[NSValue valueWithCGPoint:CGPointMake(39, 77)],[NSValue valueWithCGPoint:CGPointMake(75, 74)],[NSValue valueWithCGPoint:CGPointMake(99, 74)],[NSValue valueWithCGPoint:CGPointMake(117, 70)],[NSValue valueWithCGPoint:CGPointMake(129,69)],[NSValue valueWithCGPoint:CGPointMake(132,73)],[NSValue valueWithCGPoint:CGPointMake(143,70)],[NSValue valueWithCGPoint:CGPointMake(165,72)],[NSValue valueWithCGPoint:CGPointMake(173,72)],[NSValue valueWithCGPoint:CGPointMake(203,72)],[NSValue valueWithCGPoint:CGPointMake(216,72)],[NSValue valueWithCGPoint:CGPointMake(223,71)]];
     self.positions = @[[NSValue valueWithCGPoint:CGPointMake(132, 72)],[NSValue valueWithCGPoint:CGPointMake(24, 77)],[NSValue valueWithCGPoint:CGPointMake(73, 73)],[NSValue valueWithCGPoint:CGPointMake(99, 74)],[NSValue valueWithCGPoint:CGPointMake(128, 69)],[NSValue valueWithCGPoint:CGPointMake(143,71)],[NSValue valueWithCGPoint:CGPointMake(165,72)],[NSValue valueWithCGPoint:CGPointMake(173,72)],[NSValue valueWithCGPoint:CGPointMake(203,72)],[NSValue valueWithCGPoint:CGPointMake(216,72)],[NSValue valueWithCGPoint:CGPointMake(225,71)]];
     
     self.botonEscultura.backgroundColor = [UIColor colorWithRed:0.247 green:0.522 blue:0.565 alpha:1.000];
@@ -147,9 +147,13 @@
 - (IBAction)botonEsculturaAction:(id)sender {
     
     UIButton *button = (UIButton *)sender;
+
     button.backgroundColor = [UIColor colorWithRed:0.247 green:0.522 blue:0.565 alpha:1.000];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.botonAnteriorSeleccionado.backgroundColor = [UIColor clearColor];
+    if(self.botonAnteriorSeleccionado == self.botonEscultura)
+        [self.botonAnteriorSeleccionado setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    else
     [self.botonAnteriorSeleccionado setTitleColor:[UIColor colorWithRed:0.247 green:0.522 blue:0.565 alpha:1.000] forState:UIControlStateNormal];
     self.botonAnteriorSeleccionado = button;
     [UIView beginAnimations:@"MoveMark" context:nil];

@@ -144,14 +144,7 @@
 
 }
 
-- (void)mailComposeController:(MFMailComposeViewController*)controller
-          didFinishWithResult:(MFMailComposeResult)result
-                        error:(NSError*)error
-{
-    [self dismissViewControllerAnimated:YES completion:^{
-    }];
-    return;
-}
+
 
 #pragma mark - Collection Data
 
