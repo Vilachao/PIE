@@ -11,6 +11,7 @@
 #import "Constants.h"
 #import "PIEutil.h"
 #import "PIEMainHomeViewController.h"
+#import "PIEAppDelegate.h"
 @interface PIERootAccesibilityViewController ()
 
 @end
@@ -27,8 +28,9 @@
     
     //Navigation Controller
     //MenuController
-    self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
-    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"accesible"];
+    PIEAppDelegate * appDel = (PIEAppDelegate *)[[UIApplication sharedApplication]delegate];
+    self.menuViewController = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"menuController"];
+    self.contentViewController = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"accesible"];
     
 }
 
@@ -66,7 +68,7 @@
     //    else{
     //        self.frostedViewController.panGestureEnabled = true;
     //    }
-    NSLog(@"SDFSDFSADFSAFD");
+
 }
 
 

@@ -202,8 +202,8 @@
 -(NSInteger)selectImageBackground:(NSInteger) idEscultura{
     if(idEscultura ==0) return 3;
     if(idEscultura ==1) return 0;
-    if(idEscultura ==2) return 2;
-    if(idEscultura ==3) return 2;
+    if(idEscultura ==2) return 0;
+    if(idEscultura ==3) return 1;
     if(idEscultura ==4) return 0;
     if(idEscultura ==5) return 1;
     if(idEscultura ==6) return 5;

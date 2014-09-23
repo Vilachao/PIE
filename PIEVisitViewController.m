@@ -12,6 +12,7 @@
 #import "PIEutil.h"
 #import <AFPopupView/AFPopupView.h>
 #import <REFrostedViewController/REFrostedViewController.h>
+#import "PIEAppDelegate.h"
 
 @interface PIEVisitViewController ()
 
@@ -61,7 +62,7 @@
 -(IBAction)buttonAction:(id)sender{
     UIButton * button = (UIButton *)sender;
     NSString *textModal = [self.textModals objectAtIndex:button.tag-10];
-    NSString *textModalTitulo = [self.textModals objectAtIndex:button.tag-10];
+    NSString *textModalTitulo = [self.textModalsTitulo objectAtIndex:button.tag-10];
     self.modalView.texto = textModal ;
     self.modalView.textoTitulo = textModalTitulo;
     [[NSNotificationCenter defaultCenter]postNotificationName:@"NewText" object:nil];
@@ -79,9 +80,11 @@
 #pragma mark Configuration View
 
 -(void)configurationView{
+    PIEAppDelegate * appDel = (PIEAppDelegate *)[[UIApplication sharedApplication]delegate];
+
+    
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"pie_navigationBarBackground"] forBarMetrics:UIBarMetricsDefault];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:Nil];
-    self.modalView = [storyboard instantiateViewControllerWithIdentifier:@"Modal"];
+       self.modalView = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"Modal"];
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"HideAFPopup" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(hide) name:@"HideAFPopup" object:nil];
     self.textModalsTitulo = @[kVisitaTextoAntesTitulo,kVisitaTextoHorarioTitulo,kVisitaTextoComoLlegarTitulo,kVisitaNormasParqueTitulo,kVisitaQRTitulo];

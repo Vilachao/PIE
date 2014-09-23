@@ -14,6 +14,10 @@
 #import <FTCoreTextView.h>
 #import <FTCoreTextStyle.h>
 
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
+#define IS_IPHONE_4 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )480 ) < DBL_EPSILON )
+
 
 @interface PIEHomeViewController ()
 
@@ -59,7 +63,7 @@
     self.controlDelegatePan = 0;
     
     [super viewDidLoad];
-   
+    
     self.arrayOfItems =[PIEutil arrayFilesFolder:@"MiniHome" :nil];
     
     self.arrayOfImages =[PIEutil arrayFilesFolder:@"Home" :nil];
@@ -79,6 +83,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+
     if(self.idSelectMenu==0){ self.queesView.hidden = NO; self.ayuntamientoView.hidden= YES;self.creditosView.hidden= YES;}
     else   if(self.idSelectMenu==1){ self.queesView.hidden = YES; self.ayuntamientoView.hidden= NO;self.creditosView.hidden= YES;}
     else   if(self.idSelectMenu==2){ self.queesView.hidden = YES; self.ayuntamientoView.hidden= YES;self.creditosView.hidden= NO;}
@@ -353,6 +358,19 @@
 
 - (void)initConTexto
 {
+    
+    //Si es iPHONE 4 entramos aquí y definimos el tamaño de los textos a 3,5 pulgadas
+    if (IS_IPHONE_4)
+    {    if(self.idSelectMenu ==0){
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 50) viewForCore:self.queesView text:kpie_queesTitulo];
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 50, 320, 182) viewForCore:self.queesView text:kpie_quees];
+    }else if(self.idSelectMenu ==1){
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 50) viewForCore:self.ayuntamientoView text:kpie_ayuntamientoTitulo];
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 50, 320, 420) viewForCore:self.ayuntamientoView text:kpie_ayuntamiento];
+    }else if(self.idSelectMenu ==2){
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 20, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_creditos_newSpace];}
+    
+    }else{
 //Para cumplir con los anchos en todos lados 40, 240 en el primer parámetro
     if(self.idSelectMenu ==0){
         self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 50) viewForCore:self.queesView text:kpie_queesTitulo];
@@ -364,7 +382,7 @@
         self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 20, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_creditos_newSpace];
 
         //[[PIEutil sharedInstance]createTextSizeAyuntamietno:CGRectMake(0, 0, 320, 100) reateTextSize2:CGRectMake(0, 100, 320, 100) reateTextSize3:CGRectMake(0, 200, 320, 100) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_creditos_newSpace text2:kpie_creditos_ayuntamiento text3:kpie_creditos_plaza];
-         }
+    }}
 }
 
 - (void)viewDidLayoutSubviews

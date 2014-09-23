@@ -10,6 +10,7 @@
 #import "PIETabViewController.h"
 #import "Constants.h"
 #import "PIEutil.h"
+#import "PIEAppDelegate.h"
 
 @interface PIEMainHomeViewController ()
 @property int primeraVez;
@@ -40,42 +41,42 @@
 - (IBAction)tabBarAction1:(id)sender {
 
         self.primeraVez =0;
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
+    PIEAppDelegate *appDel = (PIEAppDelegate *)[[UIApplication sharedApplication] delegate];
+        UITabBarController *rootViewController = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"tabViewController"];
         [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
         rootViewController.selectedIndex = 0;
 }
 
 - (IBAction)tabBarAction2:(id)sender {
 
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
+    PIEAppDelegate *appDel = (PIEAppDelegate *)[[UIApplication sharedApplication] delegate];
+    UITabBarController *rootViewController = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"tabViewController"];
         [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
         rootViewController.selectedIndex = 1;
 }
 
 - (IBAction)tabBarAction3:(id)sender {
 
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
-        [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+    PIEAppDelegate *appDel = (PIEAppDelegate *)[[UIApplication sharedApplication] delegate];
+    UITabBarController *rootViewController = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"tabViewController"];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
         rootViewController.selectedIndex = 2;
 }
 
 - (IBAction)tabBarAction4:(id)sender {
 
         self.primeraVez =0;
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
-        [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+    PIEAppDelegate *appDel = (PIEAppDelegate *)[[UIApplication sharedApplication] delegate];
+    UITabBarController *rootViewController = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"tabViewController"];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
                 rootViewController.selectedIndex = 3;
    }
 
 - (IBAction)tabBarAction5:(id)sender {
 
         self.primeraVez =0;
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-        UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"tabViewController"];
+    PIEAppDelegate *appDel = (PIEAppDelegate *)[[UIApplication sharedApplication] delegate];
+    UITabBarController *rootViewController = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"tabViewController"];
         [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
                 rootViewController.selectedIndex = 4;
   

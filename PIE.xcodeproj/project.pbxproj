@@ -11,6 +11,8 @@
 		3818BC5E19A4BCC6004A003C /* Sculpture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC5D19A4BCC6004A003C /* Sculpture.m */; };
 		3818BC6119A4BCC6004A003C /* ArtistResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC6019A4BCC6004A003C /* ArtistResource.m */; };
 		3818BC6419A4BCC6004A003C /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC6319A4BCC6004A003C /* Artist.m */; };
+		384161B519D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384161B419D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard */; };
+		384161B719D0C158005D1BC1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384161B619D0C158005D1BC1 /* Storyboard.storyboard */; };
 		384CF6C419C9A1BF00891EEC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */; };
 		38613AE2199B6470007C7F42 /* PIERootMenuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE1199B6470007C7F42 /* PIERootMenuHomeViewController.m */; };
 		38613AE5199B6AAD007C7F42 /* PIENavigationMenuHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE4199B6AAD007C7F42 /* PIENavigationMenuHomeController.m */; };
@@ -25,7 +27,6 @@
 		3881F4B019C33EB300692E3B /* PIEMainHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3881F4AF19C33EB300692E3B /* PIEMainHomeViewController.m */; };
 		389BC54619A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 389BC54519A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.m */; };
 		389BC54B19A204180084E660 /* PIEaccessibilityGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 389BC54A19A204180084E660 /* PIEaccessibilityGame.m */; };
-		38B0F44E1998AF36005F04CC /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B0F44D1998AF35005F04CC /* Storyboard.storyboard */; };
 		38BAD46519982CB8002FA234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD46419982CB8002FA234 /* Foundation.framework */; };
 		38BAD46719982CB8002FA234 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD46619982CB8002FA234 /* CoreGraphics.framework */; };
 		38BAD46919982CB8002FA234 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD46819982CB8002FA234 /* UIKit.framework */; };
@@ -85,6 +86,8 @@
 		3818BC6019A4BCC6004A003C /* ArtistResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistResource.m; sourceTree = "<group>"; };
 		3818BC6219A4BCC6004A003C /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		3818BC6319A4BCC6004A003C /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		384161B419D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPhone4.storyboard; sourceTree = "<group>"; };
+		384161B619D0C158005D1BC1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		38613AE0199B6470007C7F42 /* PIERootMenuHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIERootMenuHomeViewController.h; sourceTree = "<group>"; };
 		38613AE1199B6470007C7F42 /* PIERootMenuHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIERootMenuHomeViewController.m; sourceTree = "<group>"; };
@@ -112,7 +115,6 @@
 		389BC54519A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEAccessibilityGameCollectionViewCell.m; sourceTree = "<group>"; };
 		389BC54919A204180084E660 /* PIEaccessibilityGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEaccessibilityGame.h; sourceTree = "<group>"; };
 		389BC54A19A204180084E660 /* PIEaccessibilityGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEaccessibilityGame.m; sourceTree = "<group>"; };
-		38B0F44D1998AF35005F04CC /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		38BAD46119982CB8002FA234 /* PIE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PIE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BAD46419982CB8002FA234 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		38BAD46619982CB8002FA234 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -279,7 +281,8 @@
 			children = (
 				D7C285A419B31F1D00EF6CC8 /* util */,
 				3818BC6519A4BEC8004A003C /* DataBase */,
-				38B0F44D1998AF35005F04CC /* Storyboard.storyboard */,
+				384161B619D0C158005D1BC1 /* Storyboard.storyboard */,
+				384161B419D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard */,
 				D7B21CDF19B1DFC000BBBD92 /* sidebarMenu */,
 				D7B21CE619B1F68B00BBBD92 /* tabBarMenu */,
 				38BAD46C19982CB8002FA234 /* AccionaPie */,
@@ -572,9 +575,10 @@
 				380E66791998BCD400866F2D /* Localizable.strings in Resources */,
 				D7924FC919C05FF4000B9402 /* MiniHome in Resources */,
 				38BAD49D19984C12002FA234 /* Podfile in Resources */,
+				384161B519D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard in Resources */,
 				D7A2FA1919BC3A6100FE8B43 /* Artistas in Resources */,
-				38B0F44E1998AF36005F04CC /* Storyboard.storyboard in Resources */,
 				38BAD47119982CB8002FA234 /* InfoPlist.strings in Resources */,
+				384161B719D0C158005D1BC1 /* Storyboard.storyboard in Resources */,
 				D72AC1EA19BDDBC8001B2C48 /* Esculturas in Resources */,
 				D73D2B4E19BA14EB00C79A7C /* Home in Resources */,
 				D7924FCB19C061AC000B9402 /* MiniArtistas in Resources */,
