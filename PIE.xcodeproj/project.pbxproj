@@ -795,7 +795,7 @@
 				GCC_PREFIX_HEADER = "AccionaPie/PIE-Prefix.pch";
 				INFOPLIST_FILE = "AccionaPie/PIE-Info.plist";
 				PRODUCT_NAME = PIE;
-				PROVISIONING_PROFILE = "2e9448b8-afcc-472d-b20e-cf5853f0e150";
+				PROVISIONING_PROFILE = "aa861ca7-9871-4daa-84ed-53a4d2962862";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -812,7 +812,7 @@
 				GCC_PREFIX_HEADER = "AccionaPie/PIE-Prefix.pch";
 				INFOPLIST_FILE = "AccionaPie/PIE-Info.plist";
 				PRODUCT_NAME = PIE;
-				PROVISIONING_PROFILE = "2e9448b8-afcc-472d-b20e-cf5853f0e150";
+				PROVISIONING_PROFILE = "aa861ca7-9871-4daa-84ed-53a4d2962862";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
