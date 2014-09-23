@@ -17,7 +17,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [PIEutil changeShowHOME:1];
+    CGSize iOSDeviceScreenSize = [[UIScreen mainScreen] bounds].size;
+
+    self.storyBoard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    if (iOSDeviceScreenSize.height == 480)
+    {
+        // Instantiate a new storyboard object using the storyboard file named Storyboard_iPhone35
+        self.storyBoard = [UIStoryboard storyboardWithName:@"Storyboard_iPhone4" bundle:nil];
+    }
+    
+    UITabBarController *rootViewController = [self.storyBoard instantiateViewControllerWithIdentifier:@"navigationHome"];
+
+//    
+//        UIViewController *initialViewController = [iPhone4Storyboard instantiateInitialViewController];
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        self.window.rootViewController  = rootViewController;
+        [self.window makeKeyAndVisible];
+    
+
     return YES;
 }
 

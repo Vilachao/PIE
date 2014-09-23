@@ -26,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240,1100) scrollViewSize:CGRectMake(0, 50, 320, 425) viewForCore:self.modalView text:self.texto];
+    self.textTitulo = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240, 3000) scrollViewSize:CGRectMake(0, 40, 320, 50) viewForCore:self.modalView text:self.textoTitulo];
+    self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240,1100) scrollViewSize:CGRectMake(0, 80, 320, 425) viewForCore:self.modalView text:self.texto];
 
 //.text setTextColor: [UIColor whiteColor]];
 //    self.textViewInfo.textContainerInset = UIEdgeInsetsMake(10, 10, 10, 10);
@@ -41,6 +42,7 @@
 
 -(void)texto:(NSNotification *)notification{
     self.text.text = self.texto;
+    self.textTitulo.text=self.textoTitulo;
 }
 
 - (void)didReceiveMemoryWarning

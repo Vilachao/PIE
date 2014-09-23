@@ -11,6 +11,7 @@
 #import "Constants.h"
 #import "PIEutil.h"
 #import "PIEMainHomeViewController.h"
+#import "PIEAppDelegate.h"
 
 @interface PIERootVisitaHomeViewController ()
 
@@ -30,8 +31,10 @@
     
     //Navigation Controller
     //MenuController
-    self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
-    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentControllerVisit"];
+    PIEAppDelegate * appDel = (PIEAppDelegate *)[[UIApplication sharedApplication]delegate];
+    self.menuViewController = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"menuController"];
+    self.contentViewController = [appDel.storyBoard instantiateViewControllerWithIdentifier:@"contentControllerVisit"];
+   
     
 }
 

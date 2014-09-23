@@ -14,6 +14,7 @@
 #import "PIENavigationMenuHomeController.h"
 #import "PIEMenuTableViewCell.h"
 #import "Constants.h"
+#import "PIEAppDelegate.h"
 #import "PIEutil.h"
 
 @interface PIEMenuHomeViewController ()
@@ -153,17 +154,18 @@ static int menuSelect;
  *  @param cell      cell
  */
 -(void)makeMenu{
+    PIEAppDelegate *appDel = (PIEAppDelegate *)[[UIApplication sharedApplication]delegate];
     if ([self.tabBarController selectedIndex] == 0) {
-        self.navigationController =     [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
+        self.navigationController =     [appDel.storyBoard instantiateViewControllerWithIdentifier:@"contentController"];
         self.menuList = @[kmenuHome_2,kmenuHome_3,kmenuHome_4];
     }else if([self.tabBarController selectedIndex] == 1){
-        self.navigationController =     [self.storyboard instantiateViewControllerWithIdentifier:@"contentControllerArtist"];
+        self.navigationController =     [appDel.storyBoard instantiateViewControllerWithIdentifier:@"contentControllerArtist"];
         self.menuList = @[kmenuArtista_1,kmenuArtista_2,kmenuArtista_3,kmenuArtista_4,kmenuArtista_5,kmenuArtista_6,kmenuArtista_7,kmenuArtista_8];
     }else if([self.tabBarController selectedIndex] == 2){
-        self.navigationController =     [self.storyboard instantiateViewControllerWithIdentifier:@"contentControllerVisit"];
+        self.navigationController =     [appDel.storyBoard instantiateViewControllerWithIdentifier:@"contentControllerVisit"];
         self.menuList = @[kmenuVisitaAntes,kmenuVisitaDespues];
     }else if([self.tabBarController selectedIndex] == 3){
-        self.navigationController =     [self.storyboard instantiateViewControllerWithIdentifier:@"contentControllerAccesible"];
+        self.navigationController =     [appDel.storyBoard instantiateViewControllerWithIdentifier:@"contentControllerAccesible"];
         self.menuList = @[kmenuAccesibilidadNino, kmenuAccesibilidadReducidaMov,kmenuAccesibilidadReducidaVisual,kmenuAccesibilidadReducidaAudio];
     }
     menuSelect =[self.tabBarController selectedIndex];
