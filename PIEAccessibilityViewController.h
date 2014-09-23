@@ -25,6 +25,7 @@ typedef enum ShowViewAccess : NSUInteger {
 @property (weak, nonatomic) IBOutlet UIView *accesibilityView;
 
 @property (weak, nonatomic) IBOutlet UITextView *textViewAccesibility;
+@property (weak, nonatomic) IBOutlet UITextView *textViewAccesibilityTitulo;
 
 @property (weak, nonatomic) IBOutlet UIView *viewGame;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *accessibility_segmentedButtonLevel;

@@ -12,6 +12,10 @@
 #import "PIEutil.h"
 #import "Constants.h"
 
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
+#define IS_IPHONE_4 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )480 ) < DBL_EPSILON )
+
 @interface PIEArtistsViewController ()
 
 
@@ -198,9 +202,19 @@
     self.biografiaImageView.layer.masksToBounds = YES;
     self.biografiaImageView.layer.cornerRadius = 10.0;
     [self crearDiccionarioArtistasObras];
+    
+    if(IS_IPHONE_4) {
+    
+        [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 20, 160, 300) scrollViewSize:CGRectMake(0, 0, 200, 300) viewForCore:self.viewArtist text:[self nameArtist:(int)self.idSelectMenu]];
+        
+        [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 50, 320, 220) viewForCore:self.viewArtist text:[self textArtist:(int)self.idSelectMenu]];
+        
+    }else{
+    
     [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 40, 160, 300) scrollViewSize:CGRectMake(0, 0, 200, 300) viewForCore:self.viewArtist text:[self nameArtist:(int)self.idSelectMenu]];
     
     [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 110, 320, 220) viewForCore:self.viewArtist text:[self textArtist:(int)self.idSelectMenu]];
+    }
 }
 
 #pragma mark -select menu

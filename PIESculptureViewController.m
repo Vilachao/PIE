@@ -81,12 +81,12 @@
     self.idEscultura = [[components objectAtIndex:0] intValue] - 1;
     self.nameFolderObraArtista = [NSString stringWithFormat:@"%ld",(long)self.idEscultura];
     self.arrayObras = [[NSArray alloc] initWithArray:[PIEutil arrayFilesFolder:@"Esculturas"  :@[self.nameFolderObraArtista]]];
-    self.viewButtons.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.500];
-    self.textViewEscultura.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.500];
+    self.viewButtons.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.800];
+    self.textViewEscultura.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.800];
     [self.textViewEscultura setTextColor: [UIColor whiteColor]];
     self.textViewEscultura.selectable = NO;
     self.textViewEscultura.textContainerInset = UIEdgeInsetsMake(10.0f, 5.0f, 10.0f, 10.0f);
-    self.textViewTituloEscultura.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.500];
+    self.textViewTituloEscultura.backgroundColor = [UIColor colorWithWhite:0.000 alpha:0.800];
     [self.textViewTituloEscultura setTextColor: [UIColor whiteColor]];
     self.textViewTituloEscultura.selectable = NO;
     self.textViewTituloEscultura.scrollEnabled = YES;

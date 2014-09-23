@@ -41,6 +41,7 @@ typedef enum ShowViewVisit : NSUInteger {
 
 - (IBAction)home_showMenuRefrosted:(id)sender;
 //VIsta despues
+@property (weak, nonatomic) IBOutlet UIButton *btnMasInformacion;
 
 
 @end
