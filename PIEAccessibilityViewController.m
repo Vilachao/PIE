@@ -212,7 +212,7 @@
     NSArray *titulos = @[kAccesibilidadNinosTitulo,kAccesibilidadReducidaTitulo,kAccesibilidadVisualTitulo,kAccesibilidadAuditivaTitulo];
     self.textViewAccesibility.text = [textos objectAtIndex:self.idSelectMenu];
     self.textViewAccesibilityTitulo.text = [titulos objectAtIndex:self.idSelectMenu];
-    self.textViewAccesibility.textContainerInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.textViewAccesibility.textContainerInset = UIEdgeInsetsMake(10, 0, 0, 50);
     self.textViewAccesibility.selectable = NO;
     self.textViewAccesibilityTitulo.selectable = NO;
     [self.buttonReiniciar setTitle:kAccesibilidadLabel forState:UIControlStateNormal];

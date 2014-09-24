@@ -19,12 +19,14 @@
 		38613AE8199B6BF4007C7F42 /* PIEMenuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE7199B6BF4007C7F42 /* PIEMenuHomeViewController.m */; };
 		3865D60619A34DEC00479CAF /* PIEutil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3865D60519A34DEC00479CAF /* PIEutil.m */; };
 		3865D60919A3584000479CAF /* PIEArtistsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3865D60819A3584000479CAF /* PIEArtistsCollectionViewCell.m */; };
+		3870A77919D2B28E00F61C60 /* HomeIphone4 in Resources */ = {isa = PBXBuildFile; fileRef = 3870A77819D2B28E00F61C60 /* HomeIphone4 */; };
 		38716CB1199A134A006A884D /* PIEHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38716CB0199A134A006A884D /* PIEHomeViewController.m */; };
 		38716CB4199A135A006A884D /* PIEAccessibilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38716CB3199A135A006A884D /* PIEAccessibilityViewController.m */; };
 		38716CB7199A1369006A884D /* PIEVisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38716CB6199A1369006A884D /* PIEVisitViewController.m */; };
 		38716CBA199A1379006A884D /* PIEQrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38716CB9199A1379006A884D /* PIEQrViewController.m */; };
 		38716CBD199A1387006A884D /* PIEArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38716CBC199A1387006A884D /* PIEArtistsViewController.m */; };
 		3881F4B019C33EB300692E3B /* PIEMainHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3881F4AF19C33EB300692E3B /* PIEMainHomeViewController.m */; };
+		38924DCA19D2DD96004D2EF0 /* ArtistasIphone4 in Resources */ = {isa = PBXBuildFile; fileRef = 38924DC919D2DD96004D2EF0 /* ArtistasIphone4 */; };
 		389BC54619A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 389BC54519A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.m */; };
 		389BC54B19A204180084E660 /* PIEaccessibilityGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 389BC54A19A204180084E660 /* PIEaccessibilityGame.m */; };
 		38BAD46519982CB8002FA234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD46419982CB8002FA234 /* Foundation.framework */; };
@@ -99,6 +101,7 @@
 		3865D60519A34DEC00479CAF /* PIEutil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEutil.m; sourceTree = "<group>"; };
 		3865D60719A3584000479CAF /* PIEArtistsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEArtistsCollectionViewCell.h; sourceTree = "<group>"; };
 		3865D60819A3584000479CAF /* PIEArtistsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEArtistsCollectionViewCell.m; sourceTree = "<group>"; };
+		3870A77819D2B28E00F61C60 /* HomeIphone4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HomeIphone4; sourceTree = "<group>"; };
 		38716CAF199A134A006A884D /* PIEHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEHomeViewController.h; sourceTree = "<group>"; };
 		38716CB0199A134A006A884D /* PIEHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEHomeViewController.m; sourceTree = "<group>"; };
 		38716CB2199A135A006A884D /* PIEAccessibilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEAccessibilityViewController.h; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		38716CBC199A1387006A884D /* PIEArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEArtistsViewController.m; sourceTree = "<group>"; };
 		3881F4AE19C33EB300692E3B /* PIEMainHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEMainHomeViewController.h; sourceTree = "<group>"; };
 		3881F4AF19C33EB300692E3B /* PIEMainHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEMainHomeViewController.m; sourceTree = "<group>"; };
+		38924DC919D2DD96004D2EF0 /* ArtistasIphone4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ArtistasIphone4; sourceTree = "<group>"; };
 		389BC54419A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEAccessibilityGameCollectionViewCell.h; sourceTree = "<group>"; };
 		389BC54519A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEAccessibilityGameCollectionViewCell.m; sourceTree = "<group>"; };
 		389BC54919A204180084E660 /* PIEaccessibilityGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEaccessibilityGame.h; sourceTree = "<group>"; };
@@ -479,12 +483,14 @@
 		D7E34CC619B8D81D00509F07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				38924DC919D2DD96004D2EF0 /* ArtistasIphone4 */,
+				D73D2B4D19BA14EB00C79A7C /* Home */,
+				3870A77819D2B28E00F61C60 /* HomeIphone4 */,
 				D7924FCA19C061AC000B9402 /* MiniArtistas */,
 				D7924FC819C05FF4000B9402 /* MiniHome */,
 				D72AC1EF19BF009A001B2C48 /* marker-100.png */,
 				D72AC1E919BDDBC8001B2C48 /* Esculturas */,
 				D7A2FA1819BC3A6100FE8B43 /* Artistas */,
-				D73D2B4D19BA14EB00C79A7C /* Home */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -573,8 +579,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				380E66791998BCD400866F2D /* Localizable.strings in Resources */,
+				38924DCA19D2DD96004D2EF0 /* ArtistasIphone4 in Resources */,
 				D7924FC919C05FF4000B9402 /* MiniHome in Resources */,
 				38BAD49D19984C12002FA234 /* Podfile in Resources */,
+				3870A77919D2B28E00F61C60 /* HomeIphone4 in Resources */,
 				384161B519D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard in Resources */,
 				D7A2FA1919BC3A6100FE8B43 /* Artistas in Resources */,
 				38BAD47119982CB8002FA234 /* InfoPlist.strings in Resources */,

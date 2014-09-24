@@ -8,6 +8,9 @@
 
 #import "PIEQrViewController.h"
 #import "PIESculptureViewController.h"
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
+#define IS_IPHONE_4 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )480 ) < DBL_EPSILON )
 
 @interface PIEQrViewController ()
 
@@ -43,6 +46,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     
         self.marcadorQR = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"markerQR"]];
+
     float x = [[UIScreen mainScreen] bounds].size.width/2 - self.marcadorQR.frame.size.width/2;
     float y = [[UIScreen mainScreen] bounds].size.height/2 - self.marcadorQR.frame.size.height/2;
     self.marcadorQR.frame = CGRectMake(x, y, self.marcadorQR.frame.size.width, self.marcadorQR.frame.size.height);

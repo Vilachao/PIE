@@ -28,5 +28,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *botonCerrar;
 @property (weak, nonatomic) IBOutlet UIView *viewEscultura;
+@property (weak, nonatomic) IBOutlet UIView *viewSideBar;
 
 @end

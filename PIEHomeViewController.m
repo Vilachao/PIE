@@ -66,7 +66,13 @@
     
     self.arrayOfItems =[PIEutil arrayFilesFolder:@"MiniHome" :nil];
     
+    if(IS_IPHONE_4){
+    
+    self.arrayOfImages =[PIEutil arrayFilesFolder:@"HomeIphone4" :nil];
+    
+    }else{
     self.arrayOfImages =[PIEutil arrayFilesFolder:@"Home" :nil];
+    }
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
@@ -190,7 +196,11 @@
     self.selRow = [[NSNumber alloc] initWithInteger:indexPath.row];
     self.intt=[self.selRow intValue];
     self.imageName=[self.arrayOfImages objectAtIndex:self.intt];
+    if(IS_IPHONE_4){
+    self.imageFullGalleryCollection.image= [PIEutil loadImage:self.imageName :@[@"HomeIphone4"]];
+    }else{
     self.imageFullGalleryCollection.image= [PIEutil loadImage:self.imageName :@[@"Home"]];
+    }
     [self.imageFullGalleryCollection setHidden:false];
     [self.text setHidden:true];
     CATransition *animation = [CATransition animation];
@@ -211,7 +221,9 @@
     if(self.intt<[self.arrayOfImages count]-1){
         self.intt=self.intt+1;
         NSString *nameObra = [self.arrayOfImages objectAtIndex:self.intt];
+        if(IS_IPHONE_4){        self.imageFullGalleryCollection.image=[PIEutil loadImage:nameObra :@[@"HomeIphone4"]];}else{
         self.imageFullGalleryCollection.image=[PIEutil loadImage:nameObra :@[@"Home"]];
+        }
     }
     }
 }
@@ -229,7 +241,9 @@
         if(self.intt>0){
             self.intt=self.intt-1;
             NSString *nameObra = [self.arrayOfImages objectAtIndex:self.intt];
+            if(IS_IPHONE_4){            self.imageFullGalleryCollection.image=[PIEutil loadImage:nameObra :@[@"HomeIphone4"]];}else{
             self.imageFullGalleryCollection.image=[PIEutil loadImage:nameObra :@[@"Home"]];
+            }
         }
     }
 }
@@ -359,9 +373,9 @@
         self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 50, 320, 182) viewForCore:self.queesView text:kpie_quees];
     }else if(self.idSelectMenu ==1){
         self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 10, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 50) viewForCore:self.ayuntamientoView text:kpie_ayuntamientoTitulo];
-        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 50, 320, 420) viewForCore:self.ayuntamientoView text:kpie_ayuntamiento];
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 50, 320, 320) viewForCore:self.ayuntamientoView text:kpie_ayuntamiento];
     }else if(self.idSelectMenu ==2){
-        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 20, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 460) viewForCore:self.creditosView text:kpie_creditos_newSpace];}
+        self.text = [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 20, 240, 3000) scrollViewSize:CGRectMake(0, 0, 320, 372) viewForCore:self.creditosView text:kpie_creditos_newSpace];}
     
     }else{
 //Para cumplir con los anchos en todos lados 40, 240 en el primer parámetro

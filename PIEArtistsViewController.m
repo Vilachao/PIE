@@ -58,7 +58,10 @@
     self.biografiaImageView.image = [PIEutil loadImage:imagesBio[self.idSelectMenu] :@[@"Artistas",@"MiniBiografia"]];
 
     self.nameFolderObraArtista = [NSString stringWithFormat:@"%ld",(long)self.idSelectMenu];
+    if(IS_IPHONE_4){self.arrayObras = [[NSArray alloc] initWithArray:[PIEutil arrayFilesFolder:@"ArtistasIphone4"  :@[self.nameFolderObraArtista]]];
+    }else{
     self.arrayObras = [[NSArray alloc] initWithArray:[PIEutil arrayFilesFolder:@"Artistas"  :@[self.nameFolderObraArtista]]];
+    }
     self.arrayMiniObras = [[NSArray alloc] initWithArray:[PIEutil arrayFilesFolder:@"MiniArtistas"  :@[self.nameFolderObraArtista]]];
     
     NSArray *sortedArrayOfString = [self.arrayObras sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
@@ -142,7 +145,11 @@
     }
     self.frostedViewController.panGestureEnabled = NO;
     NSString *nameObra = [self.arrayObras objectAtIndex:self.indice];
+    if(IS_IPHONE_4){
+        self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"ArtistasIphone4",self.nameFolderObraArtista]];
+}else{
     self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"Artistas",self.nameFolderObraArtista]];
+    }
     self.viewImageLabel.hidden = NO;
     [self.obraImageView setHidden:false];
     CATransition *animation = [CATransition animation];
@@ -165,7 +172,11 @@
         if(self.indice<[self.arrayObras count]-1){
             self.indice=self.indice+1;
             NSString *nameObra = [self.arrayObras objectAtIndex:self.indice];
+            if(IS_IPHONE_4){
+                self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"ArtistasIphone4",self.nameFolderObraArtista]];
+            }else{
             self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"Artistas",self.nameFolderObraArtista]];
+            }
         }
     }
     self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :(int)self.indice];
@@ -184,7 +195,10 @@
         if(self.indice>0){
             self.indice= self.indice-1;
             NSString *nameObra = [self.arrayObras objectAtIndex:self.indice];
-            self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"Artistas",self.nameFolderObraArtista]];
+            if(IS_IPHONE_4){
+                self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"ArtistasIphone4",self.nameFolderObraArtista]];
+            }else{
+                self.obraImageView.image=[PIEutil loadImage:nameObra :@[@"Artistas",self.nameFolderObraArtista]];}
         }
     }
     self.detalleObra.text = [self getTituloObra:(int)self.idSelectMenu :(int)self.indice];
@@ -205,9 +219,9 @@
     
     if(IS_IPHONE_4) {
     
-        [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 20, 160, 300) scrollViewSize:CGRectMake(0, 0, 200, 300) viewForCore:self.viewArtist text:[self nameArtist:(int)self.idSelectMenu]];
+        [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 20, 160, 300) scrollViewSize:CGRectMake(0, 20, 200, 300) viewForCore:self.viewArtist text:[self nameArtist:(int)self.idSelectMenu]];
         
-        [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 50, 320, 220) viewForCore:self.viewArtist text:[self textArtist:(int)self.idSelectMenu]];
+        [[PIEutil sharedInstance] createTextSize:CGRectMake(40, 0, 240, 3000) scrollViewSize:CGRectMake(0, 100, 380, 132) viewForCore:self.viewArtist text:[self textArtist:(int)self.idSelectMenu]];
         
     }else{
     
