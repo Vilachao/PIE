@@ -27,6 +27,7 @@
 		38716CBD199A1387006A884D /* PIEArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38716CBC199A1387006A884D /* PIEArtistsViewController.m */; };
 		3881F4B019C33EB300692E3B /* PIEMainHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3881F4AF19C33EB300692E3B /* PIEMainHomeViewController.m */; };
 		38924DCA19D2DD96004D2EF0 /* ArtistasIphone4 in Resources */ = {isa = PBXBuildFile; fileRef = 38924DC919D2DD96004D2EF0 /* ArtistasIphone4 */; };
+		38980FF619D3677800C37955 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38980FF519D3677800C37955 /* Images.xcassets */; };
 		389BC54619A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 389BC54519A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.m */; };
 		389BC54B19A204180084E660 /* PIEaccessibilityGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 389BC54A19A204180084E660 /* PIEaccessibilityGame.m */; };
 		38BAD46519982CB8002FA234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD46419982CB8002FA234 /* Foundation.framework */; };
@@ -37,7 +38,6 @@
 		38BAD47319982CB8002FA234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BAD47219982CB8002FA234 /* main.m */; };
 		38BAD47719982CB8002FA234 /* PIEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BAD47619982CB8002FA234 /* PIEAppDelegate.m */; };
 		38BAD47A19982CB8002FA234 /* AccionaPie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38BAD47819982CB8002FA234 /* AccionaPie.xcdatamodeld */; };
-		38BAD47C19982CB8002FA234 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38BAD47B19982CB8002FA234 /* Images.xcassets */; };
 		38BAD48319982CB8002FA234 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD48219982CB8002FA234 /* XCTest.framework */; };
 		38BAD48419982CB8002FA234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD46419982CB8002FA234 /* Foundation.framework */; };
 		38BAD48519982CB8002FA234 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD46819982CB8002FA234 /* UIKit.framework */; };
@@ -115,6 +115,7 @@
 		3881F4AE19C33EB300692E3B /* PIEMainHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEMainHomeViewController.h; sourceTree = "<group>"; };
 		3881F4AF19C33EB300692E3B /* PIEMainHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEMainHomeViewController.m; sourceTree = "<group>"; };
 		38924DC919D2DD96004D2EF0 /* ArtistasIphone4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ArtistasIphone4; sourceTree = "<group>"; };
+		38980FF519D3677800C37955 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		389BC54419A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEAccessibilityGameCollectionViewCell.h; sourceTree = "<group>"; };
 		389BC54519A1FD3A0084E660 /* PIEAccessibilityGameCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEAccessibilityGameCollectionViewCell.m; sourceTree = "<group>"; };
 		389BC54919A204180084E660 /* PIEaccessibilityGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEaccessibilityGame.h; sourceTree = "<group>"; };
@@ -131,7 +132,6 @@
 		38BAD47519982CB8002FA234 /* PIEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIEAppDelegate.h; sourceTree = "<group>"; };
 		38BAD47619982CB8002FA234 /* PIEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIEAppDelegate.m; sourceTree = "<group>"; };
 		38BAD47919982CB8002FA234 /* AccionaPie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccionaPie.xcdatamodel; sourceTree = "<group>"; };
-		38BAD47B19982CB8002FA234 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38BAD48119982CB8002FA234 /* PIETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BAD48219982CB8002FA234 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		38BAD48B19982CB8002FA234 /* PIETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PIETests-Info.plist"; sourceTree = "<group>"; };
@@ -325,11 +325,11 @@
 		38BAD46C19982CB8002FA234 /* AccionaPie */ = {
 			isa = PBXGroup;
 			children = (
+				38980FF519D3677800C37955 /* Images.xcassets */,
 				38BAD47519982CB8002FA234 /* PIEAppDelegate.h */,
 				38BAD47619982CB8002FA234 /* PIEAppDelegate.m */,
 				D7B21CE319B1F09800BBBD92 /* PIETabViewController.h */,
 				D7B21CE419B1F09800BBBD92 /* PIETabViewController.m */,
-				38BAD47B19982CB8002FA234 /* Images.xcassets */,
 				38BAD47819982CB8002FA234 /* AccionaPie.xcdatamodeld */,
 				38BAD46D19982CB8002FA234 /* Supporting Files */,
 			);
@@ -587,10 +587,10 @@
 				D7A2FA1919BC3A6100FE8B43 /* Artistas in Resources */,
 				38BAD47119982CB8002FA234 /* InfoPlist.strings in Resources */,
 				384161B719D0C158005D1BC1 /* Storyboard.storyboard in Resources */,
+				38980FF619D3677800C37955 /* Images.xcassets in Resources */,
 				D72AC1EA19BDDBC8001B2C48 /* Esculturas in Resources */,
 				D73D2B4E19BA14EB00C79A7C /* Home in Resources */,
 				D7924FCB19C061AC000B9402 /* MiniArtistas in Resources */,
-				38BAD47C19982CB8002FA234 /* Images.xcassets in Resources */,
 				D72AC1F019BF009A001B2C48 /* marker-100.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

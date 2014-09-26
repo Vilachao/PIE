@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewArtist;
 @property (weak, nonatomic) IBOutlet UIButton *audioButton;
 @property (weak, nonatomic) IBOutlet UIButton *galleryButton;
+@property (weak, nonatomic) IBOutlet UIButton *btnCerrar;
 @property (weak, nonatomic) IBOutlet UITextView *textViewTituloEscultura;
 @property (weak, nonatomic) IBOutlet UITextView *textViewEscultura;
 @property (weak, nonatomic) IBOutlet UIImageView *imageObra;

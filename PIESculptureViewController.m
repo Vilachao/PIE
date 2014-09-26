@@ -47,7 +47,7 @@
     //texto de cada escultura
     self.esculturaTituloTextos= @[KEsculturaTitulo0Bernet,KEsculturaTitulo1Canogar,KEsculturaTitulo2Gonzalez,KEsculturaTitulo3Cobertera,KEsculturaTitulo4Lopez,KEsculturaTitulo5Menendez,KEsculturaTitulo6Olano,KEsculturaTitulo7Salvador,KEsculturaTitulo8Salvador,KEsculturaTitulo9Salvador];
     //carpeta de imagenes de las obras
-    [self.botonCerrar setTitle:kbotonCerrar];
+    [self.btnCerrar setTitle:kbotonCerrar forState:UIControlStateNormal];
     // Do any additional setup after loading the view.
     [self.audioButton setBackgroundImage:[UIImage imageNamed:@"sonido"] forState:UIControlStateNormal];
 }
