@@ -11,8 +11,9 @@
 		3818BC5E19A4BCC6004A003C /* Sculpture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC5D19A4BCC6004A003C /* Sculpture.m */; };
 		3818BC6119A4BCC6004A003C /* ArtistResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC6019A4BCC6004A003C /* ArtistResource.m */; };
 		3818BC6419A4BCC6004A003C /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC6319A4BCC6004A003C /* Artist.m */; };
-		384161B519D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384161B419D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard */; };
+		384161B519D0C12A005D1BC1 /* Storyboard_apoyo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384161B419D0C12A005D1BC1 /* Storyboard_apoyo.storyboard */; };
 		384161B719D0C158005D1BC1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384161B619D0C158005D1BC1 /* Storyboard.storyboard */; };
+		3849923619D57B6B00EF1953 /* Storyboard_iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3849923519D57B6B00EF1953 /* Storyboard_iPhone4.storyboard */; };
 		384CF6C419C9A1BF00891EEC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */; };
 		38613AE2199B6470007C7F42 /* PIERootMenuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE1199B6470007C7F42 /* PIERootMenuHomeViewController.m */; };
 		38613AE5199B6AAD007C7F42 /* PIENavigationMenuHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE4199B6AAD007C7F42 /* PIENavigationMenuHomeController.m */; };
@@ -88,8 +89,9 @@
 		3818BC6019A4BCC6004A003C /* ArtistResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistResource.m; sourceTree = "<group>"; };
 		3818BC6219A4BCC6004A003C /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		3818BC6319A4BCC6004A003C /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
-		384161B419D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPhone4.storyboard; sourceTree = "<group>"; };
+		384161B419D0C12A005D1BC1 /* Storyboard_apoyo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_apoyo.storyboard; sourceTree = "<group>"; };
 		384161B619D0C158005D1BC1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		3849923519D57B6B00EF1953 /* Storyboard_iPhone4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPhone4.storyboard; sourceTree = "<group>"; };
 		384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		38613AE0199B6470007C7F42 /* PIERootMenuHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIERootMenuHomeViewController.h; sourceTree = "<group>"; };
 		38613AE1199B6470007C7F42 /* PIERootMenuHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIERootMenuHomeViewController.m; sourceTree = "<group>"; };
@@ -286,7 +288,8 @@
 				D7C285A419B31F1D00EF6CC8 /* util */,
 				3818BC6519A4BEC8004A003C /* DataBase */,
 				384161B619D0C158005D1BC1 /* Storyboard.storyboard */,
-				384161B419D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard */,
+				3849923519D57B6B00EF1953 /* Storyboard_iPhone4.storyboard */,
+				384161B419D0C12A005D1BC1 /* Storyboard_apoyo.storyboard */,
 				D7B21CDF19B1DFC000BBBD92 /* sidebarMenu */,
 				D7B21CE619B1F68B00BBBD92 /* tabBarMenu */,
 				38BAD46C19982CB8002FA234 /* AccionaPie */,
@@ -581,9 +584,10 @@
 				380E66791998BCD400866F2D /* Localizable.strings in Resources */,
 				38924DCA19D2DD96004D2EF0 /* ArtistasIphone4 in Resources */,
 				D7924FC919C05FF4000B9402 /* MiniHome in Resources */,
+				3849923619D57B6B00EF1953 /* Storyboard_iPhone4.storyboard in Resources */,
 				38BAD49D19984C12002FA234 /* Podfile in Resources */,
 				3870A77919D2B28E00F61C60 /* HomeIphone4 in Resources */,
-				384161B519D0C12A005D1BC1 /* Storyboard_iPhone4.storyboard in Resources */,
+				384161B519D0C12A005D1BC1 /* Storyboard_apoyo.storyboard in Resources */,
 				D7A2FA1919BC3A6100FE8B43 /* Artistas in Resources */,
 				38BAD47119982CB8002FA234 /* InfoPlist.strings in Resources */,
 				384161B719D0C158005D1BC1 /* Storyboard.storyboard in Resources */,
