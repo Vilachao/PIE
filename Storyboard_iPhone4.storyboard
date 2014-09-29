@@ -645,6 +645,7 @@
         <!--Qr View Controller - QR-->
         <scene sceneID="D9A-YI-vjj">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOh-XL-OWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="5YT-Yf-lPl" customClass="PIEQrViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3NU-uN-v0j"/>
@@ -680,7 +681,6 @@
                         <segue destination="yc6-R6-Z4l" kind="modal" identifier="sculpture" id="uAb-Xg-XL5"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OOh-XL-OWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-787" y="1892"/>
         </scene>
@@ -996,6 +996,7 @@
         <!--Navigation Controller - ACCESIBILIDAD-->
         <scene sceneID="Siw-8M-gZq">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qw6-rO-ZZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="DeJ-PC-WaN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="ACCESIBILIDAD" id="qgg-gw-vqX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="home_buttonRefrostedMenu" id="xxX-iT-Z1t">
@@ -1005,7 +1006,6 @@
                         <segue destination="5YT-Yf-lPl" kind="relationship" relationship="rootViewController" id="u0M-CT-bWI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qw6-rO-ZZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1305" y="1876"/>
         </scene>

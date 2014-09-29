@@ -21,26 +21,13 @@
 
 @implementation PIEQrViewController
 
-@synthesize scannerView;
+
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [scannerView setVerboseLogging:YES];
-    // Start the capture session when the view loads - this will also start a scan session
-    // Set animations to YES for some nice effects
-    [scannerView setAnimateScanner:YES];
-    
-    // Set code outline to YES for a box around the scanned code
-    [scannerView setDisplayCodeOutline:YES];
-    
-    [scannerView startCaptureSession];
-
-    scannerView.delegate = self;
-    
-    [scannerView startScanSession];
-    // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -54,16 +41,26 @@
 
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
 -(void)viewDidAppear:(BOOL)animated{
-    [scannerView startScanSession];
+    ZBarReaderViewController *reader = [ZBarReaderViewController new];
+    reader.readerDelegate = self;
+    reader.supportedOrientationsMask = ZBarOrientationMaskAll;
+    
+    ZBarImageScanner *scanner = reader.scanner;
+    
+    [scanner setSymbology: ZBAR_I25
+                   config: ZBAR_CFG_ENABLE
+                       to: 0];
+    
+    [self presentViewController:reader animated:NO completion:nil];
 
 }
 
-
--(void)viewWillDisappear:(BOOL)animated{
-    [scannerView stopScanSession];
-    [self.marcadorQR removeFromSuperview];
-}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -72,7 +69,7 @@
 
 
 #pragma mark - DELEGATE QR
-
+/*
 - (void)didScanCode:(NSString *)scannedCode onCodeType:(NSString *)codeType {
     
     self.codeQR = scannedCode;
@@ -99,6 +96,21 @@
     return YES;
 }
 
+*/
+
+- (void) imagePickerController: (UIImagePickerController*) reader
+ didFinishPickingMediaWithInfo: (NSDictionary*) info
+{
+    id<NSFastEnumeration> results =
+    [info objectForKey: ZBarReaderControllerResults];
+    ZBarSymbol *symbol = nil;
+    for(symbol in results)
+        break;
+    [reader dismissViewControllerAnimated:NO completion:nil];
+    
+    self.codeQR = symbol.data;
+    //[self performSegueWithIdentifier:@"sculpture" sender:nil];
+}
 
 
  #pragma mark - Navigation
@@ -116,3 +128,6 @@
     self.tabBarController.selectedIndex = 0;
 }
 @end
+
+
+

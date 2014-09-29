@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RMScannerView.h"
+#import "ZBarSDK.h"
+#import "ZBarImageScanner.h"
+@interface PIEQrViewController : UIViewController < ZBarReaderDelegate,UIAlertViewDelegate >
 
-@interface PIEQrViewController : UIViewController <RMScannerViewDelegate>
-@property (strong, nonatomic) IBOutlet RMScannerView *scannerView;
 
 @property (weak, nonatomic) IBOutlet UILabel *statusText;
 - (IBAction)homeAction:(id)sender;
