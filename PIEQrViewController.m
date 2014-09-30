@@ -39,7 +39,7 @@
     [self.navigationController.view addSubview:self.marcadorQR];
 
     
-    UILabel  * label = [[UILabel alloc] initWithFrame:CGRectMake(125, 380, 100, 50)];
+    UILabel  * label = [[UILabel alloc] initWithFrame:CGRectMake(125, 420, 100, 50)];
     if(IS_IPHONE_4){label.frame=CGRectMake(125, 330, 100, 50);
             self.marcadorQR.frame = CGRectMake(x, y-50, self.marcadorQR.frame.size.width, self.marcadorQR.frame.size.height);
     

@@ -239,7 +239,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0v-eu-KWG">
-                                        <rect key="frame" x="25" y="358" width="135" height="30"/>
+                                        <rect key="frame" x="22" y="358" width="135" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Reiniciar Juego">
@@ -251,7 +251,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QwS-Ck-NnE" userLabel="Button - Vovlver">
-                                        <rect key="frame" x="155" y="358" width="135" height="30"/>
+                                        <rect key="frame" x="164" y="358" width="135" height="30"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="PIE para niños">
@@ -604,6 +604,7 @@
         <!--Qr View Controller - QR-->
         <scene sceneID="D9A-YI-vjj">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOh-XL-OWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="5YT-Yf-lPl" customClass="PIEQrViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3NU-uN-v0j"/>
@@ -612,15 +613,22 @@
                     <view key="view" contentMode="scaleToFill" id="846-IT-PGj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ee5-OI-Gem" customClass="ZBarReaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="QR" id="rh3-Y7-pG7"/>
                     <navigationItem key="navigationItem" id="jFo-0a-q8c"/>
                     <connections>
+                        <outlet property="zbarReaderView" destination="Ee5-OI-Gem" id="7H1-Et-poh"/>
                         <segue destination="yc6-R6-Z4l" kind="modal" identifier="sculpture" id="uAb-Xg-XL5"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OOh-XL-OWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-787" y="1892"/>
         </scene>
@@ -879,7 +887,7 @@
                     <navigationItem key="navigationItem" id="Bf7-BE-Ofe">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="iQ1-6m-fsd">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jma-VE-qru">
-                                <rect key="frame" x="16" y="-10" width="50" height="64"/>
+                                <rect key="frame" x="16" y="11" width="60" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="Menu">
@@ -1231,10 +1239,10 @@
                                         <rect key="frame" x="27" y="298" width="269" height="62"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QEP-7u-QFK">
-                                        <rect key="frame" x="0.0" y="469" width="320" height="49"/>
+                                        <rect key="frame" x="0.0" y="465" width="320" height="49"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabBar_backGround2" translatesAutoresizingMaskIntoConstraints="NO" id="cUL-sJ-DOm">
-                                                <rect key="frame" x="0.0" y="-8" width="320" height="57"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6X-Dd-afy">
                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="49"/>
@@ -1246,7 +1254,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="El Parque" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nf-JV-lYP">
-                                                <rect key="frame" x="11" y="25" width="42" height="21"/>
+                                                <rect key="frame" x="11" y="29" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="7.5"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1261,7 +1269,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artistas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRv-ys-kUv">
-                                                <rect key="frame" x="75" y="25" width="42" height="21"/>
+                                                <rect key="frame" x="75" y="29" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="7.5"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1285,7 +1293,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accesibilidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VE7-Qr-X4D">
-                                                <rect key="frame" x="196" y="25" width="52" height="21"/>
+                                                <rect key="frame" x="196" y="28" width="52" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="7"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1300,13 +1308,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jr6-vM-uP4">
-                                                <rect key="frame" x="266" y="25" width="42" height="21"/>
+                                                <rect key="frame" x="266" y="28" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="7.5"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visita" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbp-Dz-RTJ">
-                                                <rect key="frame" x="139" y="25" width="42" height="21"/>
+                                                <rect key="frame" x="139" y="28" width="42" height="21"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="7.5"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
