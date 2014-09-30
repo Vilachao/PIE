@@ -78,6 +78,18 @@ static NSInteger menuSelect;
     cell.textLabel.textColor = [UIColor colorWithRed:0.865 green:0.883 blue:0.966 alpha:1.000];
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
     
+        if ([tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+            [tableView setSeparatorInset:UIEdgeInsetsZero];
+        }
+        
+        if ([tableView respondsToSelector:@selector(setLayoutMargins:)]) {
+            [tableView setLayoutMargins:UIEdgeInsetsZero];
+        }
+        
+        if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+            [cell setLayoutMargins:UIEdgeInsetsZero];
+        }
+
 }
 #pragma mark -
 #pragma mark UITableView Datasource

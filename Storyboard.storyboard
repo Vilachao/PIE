@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KiX-JH-jvb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KiX-JH-jvb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Navigation Menu Home Controller - Item-->
+        <!--Item-->
         <scene sceneID="mrC-57-3Zd">
             <objects>
                 <navigationController storyboardIdentifier="contentController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="w1w-ld-L9v" customClass="PIENavigationMenuHomeController" sceneMemberID="viewController">
@@ -22,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-398" y="-1056"/>
         </scene>
-        <!--Home View Controller - Item 1-->
+        <!--Item 1-->
         <scene sceneID="frD-ci-p1P">
             <objects>
                 <viewController storyboardIdentifier="homeController" id="zXI-qh-4g1" customClass="PIEHomeViewController" sceneMemberID="viewController">
@@ -148,7 +149,7 @@
             </objects>
             <point key="canvasLocation" x="-1859" y="297"/>
         </scene>
-        <!--Root Menu Home View Controller - EL PARQUE-->
+        <!--EL PARQUE-->
         <scene sceneID="WDS-lS-hh7">
             <objects>
                 <viewController id="zhH-dh-VWr" customClass="PIERootMenuHomeViewController" sceneMemberID="viewController">
@@ -201,7 +202,7 @@
             </objects>
             <point key="canvasLocation" x="-896" y="-1102"/>
         </scene>
-        <!--Navigation Controller - ACCESIBILIDAD-->
+        <!--ACCESIBILIDAD-->
         <scene sceneID="dBV-yA-Vdx">
             <objects>
                 <navigationController storyboardIdentifier="contentControllerAccesible" definesPresentationContext="YES" navigationBarHidden="YES" id="v41-Sy-68S" sceneMemberID="viewController">
@@ -219,7 +220,7 @@
             </objects>
             <point key="canvasLocation" x="-373" y="1043"/>
         </scene>
-        <!--Accessibility View Controller - Item 2-->
+        <!--Item 2-->
         <scene sceneID="l1G-jC-hTk">
             <objects>
                 <viewController storyboardIdentifier="accesible" id="OZ8-ae-sI7" customClass="PIEAccessibilityViewController" sceneMemberID="viewController">
@@ -308,7 +309,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1k-Qc-BG4">
-                                        <rect key="frame" x="40" y="88" width="240" height="281"/>
+                                        <rect key="frame" x="40" y="88" width="280" height="281"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -328,7 +329,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGt-oq-DfU">
-                                        <rect key="frame" x="40" y="39" width="240" height="42"/>
+                                        <rect key="frame" x="40" y="39" width="280" height="42"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -410,7 +411,7 @@
             </objects>
             <point key="canvasLocation" x="-1847" y="-472"/>
         </scene>
-        <!--Visit View Controller - VISITA-->
+        <!--VISITA-->
         <scene sceneID="CjY-O0-Kdb">
             <objects>
                 <viewController storyboardIdentifier="homeControllerVisit" id="9WN-Pa-fVB" customClass="PIEVisitViewController" sceneMemberID="viewController">
@@ -604,7 +605,7 @@
             </objects>
             <point key="canvasLocation" x="121" y="378"/>
         </scene>
-        <!--Qr View Controller - QR-->
+        <!--QR-->
         <scene sceneID="D9A-YI-vjj">
             <objects>
                 <viewController id="5YT-Yf-lPl" customClass="PIEQrViewController" sceneMemberID="viewController">
@@ -733,7 +734,7 @@
             </objects>
             <point key="canvasLocation" x="-212" y="1892"/>
         </scene>
-        <!--Artists View Controller - Item 1-->
+        <!--Item 1-->
         <scene sceneID="FBe-ug-hcp">
             <objects>
                 <viewController storyboardIdentifier="homeControllerArtist" id="hAr-Yc-EL4" customClass="PIEArtistsViewController" sceneMemberID="viewController">
@@ -871,7 +872,7 @@
             </objects>
             <point key="canvasLocation" x="-409" y="-409"/>
         </scene>
-        <!--Root Artist Home View Controller - artisteo-->
+        <!--artisteo-->
         <scene sceneID="U60-zE-VTG">
             <objects>
                 <viewController storyboardIdentifier="PIERootArtistHomeViewController" id="Xa3-kZ-4mx" customClass="PIERootArtistHomeViewController" sceneMemberID="viewController">
@@ -925,7 +926,7 @@
             </objects>
             <point key="canvasLocation" x="-787" y="-409"/>
         </scene>
-        <!--Navigation Controller - ACCESIBILIDAD-->
+        <!--ACCESIBILIDAD-->
         <scene sceneID="Siw-8M-gZq">
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="DeJ-PC-WaN" sceneMemberID="viewController">
@@ -941,7 +942,7 @@
             </objects>
             <point key="canvasLocation" x="-1305" y="1876"/>
         </scene>
-        <!--Root Visita Home View Controller - artisteo-->
+        <!--artisteo-->
         <scene sceneID="61v-Aq-Gg3">
             <objects>
                 <viewController id="tNe-kl-JK6" customClass="PIERootVisitaHomeViewController" sceneMemberID="viewController">
@@ -995,7 +996,7 @@
             </objects>
             <point key="canvasLocation" x="-665" y="378"/>
         </scene>
-        <!--Navigation Controller - ACCESIBILIDAD-->
+        <!--ACCESIBILIDAD-->
         <scene sceneID="42k-0o-3JN">
             <objects>
                 <navigationController storyboardIdentifier="contentControllerVisit" definesPresentationContext="YES" navigationBarHidden="YES" id="Rxz-DQ-Nbl" sceneMemberID="viewController">
@@ -1017,7 +1018,7 @@
             </objects>
             <point key="canvasLocation" x="-270" y="378"/>
         </scene>
-        <!--Navigation Menu Home Controller - Item-->
+        <!--Item-->
         <scene sceneID="rLJ-0G-6Te">
             <objects>
                 <navigationController definesPresentationContext="YES" id="gXn-3R-FA8" customClass="PIENavigationMenuHomeController" sceneMemberID="viewController">
@@ -1035,7 +1036,7 @@
             </objects>
             <point key="canvasLocation" x="-1272" y="1043"/>
         </scene>
-        <!--Root Accesibility View Controller - artisteo-->
+        <!--artisteo-->
         <scene sceneID="kx6-9f-bQh">
             <objects>
                 <viewController id="bhe-1h-Qan" customClass="PIERootAccesibilityViewController" sceneMemberID="viewController">
@@ -1126,7 +1127,7 @@
             </objects>
             <point key="canvasLocation" x="525" y="130"/>
         </scene>
-        <!--Navigation Menu Home Controller - Item-->
+        <!--Item-->
         <scene sceneID="PJF-0h-S9G">
             <objects>
                 <navigationController definesPresentationContext="YES" id="0pf-tl-fUa" customClass="PIENavigationMenuHomeController" sceneMemberID="viewController">
@@ -1144,7 +1145,7 @@
             </objects>
             <point key="canvasLocation" x="-1250" y="319"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Item-->
         <scene sceneID="GIf-dh-6Xm">
             <objects>
                 <navigationController definesPresentationContext="YES" id="kIM-DA-szd" sceneMemberID="viewController">
@@ -1363,7 +1364,7 @@
             </objects>
             <point key="canvasLocation" x="-2196" y="-1207"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Item-->
         <scene sceneID="bf2-tZ-gWI">
             <objects>
                 <navigationController definesPresentationContext="YES" id="jOX-TV-bPk" sceneMemberID="viewController">

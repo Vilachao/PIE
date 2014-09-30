@@ -827,8 +827,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1735fe3c-054b-4b69-9942-94dbd455dda3";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -848,7 +849,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KOMETASOFT SL (9BQNXQ35FP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: KOMETASOFT SL (9BQNXQ35FP)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -859,9 +861,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "1735fe3c-054b-4b69-9942-94dbd455dda3";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -881,8 +884,8 @@
 					"$(PROJECT_DIR)/ZBarSDK",
 				);
 				PRODUCT_NAME = PIE;
-				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = armv7;
+				PROVISIONING_PROFILE = "1735fe3c-054b-4b69-9942-94dbd455dda3";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -893,8 +896,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KOMETASOFT SL (9BQNXQ35FP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: KOMETASOFT SL (9BQNXQ35FP)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AccionaPie/PIE-Prefix.pch";
 				INFOPLIST_FILE = "AccionaPie/PIE-Info.plist";
@@ -903,8 +906,8 @@
 					"$(PROJECT_DIR)/ZBarSDK",
 				);
 				PRODUCT_NAME = PIE;
-				PROVISIONING_PROFILE = "";
-				VALID_ARCHS = armv7;
+				PROVISIONING_PROFILE = "1735fe3c-054b-4b69-9942-94dbd455dda3";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

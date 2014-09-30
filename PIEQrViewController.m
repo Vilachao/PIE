@@ -9,6 +9,7 @@
 #import "PIEQrViewController.h"
 #import "PIESculptureViewController.h"
 #import "Constants.h"
+#import <AVFoundation/AVFoundation.h>
 #define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 
 #define IS_IPHONE_4 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )480 ) < DBL_EPSILON )
@@ -28,6 +29,8 @@
 {
     [super viewDidLoad];
     zbarReaderView.readerDelegate = self;
+    zbarReaderView.tracksSymbols = NO;
+    
         // Do any additional setup after loading the view.
 }
 
@@ -40,7 +43,7 @@
     [self.navigationController.view addSubview:self.marcadorQR];
 
     
-    UILabel  * label = [[UILabel alloc] initWithFrame:CGRectMake(125, 420, 100, 50)];
+    UILabel  * label = [[UILabel alloc] initWithFrame:CGRectMake(110, 420, 100, 50)];
     if(IS_IPHONE_4){label.frame=CGRectMake(125, 330, 100, 50);
             self.marcadorQR.frame = CGRectMake(x, y-50, self.marcadorQR.frame.size.width, self.marcadorQR.frame.size.height);
     
@@ -52,6 +55,11 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
+
+    [zbarReaderView.scanner setSymbology: ZBAR_I25
+                   config: ZBAR_CFG_ENABLE
+                       to: 0];
+    
     [zbarReaderView start];
 }
 
@@ -63,6 +71,7 @@
     for(ZBarSymbol *sym in symbols){
         self.codeQR = sym.data;
         [self performSegueWithIdentifier:@"sculpture" sender:nil];
+        break;
     }
 }
 
