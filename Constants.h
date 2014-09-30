@@ -20,7 +20,7 @@
 #define kRed_Facebook @"https://www.facebook.com/profile.php?id=100007898779330"
 #define kRed_Twitter @"https://twitter.com/@ParqueEscultura"
 #define kRed_Mail @"parqueinternacionalescultura@hotmail.com"
-#define kRed_Web @"http://www.pie.com"
+#define kRed_Web @"http://www.parqueinternacionaldeesculturas.es"
 
 
 //TABBAR
@@ -235,5 +235,7 @@
 #define kAccesibilidadVisualTitulo NSLocalizedString(@"AccesibilidadVisualTitulo", @"")
 #define kAccesibilidadAuditivaTitulo NSLocalizedString(@"AccesibilidadAuditivaTitulo", @"")
 #define kAccesibilidadNinosTitulo NSLocalizedString(@"AccesibilidadNinosTitulo", @"")
+
+#define kQRScan NSLocalizedString(@"QRScan", @"")
 
 #endif

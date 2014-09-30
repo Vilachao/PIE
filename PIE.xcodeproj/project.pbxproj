@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		380E66791998BCD400866F2D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 380E667B1998BCD400866F2D /* Localizable.strings */; };
-		3818BC5E19A4BCC6004A003C /* Sculpture.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC5D19A4BCC6004A003C /* Sculpture.m */; };
-		3818BC6119A4BCC6004A003C /* ArtistResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC6019A4BCC6004A003C /* ArtistResource.m */; };
-		3818BC6419A4BCC6004A003C /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 3818BC6319A4BCC6004A003C /* Artist.m */; };
 		384161B719D0C158005D1BC1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384161B619D0C158005D1BC1 /* Storyboard.storyboard */; };
 		3849923619D57B6B00EF1953 /* Storyboard_iPhone4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3849923519D57B6B00EF1953 /* Storyboard_iPhone4.storyboard */; };
 		384CF6C419C9A1BF00891EEC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */; };
@@ -41,7 +38,6 @@
 		38BAD47119982CB8002FA234 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38BAD46F19982CB8002FA234 /* InfoPlist.strings */; };
 		38BAD47319982CB8002FA234 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BAD47219982CB8002FA234 /* main.m */; };
 		38BAD47719982CB8002FA234 /* PIEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BAD47619982CB8002FA234 /* PIEAppDelegate.m */; };
-		38BAD47A19982CB8002FA234 /* AccionaPie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38BAD47819982CB8002FA234 /* AccionaPie.xcdatamodeld */; };
 		38BAD48319982CB8002FA234 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD48219982CB8002FA234 /* XCTest.framework */; };
 		38BAD48419982CB8002FA234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD46419982CB8002FA234 /* Foundation.framework */; };
 		38BAD48519982CB8002FA234 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BAD46819982CB8002FA234 /* UIKit.framework */; };
@@ -70,8 +66,6 @@
 		D7B59B7B19D58F6F00B4FA5F /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B59B7619D58F6F00B4FA5F /* zbar-helpicons.png */; };
 		D7B59B7C19D58F6F00B4FA5F /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = D7B59B7719D58F6F00B4FA5F /* zbar-samples.png */; };
 		D7B59B7E19D5951700B4FA5F /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B59B7D19D5951700B4FA5F /* libiconv.dylib */; };
-		D7C285C219B31FEF00EF6CC8 /* RMOutlineBox.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C285AA19B31FE800EF6CC8 /* RMOutlineBox.m */; };
-		D7C285C319B31FEF00EF6CC8 /* RMScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C285AC19B31FE800EF6CC8 /* RMScannerView.m */; };
 		D7C285D219B346AB00EF6CC8 /* PIESculptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C285D119B346AB00EF6CC8 /* PIESculptureViewController.m */; };
 		D7E34CC519B8D5E900509F07 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E34CC419B8D5E900509F07 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
@@ -92,12 +86,6 @@
 		380E66801998D20200866F2D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		380E66811998D20200866F2D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		380E66821998D20200866F2D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3818BC5C19A4BCC6004A003C /* Sculpture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sculpture.h; sourceTree = "<group>"; };
-		3818BC5D19A4BCC6004A003C /* Sculpture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sculpture.m; sourceTree = "<group>"; };
-		3818BC5F19A4BCC6004A003C /* ArtistResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistResource.h; sourceTree = "<group>"; };
-		3818BC6019A4BCC6004A003C /* ArtistResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistResource.m; sourceTree = "<group>"; };
-		3818BC6219A4BCC6004A003C /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
-		3818BC6319A4BCC6004A003C /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		384161B619D0C158005D1BC1 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		3849923519D57B6B00EF1953 /* Storyboard_iPhone4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPhone4.storyboard; sourceTree = "<group>"; };
 		384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -145,7 +133,6 @@
 		38BAD47419982CB8002FA234 /* PIE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PIE-Prefix.pch"; sourceTree = "<group>"; };
 		38BAD47519982CB8002FA234 /* PIEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIEAppDelegate.h; sourceTree = "<group>"; };
 		38BAD47619982CB8002FA234 /* PIEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIEAppDelegate.m; sourceTree = "<group>"; };
-		38BAD47919982CB8002FA234 /* AccionaPie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccionaPie.xcdatamodel; sourceTree = "<group>"; };
 		38BAD48119982CB8002FA234 /* PIETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38BAD48219982CB8002FA234 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		38BAD48B19982CB8002FA234 /* PIETests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PIETests-Info.plist"; sourceTree = "<group>"; };
@@ -202,10 +189,6 @@
 		D7B59B7619D58F6F00B4FA5F /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		D7B59B7719D58F6F00B4FA5F /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
 		D7B59B7D19D5951700B4FA5F /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libiconv.dylib; sourceTree = "<group>"; };
-		D7C285A919B31FE800EF6CC8 /* RMOutlineBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOutlineBox.h; sourceTree = "<group>"; };
-		D7C285AA19B31FE800EF6CC8 /* RMOutlineBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMOutlineBox.m; sourceTree = "<group>"; };
-		D7C285AB19B31FE800EF6CC8 /* RMScannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMScannerView.h; sourceTree = "<group>"; };
-		D7C285AC19B31FE800EF6CC8 /* RMScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMScannerView.m; sourceTree = "<group>"; };
 		D7C285D019B346AB00EF6CC8 /* PIESculptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIESculptureViewController.h; sourceTree = "<group>"; };
 		D7C285D119B346AB00EF6CC8 /* PIESculptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIESculptureViewController.m; sourceTree = "<group>"; };
 		D7E34CC419B8D5E900509F07 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -292,20 +275,6 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		3818BC6519A4BEC8004A003C /* DataBase */ = {
-			isa = PBXGroup;
-			children = (
-				3818BC6219A4BCC6004A003C /* Artist.h */,
-				3818BC6319A4BCC6004A003C /* Artist.m */,
-				3818BC5F19A4BCC6004A003C /* ArtistResource.h */,
-				3818BC6019A4BCC6004A003C /* ArtistResource.m */,
-				3818BC5C19A4BCC6004A003C /* Sculpture.h */,
-				3818BC5D19A4BCC6004A003C /* Sculpture.m */,
-			);
-			name = DataBase;
-			path = AccionaPie;
-			sourceTree = "<group>";
-		};
 		38716CAE199A0A0E006A884D /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				D7C285A419B31F1D00EF6CC8 /* util */,
-				3818BC6519A4BEC8004A003C /* DataBase */,
 				384161B619D0C158005D1BC1 /* Storyboard.storyboard */,
 				3849923519D57B6B00EF1953 /* Storyboard_iPhone4.storyboard */,
 				D7B21CDF19B1DFC000BBBD92 /* sidebarMenu */,
@@ -380,7 +348,6 @@
 				38BAD47619982CB8002FA234 /* PIEAppDelegate.m */,
 				D7B21CE319B1F09800BBBD92 /* PIETabViewController.h */,
 				D7B21CE419B1F09800BBBD92 /* PIETabViewController.m */,
-				38BAD47819982CB8002FA234 /* AccionaPie.xcdatamodeld */,
 				38BAD46D19982CB8002FA234 /* Supporting Files */,
 			);
 			path = AccionaPie;
@@ -579,21 +546,8 @@
 				3865D60519A34DEC00479CAF /* PIEutil.m */,
 				D7B21CD619B1AF7D00BBBD92 /* Constants.h */,
 				380E667B1998BCD400866F2D /* Localizable.strings */,
-				D7C285A819B31FE700EF6CC8 /* RMScannerView */,
 			);
 			name = util;
-			sourceTree = "<group>";
-		};
-		D7C285A819B31FE700EF6CC8 /* RMScannerView */ = {
-			isa = PBXGroup;
-			children = (
-				D7C285A919B31FE800EF6CC8 /* RMOutlineBox.h */,
-				D7C285AA19B31FE800EF6CC8 /* RMOutlineBox.m */,
-				D7C285AB19B31FE800EF6CC8 /* RMScannerView.h */,
-				D7C285AC19B31FE800EF6CC8 /* RMScannerView.m */,
-			);
-			name = RMScannerView;
-			path = "RMScannerView-master/RMScannerView";
 			sourceTree = "<group>";
 		};
 		D7E34CC619B8D81D00509F07 /* Resources */ = {
@@ -763,13 +717,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3818BC6119A4BCC6004A003C /* ArtistResource.m in Sources */,
 				38716CB1199A134A006A884D /* PIEHomeViewController.m in Sources */,
 				D7A2FA1C19BC7C2000FE8B43 /* PIERootVisitaHomeViewController.m in Sources */,
 				38716CB4199A135A006A884D /* PIEAccessibilityViewController.m in Sources */,
 				D724134319C0BC1600550964 /* PIENavigationGlobalViewController.m in Sources */,
 				D7C285D219B346AB00EF6CC8 /* PIESculptureViewController.m in Sources */,
-				3818BC6419A4BCC6004A003C /* Artist.m in Sources */,
 				D724134719C0C5E200550964 /* PIEMenuTableViewCell.m in Sources */,
 				38BAD47319982CB8002FA234 /* main.m in Sources */,
 				38613AE2199B6470007C7F42 /* PIERootMenuHomeViewController.m in Sources */,
@@ -777,7 +729,6 @@
 				38716CB7199A1369006A884D /* PIEVisitViewController.m in Sources */,
 				389BC54B19A204180084E660 /* PIEaccessibilityGame.m in Sources */,
 				38613AE8199B6BF4007C7F42 /* PIEMenuHomeViewController.m in Sources */,
-				D7C285C219B31FEF00EF6CC8 /* RMOutlineBox.m in Sources */,
 				38716CBD199A1387006A884D /* PIEArtistsViewController.m in Sources */,
 				3865D60619A34DEC00479CAF /* PIEutil.m in Sources */,
 				D7A2FA2A19BCB1C100FE8B43 /* PIEModalViewController.m in Sources */,
@@ -790,9 +741,6 @@
 				38716CBA199A1379006A884D /* PIEQrViewController.m in Sources */,
 				3865D60919A3584000479CAF /* PIEArtistsCollectionViewCell.m in Sources */,
 				38BAD47719982CB8002FA234 /* PIEAppDelegate.m in Sources */,
-				3818BC5E19A4BCC6004A003C /* Sculpture.m in Sources */,
-				38BAD47A19982CB8002FA234 /* AccionaPie.xcdatamodeld in Sources */,
-				D7C285C319B31FEF00EF6CC8 /* RMScannerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,6 +828,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -912,6 +861,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -931,7 +881,8 @@
 					"$(PROJECT_DIR)/ZBarSDK",
 				);
 				PRODUCT_NAME = PIE;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1735fe3c-054b-4b69-9942-94dbd455dda3";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -942,8 +893,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: KOMETASOFT SL (9BQNXQ35FP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: KOMETASOFT SL (9BQNXQ35FP)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AccionaPie/PIE-Prefix.pch";
 				INFOPLIST_FILE = "AccionaPie/PIE-Info.plist";
@@ -952,7 +903,8 @@
 					"$(PROJECT_DIR)/ZBarSDK",
 				);
 				PRODUCT_NAME = PIE;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1735fe3c-054b-4b69-9942-94dbd455dda3";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1028,19 +980,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		38BAD47819982CB8002FA234 /* AccionaPie.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				38BAD47919982CB8002FA234 /* AccionaPie.xcdatamodel */,
-			);
-			currentVersion = 38BAD47919982CB8002FA234 /* AccionaPie.xcdatamodel */;
-			path = AccionaPie.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 38BAD45919982CB8002FA234 /* Project object */;
 }

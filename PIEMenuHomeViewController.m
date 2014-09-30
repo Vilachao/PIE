@@ -39,7 +39,7 @@
 /**
  *  Definimos en el viewDidLoad el aspecto del Menú refrosted
  */
-static int menuSelect;
+static NSInteger menuSelect;
 
 - (void)viewDidLoad
 {

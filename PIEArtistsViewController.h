@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Artist.h"
 #import <REFrostedViewController/REFrostedViewController.h>
 #import <MediaPlayer/MPMoviePlayerController.h>
 #import <FTCoreTextView.h>

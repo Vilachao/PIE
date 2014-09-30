@@ -53,7 +53,9 @@
     sourcePath = [sourcePath stringByAppendingPathComponent:name];
     BOOL fileExists=[[NSFileManager defaultManager] fileExistsAtPath:sourcePath];
     if(!fileExists){
+#ifdef DEBUG
         NSLog(@"no existe el fichero");
+#endif
     }
     return [UIImage imageWithContentsOfFile:sourcePath];
 }
