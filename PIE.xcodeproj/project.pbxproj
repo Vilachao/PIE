@@ -17,6 +17,10 @@
 		38613AE2199B6470007C7F42 /* PIERootMenuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE1199B6470007C7F42 /* PIERootMenuHomeViewController.m */; };
 		38613AE5199B6AAD007C7F42 /* PIENavigationMenuHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE4199B6AAD007C7F42 /* PIENavigationMenuHomeController.m */; };
 		38613AE8199B6BF4007C7F42 /* PIEMenuHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38613AE7199B6BF4007C7F42 /* PIEMenuHomeViewController.m */; };
+		3863B8A819DA94B50088C7E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3863B8A719DA94B50088C7E4 /* AVFoundation.framework */; };
+		3863B8AA19DA94CD0088C7E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3863B8A919DA94CD0088C7E4 /* QuartzCore.framework */; };
+		3863B8AC19DA94D50088C7E4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3863B8AB19DA94D50088C7E4 /* CoreMedia.framework */; };
+		3863B8AE19DA94DB0088C7E4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3863B8AD19DA94DB0088C7E4 /* CoreVideo.framework */; };
 		3865D60619A34DEC00479CAF /* PIEutil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3865D60519A34DEC00479CAF /* PIEutil.m */; };
 		3865D60919A3584000479CAF /* PIEArtistsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3865D60819A3584000479CAF /* PIEArtistsCollectionViewCell.m */; };
 		3870A77919D2B28E00F61C60 /* HomeIphone4 in Resources */ = {isa = PBXBuildFile; fileRef = 3870A77819D2B28E00F61C60 /* HomeIphone4 */; };
@@ -46,7 +50,6 @@
 		38BAD49019982CB8002FA234 /* AccionaPieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BAD48F19982CB8002FA234 /* AccionaPieTests.m */; };
 		38BAD49D19984C12002FA234 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 38BAD49C19984C12002FA234 /* Podfile */; };
 		794474E02DD64F1E997CEF2E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECBCD8FE6D349E1B6FD1F8D /* libPods.a */; };
-		D71F4D7119D97BCD002D627F /* ZBarReaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = D71F4D7019D97BCC002D627F /* ZBarReaderController.m */; };
 		D724134319C0BC1600550964 /* PIENavigationGlobalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D724134219C0BC1600550964 /* PIENavigationGlobalViewController.m */; };
 		D724134719C0C5E200550964 /* PIEMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D724134619C0C5E200550964 /* PIEMenuTableViewCell.m */; };
 		D72AC1EA19BDDBC8001B2C48 /* Esculturas in Resources */ = {isa = PBXBuildFile; fileRef = D72AC1E919BDDBC8001B2C48 /* Esculturas */; };
@@ -104,6 +107,10 @@
 		38613AE4199B6AAD007C7F42 /* PIENavigationMenuHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIENavigationMenuHomeController.m; sourceTree = "<group>"; };
 		38613AE6199B6BF4007C7F42 /* PIEMenuHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEMenuHomeViewController.h; sourceTree = "<group>"; };
 		38613AE7199B6BF4007C7F42 /* PIEMenuHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEMenuHomeViewController.m; sourceTree = "<group>"; };
+		3863B8A719DA94B50088C7E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3863B8A919DA94CD0088C7E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3863B8AB19DA94D50088C7E4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3863B8AD19DA94DB0088C7E4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		3865D60419A34DEC00479CAF /* PIEutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEutil.h; sourceTree = "<group>"; };
 		3865D60519A34DEC00479CAF /* PIEutil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIEutil.m; sourceTree = "<group>"; };
 		3865D60719A3584000479CAF /* PIEArtistsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEArtistsCollectionViewCell.h; sourceTree = "<group>"; };
@@ -146,7 +153,6 @@
 		38BAD48F19982CB8002FA234 /* AccionaPieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccionaPieTests.m; sourceTree = "<group>"; };
 		38BAD49C19984C12002FA234 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8ECBCD8FE6D349E1B6FD1F8D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D71F4D7019D97BCC002D627F /* ZBarReaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBarReaderController.m; sourceTree = "<group>"; };
 		D724134119C0BC1600550964 /* PIENavigationGlobalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIENavigationGlobalViewController.h; sourceTree = "<group>"; };
 		D724134219C0BC1600550964 /* PIENavigationGlobalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIENavigationGlobalViewController.m; sourceTree = "<group>"; };
 		D724134519C0C5E200550964 /* PIEMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIEMenuTableViewCell.h; sourceTree = "<group>"; };
@@ -210,10 +216,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3863B8AE19DA94DB0088C7E4 /* CoreVideo.framework in Frameworks */,
+				3863B8AC19DA94D50088C7E4 /* CoreMedia.framework in Frameworks */,
+				3863B8AA19DA94CD0088C7E4 /* QuartzCore.framework in Frameworks */,
+				38BAD46719982CB8002FA234 /* CoreGraphics.framework in Frameworks */,
+				3863B8A819DA94B50088C7E4 /* AVFoundation.framework in Frameworks */,
 				D7B59B7E19D5951700B4FA5F /* libiconv.dylib in Frameworks */,
 				384CF6C419C9A1BF00891EEC /* MediaPlayer.framework in Frameworks */,
 				D7E34CC519B8D5E900509F07 /* MessageUI.framework in Frameworks */,
-				38BAD46719982CB8002FA234 /* CoreGraphics.framework in Frameworks */,
 				38BAD46B19982CB8002FA234 /* CoreData.framework in Frameworks */,
 				38BAD46919982CB8002FA234 /* UIKit.framework in Frameworks */,
 				38BAD46519982CB8002FA234 /* Foundation.framework in Frameworks */,
@@ -250,7 +260,6 @@
 		380E66861998EBD900866F2D /* QR */ = {
 			isa = PBXGroup;
 			children = (
-				D71F4D7019D97BCC002D627F /* ZBarReaderController.m */,
 				38716CB8199A1379006A884D /* PIEQrViewController.h */,
 				38716CB9199A1379006A884D /* PIEQrViewController.m */,
 				D7C285D019B346AB00EF6CC8 /* PIESculptureViewController.h */,
@@ -347,6 +356,10 @@
 		38BAD46319982CB8002FA234 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3863B8AD19DA94DB0088C7E4 /* CoreVideo.framework */,
+				3863B8AB19DA94D50088C7E4 /* CoreMedia.framework */,
+				3863B8A919DA94CD0088C7E4 /* QuartzCore.framework */,
+				3863B8A719DA94B50088C7E4 /* AVFoundation.framework */,
 				384CF6C319C9A1BF00891EEC /* MediaPlayer.framework */,
 				D7E34CC419B8D5E900509F07 /* MessageUI.framework */,
 				38BAD46419982CB8002FA234 /* Foundation.framework */,
@@ -757,7 +770,6 @@
 				D724134319C0BC1600550964 /* PIENavigationGlobalViewController.m in Sources */,
 				D7C285D219B346AB00EF6CC8 /* PIESculptureViewController.m in Sources */,
 				3818BC6419A4BCC6004A003C /* Artist.m in Sources */,
-				D71F4D7119D97BCD002D627F /* ZBarReaderController.m in Sources */,
 				D724134719C0C5E200550964 /* PIEMenuTableViewCell.m in Sources */,
 				38BAD47319982CB8002FA234 /* main.m in Sources */,
 				38613AE2199B6470007C7F42 /* PIERootMenuHomeViewController.m in Sources */,

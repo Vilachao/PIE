@@ -678,7 +678,6 @@
         <!--Qr View Controller - QR-->
         <scene sceneID="D9A-YI-vjj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OOh-XL-OWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="5YT-Yf-lPl" customClass="PIEQrViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3NU-uN-v0j"/>
@@ -688,32 +687,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading the Scanner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ece-AC-m6j">
-                                <rect key="frame" x="76" y="190" width="168" height="26"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lGx-em-7GN">
-                                <rect key="frame" x="150" y="215" width="20" height="20"/>
-                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                            </activityIndicatorView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLu-51-IgF" customClass="RMScannerView">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-7a-eVa" customClass="ZBarReaderView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="QR" id="rh3-Y7-pG7"/>
                     <navigationItem key="navigationItem" id="jFo-0a-q8c"/>
                     <connections>
-                        <outlet property="scannerView" destination="ZLu-51-IgF" id="AAA-1Y-O6z"/>
-                        <outlet property="statusText" destination="Ece-AC-m6j" id="gKr-Ik-IIO"/>
+                        <outlet property="zbarReaderView" destination="Cve-7a-eVa" id="icT-fV-HD5"/>
                         <segue destination="yc6-R6-Z4l" kind="modal" identifier="sculpture" id="uAb-Xg-XL5"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOh-XL-OWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-787" y="1892"/>
         </scene>
@@ -745,7 +734,7 @@
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6m9-hC-Jjh" userLabel="View-esculturas">
-                                <rect key="frame" x="0.0" y="203" width="320" height="280"/>
+                                <rect key="frame" x="0.0" y="137" width="320" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Wr-dr-0vW" userLabel="View-sidebar">
@@ -1029,7 +1018,6 @@
         <!--Navigation Controller - ACCESIBILIDAD-->
         <scene sceneID="Siw-8M-gZq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qw6-rO-ZZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="DeJ-PC-WaN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="ACCESIBILIDAD" id="qgg-gw-vqX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="home_buttonRefrostedMenu" id="xxX-iT-Z1t">
@@ -1039,6 +1027,7 @@
                         <segue destination="5YT-Yf-lPl" kind="relationship" relationship="rootViewController" id="u0M-CT-bWI"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qw6-rO-ZZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1305" y="1876"/>
         </scene>

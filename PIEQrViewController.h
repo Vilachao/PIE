@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ZBarSDK.h"
-#import "ZBarImageScanner.h"
-@interface PIEQrViewController : UIViewController < ZBarReaderDelegate,UIAlertViewDelegate >
+
+@interface PIEQrViewController : UIViewController < ZBarReaderViewDelegate,UIAlertViewDelegate >
 
 
-@property (weak, nonatomic) IBOutlet UILabel *statusText;
-- (IBAction)homeAction:(id)sender;
+@property (weak, nonatomic) IBOutlet ZBarReaderView *zbarReaderView;
 
-- (IBAction)home_showMenuRefrosted:(id)sender;
+
 @end

@@ -21,31 +21,66 @@
 
 @implementation PIEQrViewController
 
-
-
+@synthesize zbarReaderView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    zbarReaderView.readerDelegate = self;
         // Do any additional setup after loading the view.
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     
-        self.marcadorQR = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"markerQR"]];
-
+    self.marcadorQR = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"markerQR"]];
     float x = [[UIScreen mainScreen] bounds].size.width/2 - self.marcadorQR.frame.size.width/2;
     float y = [[UIScreen mainScreen] bounds].size.height/2 - self.marcadorQR.frame.size.height/2;
     self.marcadorQR.frame = CGRectMake(x, y, self.marcadorQR.frame.size.width, self.marcadorQR.frame.size.height);
     [self.navigationController.view addSubview:self.marcadorQR];
 
+    
+    UILabel  * label = [[UILabel alloc] initWithFrame:CGRectMake(125, 380, 100, 50)];
+    if(IS_IPHONE_4){label.frame=CGRectMake(125, 330, 100, 50);
+            self.marcadorQR.frame = CGRectMake(x, y-50, self.marcadorQR.frame.size.width, self.marcadorQR.frame.size.height);
+    
+    }
+    label.text=@"Scanning...";
+    label.textColor=[UIColor whiteColor];
+     [self.navigationController.view addSubview:label];
 }
+
+-(void)viewDidAppear:(BOOL)animated{
+    [zbarReaderView start];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [zbarReaderView stop];
+}
+
+-(void)readerView:(ZBarReaderView *)readerView didReadSymbols:(ZBarSymbolSet *)symbols fromImage:(UIImage *)image{
+    for(ZBarSymbol *sym in symbols){
+        self.codeQR = sym.data;
+        [self performSegueWithIdentifier:@"sculpture" sender:nil];
+    }
+}
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"sculpture"]) {
+        PIESculptureViewController *sculpture = segue.destinationViewController;
+        sculpture.idCode = [self.codeQR copy];
+    }
+}
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-
+/**
 -(void)viewDidAppear:(BOOL)animated{
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
     reader.readerDelegate = self;
@@ -96,7 +131,7 @@
     return YES;
 }
 
-*/
+
 
 - (void) imagePickerController: (UIImagePickerController*) reader
  didFinishPickingMediaWithInfo: (NSDictionary*) info
@@ -127,6 +162,7 @@
 - (IBAction)homeAction:(id)sender {
     self.tabBarController.selectedIndex = 0;
 }
+**/
 @end
 
 

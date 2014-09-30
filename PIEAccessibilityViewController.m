@@ -202,7 +202,7 @@
 {
     PIEAccessibilityGameCollectionViewCell *cell = (PIEAccessibilityGameCollectionViewCell *)[self.accessibility_collectionViewImages cellForItemAtIndexPath:indexPath];
     [UIView animateWithDuration:0.25 animations:^{
-        cell.backgroundColor = [UIColor redColor];
+        cell.backgroundColor = [UIColor colorWithRed:0.676 green:0.003 blue:0.077 alpha:1.000];
     }];
 }
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KiX-JH-jvb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KiX-JH-jvb">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Navigation Menu Home Controller - Item-->
         <scene sceneID="mrC-57-3Zd">
             <objects>
                 <navigationController storyboardIdentifier="contentController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="w1w-ld-L9v" customClass="PIENavigationMenuHomeController" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-398" y="-1056"/>
         </scene>
-        <!--Item 1-->
+        <!--Home View Controller - Item 1-->
         <scene sceneID="frD-ci-p1P">
             <objects>
                 <viewController storyboardIdentifier="homeController" id="zXI-qh-4g1" customClass="PIEHomeViewController" sceneMemberID="viewController">
@@ -149,7 +149,7 @@
             </objects>
             <point key="canvasLocation" x="-1859" y="297"/>
         </scene>
-        <!--EL PARQUE-->
+        <!--Root Menu Home View Controller - EL PARQUE-->
         <scene sceneID="WDS-lS-hh7">
             <objects>
                 <viewController id="zhH-dh-VWr" customClass="PIERootMenuHomeViewController" sceneMemberID="viewController">
@@ -202,7 +202,7 @@
             </objects>
             <point key="canvasLocation" x="-896" y="-1102"/>
         </scene>
-        <!--ACCESIBILIDAD-->
+        <!--Navigation Controller - ACCESIBILIDAD-->
         <scene sceneID="dBV-yA-Vdx">
             <objects>
                 <navigationController storyboardIdentifier="contentControllerAccesible" definesPresentationContext="YES" navigationBarHidden="YES" id="v41-Sy-68S" sceneMemberID="viewController">
@@ -220,7 +220,7 @@
             </objects>
             <point key="canvasLocation" x="-373" y="1043"/>
         </scene>
-        <!--Item 2-->
+        <!--Accessibility View Controller - Item 2-->
         <scene sceneID="l1G-jC-hTk">
             <objects>
                 <viewController storyboardIdentifier="accesible" id="OZ8-ae-sI7" customClass="PIEAccessibilityViewController" sceneMemberID="viewController">
@@ -411,7 +411,7 @@
             </objects>
             <point key="canvasLocation" x="-1847" y="-472"/>
         </scene>
-        <!--VISITA-->
+        <!--Visit View Controller - VISITA-->
         <scene sceneID="CjY-O0-Kdb">
             <objects>
                 <viewController storyboardIdentifier="homeControllerVisit" id="9WN-Pa-fVB" customClass="PIEVisitViewController" sceneMemberID="viewController">
@@ -601,7 +601,7 @@
             </objects>
             <point key="canvasLocation" x="121" y="378"/>
         </scene>
-        <!--QR-->
+        <!--Qr View Controller - QR-->
         <scene sceneID="D9A-YI-vjj">
             <objects>
                 <viewController id="5YT-Yf-lPl" customClass="PIEQrViewController" sceneMemberID="viewController">
@@ -723,7 +723,7 @@
             </objects>
             <point key="canvasLocation" x="-212" y="1892"/>
         </scene>
-        <!--Item 1-->
+        <!--Artists View Controller - Item 1-->
         <scene sceneID="FBe-ug-hcp">
             <objects>
                 <viewController storyboardIdentifier="homeControllerArtist" id="hAr-Yc-EL4" customClass="PIEArtistsViewController" sceneMemberID="viewController">
@@ -861,7 +861,7 @@
             </objects>
             <point key="canvasLocation" x="-409" y="-409"/>
         </scene>
-        <!--artisteo-->
+        <!--Root Artist Home View Controller - artisteo-->
         <scene sceneID="U60-zE-VTG">
             <objects>
                 <viewController storyboardIdentifier="PIERootArtistHomeViewController" id="Xa3-kZ-4mx" customClass="PIERootArtistHomeViewController" sceneMemberID="viewController">
@@ -915,7 +915,7 @@
             </objects>
             <point key="canvasLocation" x="-787" y="-409"/>
         </scene>
-        <!--ACCESIBILIDAD-->
+        <!--Navigation Controller - ACCESIBILIDAD-->
         <scene sceneID="Siw-8M-gZq">
             <objects>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="DeJ-PC-WaN" sceneMemberID="viewController">
@@ -931,7 +931,7 @@
             </objects>
             <point key="canvasLocation" x="-1305" y="1876"/>
         </scene>
-        <!--artisteo-->
+        <!--Root Visita Home View Controller - artisteo-->
         <scene sceneID="61v-Aq-Gg3">
             <objects>
                 <viewController id="tNe-kl-JK6" customClass="PIERootVisitaHomeViewController" sceneMemberID="viewController">
@@ -985,7 +985,7 @@
             </objects>
             <point key="canvasLocation" x="-665" y="378"/>
         </scene>
-        <!--ACCESIBILIDAD-->
+        <!--Navigation Controller - ACCESIBILIDAD-->
         <scene sceneID="42k-0o-3JN">
             <objects>
                 <navigationController storyboardIdentifier="contentControllerVisit" definesPresentationContext="YES" navigationBarHidden="YES" id="Rxz-DQ-Nbl" sceneMemberID="viewController">
@@ -1007,7 +1007,7 @@
             </objects>
             <point key="canvasLocation" x="-270" y="378"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Menu Home Controller - Item-->
         <scene sceneID="rLJ-0G-6Te">
             <objects>
                 <navigationController definesPresentationContext="YES" id="gXn-3R-FA8" customClass="PIENavigationMenuHomeController" sceneMemberID="viewController">
@@ -1025,7 +1025,7 @@
             </objects>
             <point key="canvasLocation" x="-1272" y="1043"/>
         </scene>
-        <!--artisteo-->
+        <!--Root Accesibility View Controller - artisteo-->
         <scene sceneID="kx6-9f-bQh">
             <objects>
                 <viewController id="bhe-1h-Qan" customClass="PIERootAccesibilityViewController" sceneMemberID="viewController">
@@ -1116,7 +1116,7 @@
             </objects>
             <point key="canvasLocation" x="525" y="130"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Menu Home Controller - Item-->
         <scene sceneID="PJF-0h-S9G">
             <objects>
                 <navigationController definesPresentationContext="YES" id="0pf-tl-fUa" customClass="PIENavigationMenuHomeController" sceneMemberID="viewController">
@@ -1134,7 +1134,7 @@
             </objects>
             <point key="canvasLocation" x="-1250" y="319"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller - Item-->
         <scene sceneID="GIf-dh-6Xm">
             <objects>
                 <navigationController definesPresentationContext="YES" id="kIM-DA-szd" sceneMemberID="viewController">
@@ -1237,7 +1237,7 @@
                                                 <rect key="frame" x="0.0" y="-8" width="320" height="57"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6X-Dd-afy">
-                                                <rect key="frame" x="0.0" y="-3" width="64" height="49"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="49"/>
                                                 <state key="normal" image="tabBar_homeButtonUnSelected">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1252,7 +1252,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38B-Dr-KfS">
-                                                <rect key="frame" x="64" y="-3" width="64" height="49"/>
+                                                <rect key="frame" x="64" y="0.0" width="64" height="49"/>
                                                 <state key="normal" backgroundImage="tabBar_artistButtonUnSelected">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1267,7 +1267,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RU-Ur-tSz">
-                                                <rect key="frame" x="128" y="-3" width="64" height="49"/>
+                                                <rect key="frame" x="128" y="0.0" width="64" height="49"/>
                                                 <state key="normal" image="tabBar_visitButtonUnSelected">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1276,7 +1276,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fK-re-P3w">
-                                                <rect key="frame" x="192" y="-3" width="64" height="49"/>
+                                                <rect key="frame" x="192" y="0.0" width="64" height="49"/>
                                                 <state key="normal" image="tabBar_accessibilityUnSelected">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1291,7 +1291,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-RT-IbP">
-                                                <rect key="frame" x="256" y="-3" width="64" height="49"/>
+                                                <rect key="frame" x="256" y="0.0" width="64" height="49"/>
                                                 <state key="normal" image="tabBar_QRbuttonUnSelected">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
@@ -1353,7 +1353,7 @@
             </objects>
             <point key="canvasLocation" x="-2196" y="-1207"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller - Item-->
         <scene sceneID="bf2-tZ-gWI">
             <objects>
                 <navigationController definesPresentationContext="YES" id="jOX-TV-bPk" sceneMemberID="viewController">
