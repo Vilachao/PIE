@@ -61,9 +61,14 @@
 //    myNewVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
 //    [self.navigationController presentViewController:myNewVC animated:YES completion:nil];
 //
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
-    UITabBarController *rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"navigationHome"];
-    [[UIApplication sharedApplication].keyWindow setRootViewController:rootViewController];
+    UIStoryboard *storyboard = self.navigationController.storyboard;
+    
+    //the detail controller
+    PIEMainHomeViewController *myNewVC = [storyboard
+                                          instantiateViewControllerWithIdentifier:@"PIEMainHomeViewController"];
+    
+    myNewVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self.navigationController presentViewController:myNewVC animated:YES completion:nil];
 
 }
 
